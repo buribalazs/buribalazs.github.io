@@ -373,8 +373,6 @@ body {
       width: 100vw;
       height: 100%;
       float: left; }
-  .item-slide.large {
-    min-height: 90vh; }
   @media screen and (orientation: portrait) {
     .item-slide.dirty .left-caret, .item-slide.dirty .right-caret {
       opacity: 0 !important; } }
