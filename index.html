@@ -1,47 +1,161 @@
 <!DOCTYPE html>
-<html class="sans-serif-light">
-  <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width,initial-scale=1" name="viewport">
-    <link href="./css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Asap:400,700|Noto+Serif:700" rel="stylesheet">
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/itemslide.min.js"></script>
-    <script type="text/javascript" src="js/se-main.js"></script>
-  </head>
-  <body class="preload">
-    <div class="bg-index fadein trans-all">
-      <div class="content-wrap">
-        <div class="text-center"><img src="img/logo-lg.png" class="se-logo-main"></div>
-        <div class="index-nav-wrap serif-heavy uppercase text-center row">
-          <div class="index-destination-block-container anim-from-left">
-            <div class="index-destination-block-content trans-all">
-              <div class="index-destination-row1">semmi</div>
-              <div class="index-destination-row2">extra</div>
-              <div class="index-destination-row3">bartók b. út.</div>
-              <div class="index-callword sans-serif-heavy">original</div><img src="img/arrow-sketch-left.png" class="index-left-arrow trans-all">
-            </div>
-          </div>
-          <div class="index-destination-block-container anim-from-right">
-            <div class="index-destination-block-content offset trans-all"><img src="img/arrow-sketch-right.png" class="index-right-arrow trans-all">
-              <div class="index-destination-row1">semmi</div>
-              <div class="index-destination-row2">extra</div>
-              <div class="index-destination-row3b">lajos utca</div>
-              <div class="index-callword offset sans-serif-heavy">és egy kis kert</div>
-            </div>
-          </div>
-        </div>
-        <div class="text-center">
-          <div class="index-nav-container">
-            <ul class="index-nav sans-serif-heavy wide uppercase">
-              <li>étlap</li>
-              <li>heti menü</li>
-              <li>extra ajánlat</li>
-              <li>kapcsolat</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>VCE sandbox</title>
+  <link rel="stylesheet" type="text/css" href="//redirector.eservice.emarsys.net/ui/latest/css/app.css">
+  <link rel="stylesheet" type="text/css"
+        href="//redirector.eservice.emarsys.net/ui/latest/css/services/contentblocks.css">
+  <link rel="stylesheet" type="text/css" href="//redirector.eservice.emarsys.net/ui/latest/css/services/dashboard.css">
+  <link rel="stylesheet" type="text/css"
+        href="//redirector-staging.eservice.emarsys.com/ui/latest/css/services/vce.css">
+  <script type="text/javascript" src="//redirector.eservice.emarsys.net/ui/latest/js/app.js"></script>
+  <script type="text/javascript"
+          src="//redirector-staging.eservice.emarsys.com/content-blocks-positioner/latest/app.js"></script>
+
+  <script type="text/javascript"
+          src="//redirector-staging.eservice.emarsys.com/vce-preview/latest/scripts/vce-preview.js"></script>
+  <script type="text/javascript"
+          src="./vce.js"></script>
+  <style>
+    .height-grow {
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+<div class="e-container" style="position: relative; height: 95vh;">
+  <h1>VCE sandbox</h1>
+  <!--iframe-width="100%" extra-class=""-->
+  <vce-preview id="vce-preview" class="e-contentblocks-preview" iframe-width="100%" extra-class="height-grow">
+    <vce-plugin-prevent-link-click></vce-plugin-prevent-link-click>
+    <vce-plugin-force-http-image-link></vce-plugin-force-http-image-link>
+    <vce-plugin-clean-device-width></vce-plugin-clean-device-width>
+    <vce-plugin-clean-pixel-ratio></vce-plugin-clean-pixel-ratio>
+    <vce-link-editor-dialog selector="a[e-editable]"
+                            link-editor-dialog="link-editor-dialog"></vce-link-editor-dialog>
+    <vce-plugin-editable-text
+      editable-selector="p[e-editable],div[e-editable],h1[e-editable],h2[e-editable],h3[e-editable]"
+      fonts='["Arial=arial"]'
+      font-sizes='["6px 7px","11px 12px"]'
+      change="change"
+      tinymce-plugins='["paste","textcolor","colorpicker","noneditable","foreColorPatch"]'
+      toolbar='["forecolor | bold italic underline strikethrough | personalization conditionalEditor | linkEditor",
+                                          "fontselect | fontsizeselect | removeformat"]' change="textChange">
+      <vce-plugin-text-inner-link-editor external-plugin="external-plugin">
+        <vce-link-editor-dialog
+          link-editor-dialog="link-editor-dialog"></vce-link-editor-dialog>
+      </vce-plugin-text-inner-link-editor>
+    </vce-plugin-editable-text>
+    <vce-plugin-toolbar selector="img[e-editable]">
+      <vce-plugin-image-link-editor
+        toolbar-button="toolbar-button"
+        change="imageLinkChange">
+        <vce-link-editor-dialog
+          link-editor-dialog="link-editor-dialog"></vce-link-editor-dialog>
+      </vce-plugin-image-link-editor>
+      <vce-plugin-image-properties toolbar-button="toolbar-button"
+                                   change="imagePropertiesChange">
+        <vce-image-properties-dialog image-properties-dialog="image-properties-dialog">
+          <open-media-db open-media-db="open-media-db"></open-media-db>
+          <vce-image-properties-dialog-tab label="Desktop" name="default">
+            <vce-ipd-url-warning vce-ipd-warning="vce-ipd-warning"></vce-ipd-url-warning>
+            <vce-ipd-alt-text-warning vce-ipd-warning="vce-ipd-warning"></vce-ipd-alt-text-warning>
+            <vce-ipd-mso-warning vce-ipd-warning="vce-ipd-warning"></vce-ipd-mso-warning>
+            <vce-ipd-dimension-warning vce-ipd-warning="vce-ipd-warning"></vce-ipd-dimension-warning>
+          </vce-image-properties-dialog-tab>
+        </vce-image-properties-dialog>
+      </vce-plugin-image-properties>
+    </vce-plugin-toolbar>
+  </vce-preview>
+</div>
+<script>
+  let data = window.data;
+  const replaceEditables = window.replaceEditables;
+  const replaceVariables = window.replaceVariables;
+  const STYLE_ANCHOR = '#style#';
+  const BODY_ANCHOR = '#body#';
+  const DELIMITER = '___';
+
+  class VCECampaign {
+    constructor (obj) {
+      this.data = obj;
+      this.templates = obj.available_block_templates.reduce((acc, item) => {
+        acc[item._id] = item;
+        return acc;
+      }, {});
+      this.blocks = obj.blocks.map(block => new Block(block, this.templates[block.template].html));
+      this.blockMap = this.blocks.reduce((acc, item) => {
+        acc[item.data._id] = item;
+        return acc;
+      }, {});
+      this.onRender = a => a;
+    }
+
+    get parsed () {
+      return replaceVariables(this.data.variables, this.data.frame.html
+        .replace(STYLE_ANCHOR, `<style>${this.data.frame.style}</style>`)
+        .replace(BODY_ANCHOR, this.blocks.reduce((acc, item) => acc.concat(item.parsed), '')));
+    }
+
+    handleChange (e) {
+      e = e.detail;
+      ((blockId, editableId) => {
+        delete e.editableId;
+        this.blockMap[blockId].handleChange(editableId, e);
+        if (['imageData', 'linkData'].includes(Object.keys(e)[0])) {
+          this.onRender();
+        }
+      })(...e.editableId.split(DELIMITER));
+    }
+
+    onRenderRequest (cb) {
+      this.onRender = cb;
+    }
+  }
+
+  class Block {
+    constructor (obj, template) {
+      this.data = obj;
+      this.template = template;
+    }
+
+    decorate (html) {
+      let wrap = document.createElement('DIV');
+      wrap.innerHTML = html;
+      wrap.querySelectorAll('[e-editable]').forEach(editable => {
+        editable.setAttribute('e-editable', `${this.data._id}${DELIMITER}${editable.getAttribute('e-editable')}`);
+      });
+      return wrap.innerHTML;
+    }
+
+    handleChange (editableId, data) {
+      this.data.content = this.data.content || {};
+      this.data.content[editableId] = ({
+        data: d => ({ value: d.data }),
+        linkData: d => ({ attributes: d.linkData }),
+        imageData: d => ({ attributes: d.imageData.default.attributes })
+      }[Object.keys(data)[0]] || (a => a))(data);
+    }
+
+    get parsed () {
+      return this.decorate(replaceEditables(this.template, this.data.content));
+    }
+  }
+
+  function addChangeListener (domElm, cb) {
+    domElm.querySelectorAll(`vce-plugin-editable-text,
+  vce-plugin-image-link-editor,
+  vce-plugin-image-properties,
+  vce-plugin-text-inner-link-editor`).forEach(editablePlugin => editablePlugin.addEventListener('change', cb));
+  }
+
+  let vce = document.querySelector('#vce-preview');
+  let camp = new VCECampaign(data);
+  vce.setAttribute('content', camp.parsed);
+  addChangeListener(vce, camp.handleChange.bind(camp));
+  camp.onRenderRequest(() => vce.setAttribute('content', camp.parsed));
+
+</script>
+</body>
 </html>
