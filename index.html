@@ -65,22 +65,6 @@
   </vce-preview>
 </div>
 <script>
-  let previewComponent = document.querySelector('vce-preview');
-  let mobileButton = document.querySelector('#mobile-button');
-  let desktopButton = document.querySelector('#desktop-button');
-  mobileButton.addEventListener('click', () => {
-    mobileButton.classList.add('e-btn-active');
-    desktopButton.classList.remove('e-btn-active');
-    previewComponent.setAttribute('extra-class', 'mobile');
-  });
-  desktopButton.addEventListener('click', () => {
-    desktopButton.classList.add('e-btn-active');
-    mobileButton.classList.remove('e-btn-active');
-    previewComponent.setAttribute('extra-class', 'desktop');
-  });
-  document.querySelector('body').classList.add('loaded');
-</script>
-<script>
   let data = window.data;
   const replaceEditables = window.replaceEditables;
   const replaceVariables = window.replaceVariables;
