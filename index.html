@@ -3,7 +3,8 @@
 <head>
   <meta http-equiv="Content-type" content="text/html; charset=utf-8">
   <link rel="stylesheet" href="https://redirector-staging.eservice.emarsys.com/ui/latest/css/app.css">
-  <link rel="stylesheet" href="https://redirector-staging.eservice.emarsys.com/ui/latest/css/services/contentblocks.css">
+  <link rel="stylesheet"
+        href="https://redirector-staging.eservice.emarsys.com/ui/latest/css/services/contentblocks.css">
   <script src="https://redirector-staging.eservice.emarsys.com/ui/latest/js/app.js"></script>
   <script src='https://redirector-staging.eservice.emarsys.com/content-blocks-positioner/latest/app.js'></script>
   <script src="//redirector-staging.eservice.emarsys.com/vce-preview/latest/scripts/vce-preview.js"></script>
@@ -49,8 +50,7 @@
         <vce-link-editor-dialog
           link-editor-dialog="link-editor-dialog"></vce-link-editor-dialog>
       </vce-plugin-image-link-editor>
-      <vce-plugin-image-properties toolbar-button="toolbar-button"
-                                   change="imagePropertiesChange">
+      <vce-plugin-image-properties toolbar-button="toolbar-button">
         <vce-image-properties-dialog image-properties-dialog="image-properties-dialog">
           <open-media-db open-media-db="open-media-db"></open-media-db>
           <vce-image-properties-dialog-tab label="Desktop" name="default">
@@ -146,10 +146,17 @@
   }
 
   let vce = document.querySelector('vce-preview');
+  let imgProp = document.querySelector('vce-plugin-image-properties');
   let camp = new VCECampaign(data);
-  vce.setAttribute('content', camp.parsed);
   addChangeListener(vce, camp.handleChange.bind(camp));
-  camp.onRenderRequest(() => vce.setAttribute('content', camp.parsed));
+  camp.onRenderRequest(update);
+  update();
+
+  function update () {
+    let parsed = camp.parsed;
+    vce.setAttribute('content', parsed);
+    imgProp.setAttribute('template', parsed);
+  }
 
 </script>
 </body>
