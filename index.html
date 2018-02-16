@@ -3,99 +3,66 @@
 <head>
   <meta http-equiv="Content-type" content="text/html; charset=utf-8">
   <link rel="stylesheet" href="https://redirector-staging.eservice.emarsys.com/ui/latest/css/app.css">
-  <link rel="stylesheet", href="https://redirector-staging.eservice.emarsys.com/ui/latest/css/services/contentblocks.css">
-  <link rel="stylesheet" href="https://redirector-staging.eservice.emarsys.com/ui/latest/css/services/vce.css">
+  <link rel="stylesheet" href="https://redirector-staging.eservice.emarsys.com/ui/latest/css/services/contentblocks.css">
   <script src="https://redirector-staging.eservice.emarsys.com/ui/latest/js/app.js"></script>
-  <script type="text/javascript" src="//redirector-staging.eservice.emarsys.com/vce-preview/latest/scripts/vce-preview.js"></script>
+  <script src='https://redirector-staging.eservice.emarsys.com/content-blocks-positioner/latest/app.js'></script>
+  <script src="//redirector-staging.eservice.emarsys.com/vce-preview/latest/scripts/vce-preview.js"></script>
   <script type="text/javascript" src="./vce.js"></script>
 </head>
 <body>
-<div class="e-fullheight">
-  <div class="e-header e-header-flex"><a href="/">
-    <div class="e-header__parentlink">
-      <e-icon icon="e-move-left" size="small"></e-icon>
-    </div></a>
-    <h1>
-      <e-inplaceeditor id="name-input">Html Editor</e-inplaceeditor>
-    </h1>
-    <div class="e-header__button">
-      <div class="e-buttongroup">
-        <button id="save-button" disabled="true" class="e-btn e-btn-primary">Save</button>
-      </div>
-    </div>
-  </div>
-  <div class="e-fullheight__wrapper">
-    <div class="e-fullheight__container">
-      <div style="width: 50%; z-index: 2;" class="e-fullheight__content e-fullheight__content-6 e-fullheight__content-box">
-        <div class="e-fullheight__header">
-          <h2>Edit Html Source</h2>
-        </div>
-        <div class="e-fullheight__body">
+<style>
+  .wrap {
+    height: 100vh;
+    border: 1px solid green;
+  }
 
-          <vce-html-editor
-            id="content"
-            translations='{"title":"title","lead":"lead","learnMore":"learn more","learn more link":"learn more link"}'
-          ></vce-html-editor>
-
-        </div>
-      </div>
-      <div style="width: calc(50% - 20px);" class="e-fullheight__content e-fullheight__content-6 e-fullheight__content-box">
-        <div class="e-fullheight__header">
-          <div class="e-buttongroup e-buttongroup-sticky">
-            <div id="desktop-button" class="e-btn-active e-btn e-btn-onlyicon e-svgclickfix">
-              <e-icon icon="monitor"></e-icon>
-            </div>
-            <div id="mobile-button" class="e-btn e-btn-onlyicon e-svgclickfix">
-              <e-icon icon="mobile"></e-icon>
-            </div>
-          </div>
-        </div>
-        <div class="e-contentblocks-preview">
-          <vce-preview id="preview" extra-class="desktop">
-            <vce-plugin-prevent-link-click></vce-plugin-prevent-link-click>
-            <vce-plugin-force-http-image-link></vce-plugin-force-http-image-link>
-            <vce-plugin-clean-device-width></vce-plugin-clean-device-width>
-            <vce-plugin-clean-pixel-ratio></vce-plugin-clean-pixel-ratio>
-            <vce-link-editor-dialog selector="a[e-editable]"
-                                    link-editor-dialog="link-editor-dialog"></vce-link-editor-dialog>
-            <vce-plugin-editable-text
-              editable-selector="p[e-editable],div[e-editable],h1[e-editable],h2[e-editable],h3[e-editable]"
-              fonts='["Arial=arial"]'
-              font-sizes='["6px 7px","11px 12px"]'
-              change="change"
-              tinymce-plugins='["paste","textcolor","colorpicker","noneditable","foreColorPatch"]'
-              toolbar='["forecolor | bold italic underline strikethrough | personalization conditionalEditor | linkEditor",
+  .vce-wrap {
+    width: 100%;
+    height: 100%;
+  }
+</style>
+<div class="wrap">
+  <vce-preview id="preview" extra-class="vce-wrap">
+    <vce-plugin-prevent-link-click></vce-plugin-prevent-link-click>
+    <vce-plugin-force-http-image-link></vce-plugin-force-http-image-link>
+    <vce-plugin-clean-device-width></vce-plugin-clean-device-width>
+    <vce-plugin-clean-pixel-ratio></vce-plugin-clean-pixel-ratio>
+    <vce-link-editor-dialog selector="a[e-editable]"
+                            link-editor-dialog="link-editor-dialog"></vce-link-editor-dialog>
+    <vce-plugin-editable-text
+      editable-selector="p[e-editable],div[e-editable],h1[e-editable],h2[e-editable],h3[e-editable]"
+      fonts='["Arial=arial"]'
+      font-sizes='["6px 7px","11px 12px"]'
+      change="change"
+      tinymce-plugins='["paste","textcolor","colorpicker","noneditable","foreColorPatch"]'
+      toolbar='["forecolor | bold italic underline strikethrough | personalization conditionalEditor | linkEditor",
                                           "fontselect | fontsizeselect | removeformat"]' change="textChange">
-              <vce-plugin-text-inner-link-editor external-plugin="external-plugin">
-                <vce-link-editor-dialog
-                  link-editor-dialog="link-editor-dialog"></vce-link-editor-dialog>
-              </vce-plugin-text-inner-link-editor>
-            </vce-plugin-editable-text>
-            <vce-plugin-toolbar selector="img[e-editable]">
-              <vce-plugin-image-link-editor
-                toolbar-button="toolbar-button"
-                change="imageLinkChange">
-                <vce-link-editor-dialog
-                  link-editor-dialog="link-editor-dialog"></vce-link-editor-dialog>
-              </vce-plugin-image-link-editor>
-              <vce-plugin-image-properties toolbar-button="toolbar-button"
-                                           change="imagePropertiesChange">
-                <vce-image-properties-dialog image-properties-dialog="image-properties-dialog">
-                  <open-media-db open-media-db="open-media-db"></open-media-db>
-                  <vce-image-properties-dialog-tab label="Desktop" name="default">
-                    <vce-ipd-url-warning vce-ipd-warning="vce-ipd-warning"></vce-ipd-url-warning>
-                    <vce-ipd-alt-text-warning vce-ipd-warning="vce-ipd-warning"></vce-ipd-alt-text-warning>
-                    <vce-ipd-mso-warning vce-ipd-warning="vce-ipd-warning"></vce-ipd-mso-warning>
-                    <vce-ipd-dimension-warning vce-ipd-warning="vce-ipd-warning"></vce-ipd-dimension-warning>
-                  </vce-image-properties-dialog-tab>
-                </vce-image-properties-dialog>
-              </vce-plugin-image-properties>
-            </vce-plugin-toolbar>
-          </vce-preview>
-        </div>
-      </div>
-    </div>
-  </div>
+      <vce-plugin-text-inner-link-editor external-plugin="external-plugin">
+        <vce-link-editor-dialog
+          link-editor-dialog="link-editor-dialog"></vce-link-editor-dialog>
+      </vce-plugin-text-inner-link-editor>
+    </vce-plugin-editable-text>
+    <vce-plugin-toolbar selector="img[e-editable]">
+      <vce-plugin-image-link-editor
+        toolbar-button="toolbar-button"
+        change="imageLinkChange">
+        <vce-link-editor-dialog
+          link-editor-dialog="link-editor-dialog"></vce-link-editor-dialog>
+      </vce-plugin-image-link-editor>
+      <vce-plugin-image-properties toolbar-button="toolbar-button"
+                                   change="imagePropertiesChange">
+        <vce-image-properties-dialog image-properties-dialog="image-properties-dialog">
+          <open-media-db open-media-db="open-media-db"></open-media-db>
+          <vce-image-properties-dialog-tab label="Desktop" name="default">
+            <vce-ipd-url-warning vce-ipd-warning="vce-ipd-warning"></vce-ipd-url-warning>
+            <vce-ipd-alt-text-warning vce-ipd-warning="vce-ipd-warning"></vce-ipd-alt-text-warning>
+            <vce-ipd-mso-warning vce-ipd-warning="vce-ipd-warning"></vce-ipd-mso-warning>
+            <vce-ipd-dimension-warning vce-ipd-warning="vce-ipd-warning"></vce-ipd-dimension-warning>
+          </vce-image-properties-dialog-tab>
+        </vce-image-properties-dialog>
+      </vce-plugin-image-properties>
+    </vce-plugin-toolbar>
+  </vce-preview>
 </div>
 <script>
   let previewComponent = document.querySelector('vce-preview');
