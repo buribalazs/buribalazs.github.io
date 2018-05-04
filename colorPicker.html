@@ -123,18 +123,34 @@
         rainbow.addEventListener('mousemove', setColor);
     });
 
+    rainbow.addEventListener('touchstart', e => {
+        setColor(e);
+        rainbow.addEventListener('touchmove', setColor);
+    });
+
 
     saturation.addEventListener('mousedown', e => {
         setSaturation(e);
         saturation.addEventListener('mousemove', setSaturation);
     });
 
+    saturation.addEventListener('touchstart', e => {
+        setSaturation(e);
+        saturation.addEventListener('touchmove', setSaturation);
+    });
+
     document.addEventListener('mouseup', e => {
         rainbow.removeEventListener('mousemove', setColor);
         saturation.removeEventListener('mousemove', setSaturation);
     });
+    document.addEventListener('touchend', e => {
+        rainbow.removeEventListener('touchmove', setColor);
+        saturation.removeEventListener('touchmove', setSaturation);
+    });
 
     function setColor (e) {
+        killE(e);
+        if (e.touches) e = e.touches[0];
         let p = cursorPoint(e);
         let color = hexToHsl(COLOR);
         color[0] = (p.x) / 360;
@@ -145,6 +161,8 @@
     }
 
     function setSaturation (e) {
+        killE(e);
+        if (e.touches) e = e.touches[0];
         let p = cursorPoint(e);
         let color = hexToHsl(COLOR);
         color[1] = 1 - (p.y - 10) / 300;
@@ -235,6 +253,12 @@
         svgPoint.x = evt.clientX;
         svgPoint.y = evt.clientY;
         return svgPoint.matrixTransform(svg.getScreenCTM().inverse());
+    }
+
+    function killE (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        e.stopImmediatePropagation();
     }
 </script>
 </body>
