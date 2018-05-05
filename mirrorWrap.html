@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mirror Wrap</title>
+</head>
+<body>
+<svg class="canvas-svg" width="500" height="500" version="1.1" xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <clipPath id="mid">
+            <rect width="300" height="300"></rect>
+        </clipPath>
+        <clipPath id="top">
+            <polygon points="-50,-50 350,-50 300,0 0,0"></polygon>
+        </clipPath>
+        <clipPath id="left">
+            <polygon points="-50,-50 0,0 0,300 -50,350"></polygon>
+        </clipPath>
+    </defs>
+    <g class="pw-canvas" transform="translate(100,100)">
+        <g clip-path="url(#mid)">
+            <g class="img-translate-group" transform="translate(0,0)">
+                <g class="img-scale-group" transform="scale(2) translate(-75, -75)">
+                    <g transform="rotate(45 150 150)">
+                        <image class="img-main" xlink:href="test.png"></image>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g clip-path="url(#top)">
+            <image class="img-top" xlink:href="test.png"></image>
+        </g>
+        <g clip-path="url(#left)">
+            <image class="img-left" xlink:href="test.png"></image>
+        </g>
+        <rect height="300" width="300" fill="none" stroke="blue"></rect>
+        <rect height="110" width="110" x="-80" y="-80" fill="none" stroke="cyan"></rect>
+    </g>
+</svg>
+<script>
+    let svg = document.querySelector('.canvas-svg');
+    let imageTranslateGroup = document.querySelector('.img-translate-group');
+    let imageMid = document.querySelector('.img-main');
+    let imageTop = document.querySelector('.img-top');
+    let imageLeft = document.querySelector('.img-left');
+    let offset = [0, 0];
+
+    function updateEdges () {
+        let origin = svg.createSVGMatrix().flipY().translate(-100, -100);
+        let matrix = imageMid.getCTM();
+        let topMatrix = origin.multiply(matrix);
+        imageTop.setAttribute('transform', matrixToAttr(topMatrix));
+        origin = svg.createSVGMatrix().flipX().translate(-100, -100);
+        let leftMatrix = origin.multiply(matrix);
+        imageLeft.setAttribute('transform', matrixToAttr(leftMatrix));
+    }
+
+    updateEdges();
+
+    imageMid.addEventListener('mousedown', startDrag);
+    window.addEventListener('mouseup', stopDrag);
+
+    function startDrag (e) {
+        killE(e);
+        let point = cursorPoint(e);
+        console.log(imageTranslateGroup);
+        let imageOffset = imageTranslateGroup.getAttribute('transform').slice('transform('.length, -1).split(/[ ,]/).map(n => Number(n));
+        console.log(imageOffset);
+        offset = [point.x- imageOffset[0], point.y - imageOffset[1]];
+        imageMid.addEventListener('mousemove', drag);
+    }
+
+    function stopDrag () {
+        imageMid.removeEventListener('mousemove', drag);
+    }
+
+    function drag (e) {
+        let point = cursorPoint(e);
+        point.x -= offset[0];
+        point.y -= offset[1];
+        imageTranslateGroup.setAttribute('transform', `translate(${point.x}, ${point.y})`);
+        updateEdges();
+    }
+
+    function killE (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        e.stopImmediatePropagation();
+    }
+
+    function cursorPoint (evt) {
+        let svgPoint = svg.createSVGPoint();
+        svgPoint.x = evt.clientX;
+        svgPoint.y = evt.clientY;
+        return svgPoint.matrixTransform(svg.getScreenCTM().inverse());
+    }
+
+    function matrixToAttr (m) {
+        return `matrix(${m.a} ${m.b} ${m.c} ${m.d} ${m.e} ${m.f})`;
+    }
+</script>
+</body>
+</html>
