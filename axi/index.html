@@ -37,6 +37,14 @@
             <label for="in_signature">signature</label>
             <input id="in_signature"/>
         </div>
+        <div>
+            <label for="in_sender-address">sender address</label>
+            <textarea rows="10" id="in_sender-address"></textarea>
+        </div>
+        <div>
+            <label for="in_recipient-address">recipient address</label>
+            <textarea rows="10" id="in_recipient-address"></textarea>
+        </div>
     </div>
     <div id="svg-container">
 
@@ -84,7 +92,7 @@
         for (let i = 0; i < str.length; i++) {
             offset = drawChar(str[i], offset, g);
         }
-        return { g, offset };
+        return { g, offset, left: calcLeft(str) };
     }
 
     function drawLines (str, align) {
@@ -93,23 +101,36 @@
         let g = makeG();
         let vOffset = 0;
         for (let i = 0; i < str.length; i++) {
-            let { g: line, offset: hOffset } = drawLine(str[i]);
-            line.setAttribute('transform', `translate(${calcOffset(align, hOffset)}, ${vOffset})`);
+            let { g: line, offset: hOffset, left } = drawLine(str[i]);
+            line.setAttribute('transform', `translate(${calcOffset(align, hOffset, left)}, ${vOffset})`);
             g.appendChild(line);
             vOffset += LINE_HEIGHT;
         }
         return g;
     }
 
-    function calcOffset (align, hOffset) {
+    function calcOffset (align, hOffset, left) {
         switch (align) {
             case ALIGN.RIGHT:
                 return -hOffset;
             case ALIGN.CENTER:
                 return -hOffset / 2;
             default:
-                return 0;
+                return left;
         }
+    }
+
+    function calcLeft (str) {
+        str = str.charAt(0);
+        let data = FONT[ALPHABET.indexOf(str)].split('M')[1];
+        if (data) {
+            data = data.split(' ').map(d => Number(d)).filter(d => !Number.isNaN(d)).filter((d, i) => i % 2 === 1);
+            data = Math.min(...data);
+            if (data < 0) {
+                return -data * 2;
+            }
+        }
+        return 0;
     }
 
     function makeG () {
@@ -121,7 +142,9 @@
     let fields = [
         { id: 'salutation' },
         { id: 'message' },
-        { id: 'signature', align: ALIGN.RIGHT }
+        { id: 'signature', align: ALIGN.RIGHT },
+        { id: 'sender-address', align: ALIGN.LEFT },
+        { id: 'recipient-address', align: ALIGN.CENTER }
     ];
 
     let to;
