@@ -22,19 +22,21 @@
   </metadata>
   <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1" transform="translate(0,-308.26772)">
     <g id="salutation" transform="translate(51.14841,440.72344)"/>
-    <g transform="matrix(0.57524462,0,0,0.57524462,43.877408,490.63969)" id="message"/>
+    <g transform="matrix(1,0,0,1,45.877408,490.63969)" id="message"/>
 
     <g transform="translate(430,584.72344)" id="signature"/>
     <g id="sender-address" transform="matrix(0.70760849,0,0,0.5610996,5.9032943,739.0604)"/>
 
 
-    <g transform="translate(240,892.90705)" id="recipient-address"/>
+    <g transform="translate(252,887.90705)" id="recipient-address"/>
 
-    <path style="fill:none;stroke:blue;stroke-width:0.9375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="M 46.000001,401.36221 H 448.00001 v 233 H 46.000001 Z" id="path1237" inkscape:connector-curvature="0"/>
-    <path style="fill:none;stroke:#000000;stroke-width:0.9375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="M 10.534244,728.81045 H 448.00001 V 1051.3622 H 10.534244 Z" id="path1239" inkscape:connector-curvature="0"/>
-    <path style="fill:none;stroke:#717171;stroke-width:0.9375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="M 11.881913,780.26399 H 296.29072" id="path1241" inkscape:connector-curvature="0"/>
-    <rect style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2.12598443;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" id="rect1243" width="310.25729" height="151.63699" x="96.768341" y="868.80164"/>
-    <path style="fill:none;stroke:#000000;stroke-width:0.9375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 246.41012,833.88522 v 25.93791" id="path1245" inkscape:connector-curvature="0"/>
+    <g id="mock-guides">
+        <path style="fill:none;stroke:blue;stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="M 46.000001,401.36221 H 448.00001 v 233 H 46.000001 Z" id="path1237" inkscape:connector-curvature="0"/>
+        <path style="fill:none;stroke:blue;stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="M 10.534244,728.81045 H 448.00001 V 1051.3622 H 10.534244 Z" id="path1239" inkscape:connector-curvature="0"/>
+        <path style="fill:none;stroke:blue;stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="M 11.881913,780.26399 H 296.29072" id="path1241" inkscape:connector-curvature="0"/>
+        <rect style="fill:none;stroke:blue;stroke-width:0.5px;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" id="rect1243" width="310.25729" height="151.63699" x="96.768341" y="868.80164"/>
+        <path style="fill:none;stroke:blue;stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 246.41012,833.88522 v 25.93791" id="path1245" inkscape:connector-curvature="0"/>
+    </g>
 
   </g>
   <WCB layer="0" node="0" lastpath="0" lastpathnc="0" lastknownposx="0" lastknownposy="0" pausedposx="0" pausedposy="0" randseed="0" application="Axidraw"/>
