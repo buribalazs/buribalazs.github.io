@@ -97,7 +97,7 @@
             id: 'recipient-address',
             align: ALIGN.CENTER,
             box: { w: 310, h: 148 },
-            val: 'Howard Miller\nATTN: Jom O\'Keefe\n860 E Main Ave\nZeeland, MI 49464'
+            val: 'Howard Miller\nATTN: Jim O\'Keefe\n860 E Main Ave\nZeeland, MI 49464'
         }
     ];
 
@@ -202,9 +202,9 @@
             width = 0;
             words.forEach((w, i) => {
                 w.break = false;
-                if (w.newline || width + (w.width + (words[i + 1] || { width: 0 }).width) * scale > box.w) {
+                if (w.newline || (width + (w.width + (words[i + 1] || { width: 0 }).width) * scale > box.w)) {
                     w.break = true;
-                    width = w.width;
+                    width = 0;
                     lineCount++;
                 } else {
                     width += w.width * scale;
