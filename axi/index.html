@@ -82,8 +82,10 @@
         {
             id: 'message',
             align: ALIGN.LEFT,
-            box: { w: 400, h: 80 },
-            lh:40,
+            box: { w: 360, h: 80 },
+            lh: 40,
+            scale: 0.87,
+            center: true,
             val: 'Thanks for taking the time with me this week at the factory. I appreciate all your help and hard work!'
         },
         { id: 'signature', align: ALIGN.RIGHT, box: { w: 200, h: 30 }, val: '-Eric' },
@@ -138,9 +140,9 @@
         return { g, offset, left: (FONT[str.charAt(0)] || { left: 0 }).left };
     }
 
-    function drawLines (str, align = ALIGN.LEFT, box, lineHeight) {
+    function drawLines (str, align = ALIGN.LEFT, box, lineHeight, initialScale, center) {
         lineHeight = lineHeight || LINE_HEIGHT;
-        let formatted = format(str, box, lineHeight);
+        let formatted = format(str, box, lineHeight, initialScale);
         str = formatted.str;
         let scale = formatted.scale;
         str = str.split('\n');
@@ -164,6 +166,10 @@
         //     [ALIGN.RIGHT]: -box.w,
         // }[align]);
         // g.appendChild(rect);
+        if (center) {
+            g.setAttribute('transform', `translate(${(box.w - formatted.w) / 2},${(box.h - formatted.h) / 2})`);
+        }
+
         return g;
     }
 
@@ -178,9 +184,9 @@
         }
     }
 
-    function format (str, box = { w: 300, h: 300 }, lineHeight) {
+    function format (str, box = { w: 300, h: 300 }, lineHeight, scale) {
+        scale = scale || 1;
         lineHeight = lineHeight || LINE_HEIGHT;
-        let scale = 1;
         str = str.split('\n').join('#nl# ');
         let words = str.split(' ').map(word => {
             let newline = false;
@@ -197,26 +203,31 @@
 
         let lineCount = 1;
         let width = 0;
+        let maxWidth = 0;
         do {
             lineCount = 1;
             width = 0;
+            maxWidth = 0;
             words.forEach((w, i) => {
                 w.break = false;
                 if (w.newline || (width + (w.width + (words[i + 1] || { width: 0 }).width) * scale > box.w)) {
                     w.break = true;
+                    maxWidth = Math.max(maxWidth, width + w.width * scale);
                     width = 0;
                     lineCount++;
                 } else {
                     width += w.width * scale;
                 }
+                maxWidth = Math.max(maxWidth, width);
             });
         } while (lineCount * lineHeight * scale > box.h && ((scale -= 0.01) || 1));
 
         str = words.map(w => w.word + (w.break ? '\n' : ' ')).join('');
-
         return {
             str,
-            scale
+            scale,
+            w: maxWidth,
+            h: lineCount * lineHeight * scale
         }
     }
 
@@ -243,7 +254,7 @@
         to = setTimeout(() => {
             fields.forEach(f => {
                 let g = svgContainer.querySelector(`#${f.id}`);
-                let result = drawLines(document.querySelector(`#in_${f.id}`).value, f.align || ALIGN.LEFT, f.box, f.lh);
+                let result = drawLines(document.querySelector(`#in_${f.id}`).value, f.align || ALIGN.LEFT, f.box, f.lh, f.scale, f.center);
                 g.innerHTML = '';
                 g.appendChild(result);
             });
@@ -251,7 +262,7 @@
             dl.innerHTML = svgContainer.innerHTML;
             dl.querySelector('#mock-guides').remove();
             document.querySelector('#dl').setAttribute('href', `data:text/plain;charset=utf-8,${encodeURIComponent(dl.innerHTML)}`);
-        }, 500);
+        }, 200);
     };
 
     fields.forEach(f => {

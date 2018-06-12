@@ -22,10 +22,10 @@
   </metadata>
   <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1" transform="translate(0,-308.26772)">
     <g id="salutation" transform="translate(51.14841,440.72344)"/>
-    <g transform="matrix(1,0,0,1,45.877408,490.63969)" id="message"/>
+    <g transform="matrix(1,0,0,1,55.877408,490.63969)" id="message"/>
 
     <g transform="translate(430,584.72344)" id="signature"/>
-    <g id="sender-address" transform="matrix(0.70760849,0,0,0.5610996,5.9032943,739.0604)"/>
+    <g id="sender-address" transform="matrix(0.70760849,0,0,0.5610996,10.9032943,742.0604)"/>
 
 
     <g transform="translate(252,887.90705)" id="recipient-address"/>
