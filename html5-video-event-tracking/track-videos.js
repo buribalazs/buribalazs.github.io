@@ -74,7 +74,6 @@
     function reportPlay(video) {
         if (!video.playReported){
             video.playReported = true;
-            console.log('play', video.id)
             getGtag()('event', 'Play', {
                 'event_category': 'Video',
                 'event_label': video.id
@@ -112,7 +111,6 @@
                     video.timeSinceStopped += 1
                     if (video.timeSinceStopped >= WAIT_TIME_BEFORE_REPORT_TIME_PLAYED) {
                         
-                        console.log('watched', video.id, video.timePlayed)
                         getGtag()('event', 'Watched', {
                             'event_category': 'Video',
                             'event_label': video.id,
