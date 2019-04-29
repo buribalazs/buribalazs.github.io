@@ -110,11 +110,10 @@
                     video.state = STATE.STOPPED
                     video.timeSinceStopped += 1
                     if (video.timeSinceStopped >= WAIT_TIME_BEFORE_REPORT_TIME_PLAYED) {
-                        
                         getGtag()('event', 'Watched', {
                             'event_category': 'Video',
                             'event_label': video.id,
-                            'value':video.timePlayed,
+                            'value': parseInt(video.timePlayed / video.element.duration * 100),
                             'non_interaction': true
                           });
 
