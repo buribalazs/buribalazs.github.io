@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>canipark demo</title>
+</head>
+<body>
+    <div class="camera-app-container">
+        <img src="img/canipark-logo.png" alt="">
+        <div class="camera-container">
+            <video playsinline autoplay></video>
+            <canvas></canvas>
+            <div class="corners">
+                <img src="img/camera-corner.svg">
+                <img src="img/camera-corner.svg">
+                <img src="img/camera-corner.svg">
+                <img src="img/camera-corner.svg">
+            </div>
+        </div>
+        <p>Take a clear photo of the parking sign, minimizing shadows or reflections</p>
+    </div>
+    <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+    <script type="text/javascript" src="canipark.js"></script>
+    <link rel="stylesheet" href="style.css">
+</body>
+</html>
