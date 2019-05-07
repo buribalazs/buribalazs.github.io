@@ -1,6 +1,5 @@
 html, body {
     background: #ff6f61;
-    background-image: radial-gradient(circle at center, #ff6f61, #f21e12);
     color:white;
     font-family: sans-serif;
     height: 100%;
@@ -17,6 +16,14 @@ html, body {
     height: 100%;
 }
 
+.camera-app-container .corners {
+    display: none;
+}
+
+.camera-app-container.initialized .corners {
+    display: block;
+}
+
 .camera-app-container img {
     max-height: 70px;
     display: block;
@@ -29,11 +36,14 @@ html, body {
 .camera-container {
     position: relative;
     max-height: calc(100% - 150px);
+    overflow: hidden;
 }
 
-.camera-container video, .camera-container canvas, .camera-container .corners {
-    max-width: 100%;
-    max-height: 100%;
+.camera-container video, .camera-container canvas {
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .camera-container canvas, .camera-container .corners {
@@ -41,10 +51,11 @@ html, body {
     height:100%;
     width: 100%;
     top:0;
+    left:0;
 }
 
 .camera-container .corners img {
-    margin: 20px;
+    margin: 60px;
     position: absolute;
 }
 
@@ -62,4 +73,9 @@ html, body {
     right:0;
     bottom:0;
     transform: scale(-1);
+}
+
+.camera-container .corners img:nth-child(5) {
+    right:calc(50% - 92px);
+    bottom:-40px;
 }

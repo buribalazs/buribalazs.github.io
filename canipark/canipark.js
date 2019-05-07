@@ -6,6 +6,7 @@
     canvas.width = 480;
     canvas.height = 360;
     
+    const app = document.querySelector('.camera-app-container');
     const button = document.querySelector('.camera-container');
     button.onclick = function() {
         canvas.width = video.videoWidth;
@@ -19,6 +20,7 @@
     };
     
     function handleSuccess(stream) {
+        app.classList.add('initialized');
         window.stream = stream; // make stream available to browser console
         video.srcObject = stream;
     }
