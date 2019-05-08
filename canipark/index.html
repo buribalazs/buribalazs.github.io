@@ -9,7 +9,7 @@
 <body>
     <div class="camera-app-container">
         <div class="camera-app-container-inner camera">
-            <img src="img/canipark-logo.png" alt="">
+            <img src="img/canipark-logo.png">
             <div class="camera-container">
                 <video playsinline autoplay></video>
                 <canvas></canvas>
@@ -24,8 +24,12 @@
             <p>Take a clear photo of the parking sign, minimizing shadows or reflections</p>
         </div>
         <div class="camera-app-container-inner process">
-            <img src="img/spinner.svg">
-            <div class="processing-msg">Processing...</div>
+            <img src="img/canipark-logo.png">
+            <div class="camera-process-spinner-container">
+                <img class="camera-process-spinner" src="img/spinner.svg">
+                <div class="processing-msg">Processing...</div>
+            </div>
+            <div>&nbsp;</div>
         </div>
     </div>
     <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
