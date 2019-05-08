@@ -30,7 +30,7 @@
         }, 1000);
 
         setTimeout(() => {
-            // window.location = 'http://www.canipark.com.au/p10EE3';
+            window.location = 'http://www.canipark.com.au/p10EE3';
         }, 2000);
     };
     
