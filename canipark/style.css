@@ -24,15 +24,16 @@ html, body {
     height:100%;
 }
 
-.camera-app-container-inner.process {
-    justify-content: center;
-}
-
-.camera-app-container-inner.process img {
+.camera-app-container-inner.process .camera-process-spinner {
     animation-name: spin;
     animation-duration: 5000ms;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+}
+
+.camera-process-spinner-container{
+    display: flex;
+    flex-direction: column;
 }
 
 .camera-app-container-inner.process .processing-msg {
