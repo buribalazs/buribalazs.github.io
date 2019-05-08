@@ -9,11 +9,44 @@ html, body {
 }
 
 .camera-app-container {
+    height: 100%;
+}
+
+.camera-app-container-inner.camera-screen-hidden {
+    display: none;
+}
+
+.camera-app-container-inner {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 100%;
+    height:100%;
+}
+
+.camera-app-container-inner.process {
+    justify-content: center;
+}
+
+.camera-app-container-inner.process img {
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.camera-app-container-inner.process .processing-msg {
+    /* margin-top: 1rem; */
+    margin-left: 0.7rem;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg) scale(0.7);
+    }
+    to {
+        transform:rotate(360deg) scale(0.7);
+    }
 }
 
 .camera-app-container .corners {
