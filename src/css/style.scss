@@ -1,5 +1,7 @@
+@import "_grid-item-highlight";
+
 :root {
-    --accent-color: blue;
+    --accent-color: #2f6ecc;
     --custom-gray-color: #474c52;
 }
 ::placeholder{
@@ -16,6 +18,7 @@ html,body{
 }
 header{
     width: 100%;
+    margin-bottom: 1rem;
 }
 .header-searchrow{
     display: flex;
@@ -85,18 +88,21 @@ nav ul li a {
 .grid-container {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 -1rem;
+    
 }
 .grid-item {
     box-sizing: border-box;
     border-bottom:1px solid lightgray;
-    width: 33.3%;
-    padding:2rem;
+    width: calc(33.3% - 2rem);
+    padding:1rem;
+    margin: 0 1rem;
     line-height:1.4em;
     min-height:300px;
 }
 
 .grid-item__double {
-    width: 66.6%;
+    width: calc(66.6% - 2rem);
 }
 .small-text{
     font-size:13px;
