@@ -1,0 +1,26 @@
+{
+  "name": "buribalazs.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buribalazs/buribalazs.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/buribalazs/buribalazs.github.io/issues"
+  },
+  "homepage": "https://github.com/buribalazs/buribalazs.github.io#readme",
+  "devDependencies": {
+    "nunjucks": "^3.2.0",
+    "parcel": "^1.12.4",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-nunjucks": "^2.2.0",
+    "sass": "^1.25.0"
+  }
+}
