@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link href="/static/css/style.css" rel="stylesheet">
+    <title>LOMEX</title>
+</head>
+<body>
+    
+<header class="webstore">
+    <div class="header-user">
+        <div class="webstore__brand">
+            <img class="logo" src="/static/assets/logo.svg" alt="">
+        </div>
+        <div>
+            <a href="javascript:openLogin();">belépés</a>
+            <a href="#">kosár (0)</a>
+        </div>
+    </div>
+    <nav>
+        <div class="nav-fade nav-fade--left"></div>
+        <div class="nav-fade nav-fade--right"></div>
+        <div class="nav-inner">
+            <ul>
+                <li><a href="#">nyitólap</a></li>
+                <li><a href="#">webáruház</a></li>
+                <li><a href="#">beszállítók</a></li>
+                <li><a href="#">céginfó</a></li>
+                <li><a href="#">aktualitások</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="search-main">
+        <input type="text" placeholder="termék keresés">
+        <a class="search-button" href="#">
+            <img class="search-button__icon" src="/static/assets/icon-search.svg" alt="">
+        </a>
+        <a class="search-button search-button-webstore-filter" href="#">
+            <img class="search-button__icon" src="/static/assets/icon-filter.svg">
+        </a>
+    </div>
+    <div class="webstore__filter-container">
+        <select name="money" id="">
+            <option value="HUF">HUF</option>
+            <option value="EUR">EUR</option>
+        </select>
+        <select name="orderby" id="">
+            <option value="">Legolcsóbb elöl</option>
+            <option value="">Legdrágább elöl</option>
+            <option value="">A-Z</option>
+            <option value="">Z-A</option>
+        </select>
+        <label for="check-only-on-store">Csak raktáron lévők
+            <input id="check-only-on-store" type="checkbox" class="type">
+        </label>
+        <label for="check-discount">Leértékeltek
+            <input id="check-discount" type="checkbox" class="type">
+        </label>
+    </div>
+</header>
+<main>
+    <div class="webstore-wrap">
+        <div class="webstore__categories">
+            <ul>
+               <li>Áramkörvédelem (960)</li>
+               <li>Csatlakozó (2683)</li>
+               <li>Dióda (1192)</li>
+               <li>Diódahíd (68)</li>
+               <li>Egyéb (297)</li>
+               <li>Elem, akku, táp (301)</li>
+               <li>Ellenállás (9956)</li>
+               <li>Hangsugárzó (106)</li>
+               <li>Hűtőborda (85)</li>
+               <li>Induktivitás (568)</li>
+               <li>Integrált áramkörök (3681)</li>
+               <li>Kapcsoló, nyomógomb (776)</li>
+               <li>Kábel, huzal (95)</li>
+               <li>Kondenzátor (2829)</li>
+               <li>Kvarc, rez., oszc., szűrő (217)</li>
+               <li>Műszerdoboz (356)</li>
+               <li>Optoelektronika, LED, LCD (1641)</li>
+               <li>Relé (588)</li>
+               <li>Szenzor (406)</li>
+               <li>Tápegységek, adapterek (205)</li>
+               <li>Transzformátor (760)</li>
+               <li>Tranzisztor (1325)</li>
+               <li>Triac, Thyristor, Diac, UJT (119)</li>
+               <li>Ventilátor (88)</li>
+               <li>Világítás (70)</li>
+            </ul>
+        </div>
+        <div class="webstore__main">
+            <div class="webstore__item">termék</div>
+            <div class="webstore__item">termék</div>
+            <div class="webstore__item">termék</div>
+            <div class="webstore__item">termék</div>
+            <div class="webstore__item">termék</div>
+            <div class="webstore__item">termék</div>
+            <div class="webstore__item">termék</div>
+        </div>
+    </div>
+</main>
+
+    <footer>
+        © 2020 Lomex Kft. Minden jog fenntartva.<br>
+    Az oldal használatához a Google Chrome, a Mozilla Firefox, vagy a Microsoft Edge (Internet Explorer) böngészők legfrissebb verzióját javasoljuk.
+    </footer>
+</body>
+<script src="/static/js/main.js"></script>
+</html>
