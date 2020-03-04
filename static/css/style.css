@@ -487,16 +487,6 @@ nav ul li a {
         justify-content: space-between;
     }
 }
-.breadcrumbs ul {
-    padding: 0;
-}
-.breadcrumbs li {
-    display: inline;
-    font-size: 0.8rem;
-}
-.breadcrumbs li:not(:last-child)::after {
-    content: '›';
-}
 footer {
     font-size: 13px;
     background: #5d5d5d;
@@ -625,6 +615,17 @@ footer {
 .product-card__instore-num {
     color:red;
 }
+.breadcrumbs ul {
+    padding: 0;
+    margin:0;
+}
+.breadcrumbs li {
+    display: inline;
+    font-size: 0.8rem;
+}
+.breadcrumbs li:not(:last-child)::after {
+    content: '›';
+}
 .webstore .logo {
     position: relative;
     top:0;
@@ -667,7 +668,10 @@ footer {
 }
 .webstore-wrap {
     display: flex;
-    margin-top: 2rem;
+    margin-top: 1rem;
+}
+.webstore__main {
+    flex: 1 1 100%;    
 }
 .webstore__categories {
     margin-right: 2rem;
@@ -683,8 +687,29 @@ footer {
     white-space: nowrap;
     letter-spacing: -0.025rem;
 }
-.webstore__main {
-    flex: 1 1 100%;    
+.webstore__categories__root ul {
+    margin-left: 1rem;
+    position: relative;
+}
+.webstore__categories__root ul::before {
+    content: '';
+    position: absolute;
+    border-left: 1px solid lightgray;
+    left:-23px;
+    top:-12px;
+    bottom:12px;
+}
+.webstore__categories__root li {
+    position: relative;
+}
+.webstore__categories__root ul li::before {
+    content: '';
+    position: absolute;
+    width:1rem;
+    top:12px;
+    left:-1.4rem;
+    border-bottom: 1px solid lightgray;
+    
 }
 @media (max-width: 639px) {
     .search-button-webstore-filter {
