@@ -33,16 +33,35 @@
             </ul>
         </div>
     </nav>
+    <div class="breadcrumbs">
+        <ul>
+            <li><a href="#">
+                Termékcsoportok
+            </a></li>
+            <li><a href="#">
+                Áramkörvédelem
+            </a></li>
+            <li><a href="#">
+                Olvadó biztosíték
+            </a></li>
+            <li><a href="#">
+                Még alkategória
+            </a></li>
+        </ul>
+    </nav>
     <div class="search-main">
         <input type="text" placeholder="termék keresés">
         <a class="search-button" href="#">
             <img class="search-button__icon" src="/static/assets/icon-search.svg" alt="">
         </a>
-        <a class="search-button search-button-webstore-filter" href="#">
+        <a id="filters-button" class="search-button search-button-webstore-filter" href="#">
             <img class="search-button__icon" src="/static/assets/icon-filter.svg">
         </a>
+        <a id="categories-button" class="search-button search-button-webstore-filter" href="#">
+            <img class="search-button__icon" src="/static/assets/icon-categories.svg">
+        </a>
     </div>
-    <div class="webstore__filter-container">
+    <div id="filters" class="webstore__filter-container">
         <select name="money" id="">
             <option value="HUF">HUF</option>
             <option value="EUR">EUR</option>
@@ -53,44 +72,53 @@
             <option value="">A-Z</option>
             <option value="">Z-A</option>
         </select>
-        <label for="check-only-on-store">Csak raktáron lévők
+        <label for="check-only-on-store">
             <input id="check-only-on-store" type="checkbox" class="type">
+            Csak raktáron lévők
         </label>
-        <label for="check-discount">Leértékeltek
+        <label for="check-discount">
             <input id="check-discount" type="checkbox" class="type">
+            Leértékeltek
         </label>
     </div>
 </header>
 <main>
     <div class="webstore-wrap">
-        <div class="webstore__categories">
-            <ul>
-               <li>Áramkörvédelem (960)</li>
-               <li>Csatlakozó (2683)</li>
-               <li>Dióda (1192)</li>
-               <li>Diódahíd (68)</li>
-               <li>Egyéb (297)</li>
-               <li>Elem, akku, táp (301)</li>
-               <li>Ellenállás (9956)</li>
-               <li>Hangsugárzó (106)</li>
-               <li>Hűtőborda (85)</li>
-               <li>Induktivitás (568)</li>
-               <li>Integrált áramkörök (3681)</li>
-               <li>Kapcsoló, nyomógomb (776)</li>
-               <li>Kábel, huzal (95)</li>
-               <li>Kondenzátor (2829)</li>
-               <li>Kvarc, rez., oszc., szűrő (217)</li>
-               <li>Műszerdoboz (356)</li>
-               <li>Optoelektronika, LED, LCD (1641)</li>
-               <li>Relé (588)</li>
-               <li>Szenzor (406)</li>
-               <li>Tápegységek, adapterek (205)</li>
-               <li>Transzformátor (760)</li>
-               <li>Tranzisztor (1325)</li>
-               <li>Triac, Thyristor, Diac, UJT (119)</li>
-               <li>Ventilátor (88)</li>
-               <li>Világítás (70)</li>
-            </ul>
+        <div id="categories" class="webstore__categories mobile-overlay">
+            <div class="mobile-overlay__bg"></div>
+            <div class="mobile-overlay__body">
+                <a href="" class="mobile-overlay__close"></a>
+                <div class="mobile-overlay__content">
+                    <h2 class="mobile-overlay__header">Kategóriák</h2>
+                    <ul>
+                        <li>Áramkörvédelem (960)</li>
+                        <li>Csatlakozó (2683)</li>
+                        <li>Dióda (1192)</li>
+                        <li>Diódahíd (68)</li>
+                        <li>Egyéb (297)</li>
+                        <li>Elem, akku, táp (301)</li>
+                        <li>Ellenállás (9956)</li>
+                        <li>Hangsugárzó (106)</li>
+                        <li>Hűtőborda (85)</li>
+                        <li>Induktivitás (568)</li>
+                        <li>Integrált áramkörök (3681)</li>
+                        <li>Kapcsoló, nyomógomb (776)</li>
+                        <li>Kábel, huzal (95)</li>
+                        <li>Kondenzátor (2829)</li>
+                        <li>Kvarc, rez., oszc., szűrő (217)</li>
+                        <li>Műszerdoboz (356)</li>
+                        <li>Optoelektronika, LED, LCD (1641)</li>
+                        <li>Relé (588)</li>
+                        <li>Szenzor (406)</li>
+                        <li>Tápegységek, adapterek (205)</li>
+                        <li>Transzformátor (760)</li>
+                        <li>Tranzisztor (1325)</li>
+                        <li>Triac, Thyristor, Diac, UJT (119)</li>
+                        <li>Ventilátor (88)</li>
+                        <li>Világítás (70)</li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <div class="webstore__main">
             
@@ -106,7 +134,7 @@
                 </div>
                 <div class="product-card__row__infobar">
                     <a class="product-card__row__infobar__pdflink" href="#"><img src="/static/assets/pdf.svg" alt="Adatlap"><span>Adatlap</span></a>
-                    <div>
+                    <div class="product-card__row__infobar__info">
                         <a href="#">Gyártó: Littelfuse</a>
                         <a href="#">RoHS</a>
                     </div>
@@ -116,6 +144,7 @@
         <div class="product-card__row__cart-wrap">
             <div class="product-card__row__cart">
                 <div>
+                    <small>Csomagolási egység vásárlása esetén</small>
                     <div class="product-card__row__cart__pricerow"><span>Nettó ár / db:</span><strong>52.32 Ft.</strong></div>
                     <div class="product-card__row__cart__pricerow"><span>Bruttó ár / db:</span><strong>66.45 Ft.</strong></div>
                 </div>
@@ -146,7 +175,7 @@
                 </div>
                 <div class="product-card__row__infobar">
                     <a class="product-card__row__infobar__pdflink" href="#"><img src="/static/assets/pdf.svg" alt="Adatlap"><span>Adatlap</span></a>
-                    <div>
+                    <div class="product-card__row__infobar__info">
                         <a href="#">Gyártó: Littelfuse</a>
                         <a href="#">RoHS</a>
                     </div>
@@ -156,6 +185,7 @@
         <div class="product-card__row__cart-wrap">
             <div class="product-card__row__cart">
                 <div>
+                    <small>Csomagolási egység vásárlása esetén</small>
                     <div class="product-card__row__cart__pricerow"><span>Nettó ár / db:</span><strong>52.32 Ft.</strong></div>
                     <div class="product-card__row__cart__pricerow"><span>Bruttó ár / db:</span><strong>66.45 Ft.</strong></div>
                 </div>
@@ -186,7 +216,7 @@
                 </div>
                 <div class="product-card__row__infobar">
                     <a class="product-card__row__infobar__pdflink" href="#"><img src="/static/assets/pdf.svg" alt="Adatlap"><span>Adatlap</span></a>
-                    <div>
+                    <div class="product-card__row__infobar__info">
                         <a href="#">Gyártó: Bourns</a>
                         <a href="#">RoHS</a>
                     </div>
@@ -196,6 +226,7 @@
         <div class="product-card__row__cart-wrap">
             <div class="product-card__row__cart">
                 <div>
+                    <small>Csomagolási egység vásárlása esetén</small>
                     <div class="product-card__row__cart__pricerow"><span>Nettó ár / db:</span><strong>52.32 Ft.</strong></div>
                     <div class="product-card__row__cart__pricerow"><span>Bruttó ár / db:</span><strong>66.45 Ft.</strong></div>
                 </div>
@@ -226,7 +257,7 @@
                 </div>
                 <div class="product-card__row__infobar">
                     <a class="product-card__row__infobar__pdflink" href="#"><img src="/static/assets/pdf.svg" alt="Adatlap"><span>Adatlap</span></a>
-                    <div>
+                    <div class="product-card__row__infobar__info">
                         <a href="#">Gyártó: Littelfuse</a>
                         <a href="#">RoHS</a>
                     </div>
@@ -236,6 +267,7 @@
         <div class="product-card__row__cart-wrap">
             <div class="product-card__row__cart">
                 <div>
+                    <small>Csomagolási egység vásárlása esetén</small>
                     <div class="product-card__row__cart__pricerow"><span>Nettó ár / db:</span><strong>52.32 Ft.</strong></div>
                     <div class="product-card__row__cart__pricerow"><span>Bruttó ár / db:</span><strong>66.45 Ft.</strong></div>
                 </div>
@@ -257,6 +289,33 @@
         </div>
     </div>
 </main>
+<script>
+    var categoriesButton = document.getElementById('categories-button')
+    var categories = document.getElementById('categories')
+    var html = document.querySelector('html')
+
+    function categoriesHandler(methodname){
+        return function(e){
+            e.preventDefault()
+            categories.classList[methodname]('mobile-overlay--active')
+            html.classList[methodname]('mobile-overlay--pagelock')
+        }
+    }
+
+    categoriesButton.addEventListener('click', categoriesHandler('add'))
+    categories.querySelector('.mobile-overlay__close').addEventListener('click', categoriesHandler('remove'))
+    categories.querySelector('.mobile-overlay__bg').addEventListener('click', categoriesHandler('remove'))
+
+    var filtersButton = document.getElementById('filters-button')
+    var filters = document.getElementById('filters')
+    var filtersOpened = false;
+    filtersButton.addEventListener('click', function(e){
+        e.preventDefault()
+        var methodname = filtersOpened ? 'remove' : 'add'
+        filters.classList[methodname]('webstore__filter-container--active')
+        filtersOpened = !filtersOpened
+    })
+</script>
 
     <footer>
         © 2020 Lomex Kft. Minden jog fenntartva.<br>
