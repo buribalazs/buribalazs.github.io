@@ -502,19 +502,16 @@ footer {
 }
 .product-card {
     min-height: 150px;
-    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
     line-height: 1.5rem;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
 }
 .product-card header {
     margin-bottom: 1rem;
-    /* font-size: 1.5rem; */
+    line-height: 1.2rem;
 }
 .product-card header strong {
     white-space: nowrap;
-}
-.product-card:last-child {
-    border: none;
 }
 .product-card img {
     display: block;
@@ -551,7 +548,7 @@ footer {
 .product-card__row__cart--right {
     justify-content: flex-end;
     margin-bottom: 1.5rem;
-    margin-top: 1.5rem;
+    margin-top: 0.5rem;
 }
 .product-card__row__cart__pricerow {
     display: flex;
@@ -573,11 +570,18 @@ footer {
     -o-object-fit: contain;
        object-fit: contain;
 }
+.product-card__calculatorlink {
+    display: block;
+    text-align: right;
+    font-size: 0.8rem;
+    color:red;
+}
 .product-card__qtyinput {
     max-width: 100px;
     padding: 0.2rem 0.4rem;
 }
 .product-card__infocol {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -591,7 +595,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
 .product-card__row__infobar__info {
     margin-top: 1rem;
@@ -625,6 +629,33 @@ footer {
 }
 .breadcrumbs li:not(:last-child)::after {
     content: '›';
+}
+@media (max-width: 639px){
+    .product-card {
+        margin: 0 -1rem;
+        padding: 0 1rem;
+        padding-top: 0.5rem;
+        border-top: 5px solid #e4e4e4;
+    }
+    .product-card__row__cart--right {
+        margin-top: 2rem;
+    }
+    .product-card__infocol {
+        margin-bottom: 2rem;
+    }
+    .product-card__row__infobar {
+        position: absolute;
+        width: 80vw;
+        bottom:-3rem;
+    }
+    .product-card__qtyinput {
+        border: 1px solid gray;
+    }
+}
+@media (min-width: 640px) {
+    .product-card:first-child {
+        border-top: none;
+    }
 }
 .webstore .logo {
     position: relative;
