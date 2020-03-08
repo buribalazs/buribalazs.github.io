@@ -145,6 +145,7 @@ body.under-modal{
 @media (max-width: 639px) {
     .mobile-overlay {
         position: fixed;
+        z-index: 10;
         top:0;
         bottom:0;
         left: 0;
@@ -652,6 +653,46 @@ footer {
 .product-card__lastitems-flag {
     display: block;
     color:red;
+}
+.product-card__custom-name {
+    display: inline-block;
+    white-space: nowrap;
+}
+.product-card__custom-name__label {
+    white-space: nowrap;
+    font-size: 0.8rem;
+    margin-left: 0.3rem;
+    font-weight: bold;
+    line-height: 0.8rem;
+}
+.product-card__custom-name__pencil {
+    transform: scaleX(-1);
+    display: inline-block;
+}
+.product-card__custom-name__save {
+    display: none;
+    font-weight: 900;
+}
+.product-card__custom-name__input {
+    /* max-width: 155px; */
+    padding: 0.2rem 0.3rem;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    outline: none;
+    display: none;
+    height:1rem;
+}
+.product-card__custom-name--active .product-card__custom-name__input {
+    display: initial;
+}
+.product-card__custom-name--active .product-card__custom-name__pencil {
+    display: none;
+}
+.product-card__custom-name--active .product-card__custom-name__save {
+    display: initial;
+}
+.product-card__custom-name--active .product-card__custom-name__label {
+    display: none;
 }
 @media (max-width: 639px){
     .product-card {
