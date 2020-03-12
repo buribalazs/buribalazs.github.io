@@ -14,8 +14,12 @@
     window.closeLogin = closeLogin
 
     //webstore
+    //utils
+    function qsAllArr(selector){
+        return Array.prototype.slice.call(document.querySelectorAll(selector))
+    }
     //custom name
-    Array.prototype.slice.call(document.querySelectorAll('.product-card__custom-name')).forEach(parent => {
+    qsAllArr('.product-card__custom-name').forEach(parent => {
         let input = parent.querySelector('input')
         let label = parent.querySelector('.product-card__custom-name__label')
         parent.querySelector('.product-card__custom-name__pencil').addEventListener('click', e => {
@@ -30,5 +34,27 @@
         }
         parent.querySelector('.product-card__custom-name__save').addEventListener('click', saveChange)
         input.addEventListener('change', saveChange)
-    });
+    })
+
+
+    //product card dropdowns
+    var opendropdowns = {}
+    window.productdropdown = function(e){
+        e = e.target
+        var id = e.getAttribute('data-id')
+        var type = e.getAttribute('data-type')
+        var prev = opendropdowns[id]
+        var t = document.querySelector('[data-forid="' + id + '"][data-type="' + type + '"]')
+        opendropdowns[id] = t
+        if(prev && prev === t){
+            if(t.classList.contains('product-group--active')){
+                t.classList.remove('product-group--active')
+            }else{
+                t.classList.add('product-group--active')
+            }
+        }else{
+            prev && prev.classList.remove('product-group--active')
+            t.classList.add('product-group--active')
+        }
+    }
 })()
