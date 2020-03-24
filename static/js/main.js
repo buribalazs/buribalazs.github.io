@@ -57,4 +57,12 @@
             t.classList.add('product-group--active')
         }
     }
+
+    window.openAccountOverlay = function(){
+        var overlay = document.querySelector('.account-overlay')
+        if(overlay){
+            var isOpen = overlay.classList.contains('account-overlay--active')
+            overlay.classList[isOpen ? 'remove': 'add']('account-overlay--active')
+        }
+    }
 })()

@@ -394,6 +394,9 @@ header{
     font-weight: 400;
     margin-left:2rem;
 }
+.header-account {
+    position: relative;
+}
 .logo{
     position: absolute;
     top: 2.7rem;
@@ -481,6 +484,9 @@ nav ul li a {
 @media (max-width: 640px){
     nav {
         margin: 0 -1rem;
+    }
+    .header-account {
+        position: initial;
     }
 }
 @media (max-width: 540px){
@@ -973,5 +979,127 @@ footer {
     .webstore__filter-container--active > * {
         flex: 1 1 40%;
         margin: 0.2rem 0.5rem;
+    }
+}
+.account-overlay {
+    position: absolute;
+    min-width: 500px;
+    z-index: 2;
+    right:100px;
+    top:30px;
+    padding:1rem;
+    background: white;
+    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.15);
+    opacity: 0;
+    display: none;
+}
+@-webkit-keyframes show-acc-overlay {
+    0% {
+        opacity: 0;
+    }
+    1% {
+        display: block;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes show-acc-overlay {
+    0% {
+        opacity: 0;
+    }
+    1% {
+        display: block;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.account-overlay--active {
+    display: block;
+    -webkit-animation: show-acc-overlay 0.3s;
+            animation: show-acc-overlay 0.3s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+}
+.account-overlay header {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    margin: 1rem 0;
+}
+.account-overlay__cols {
+    display: flex;
+    height:100%;
+}
+.account-overlay .account-overlay__close {
+    position: absolute;
+    right:15px;
+    top:20px;
+    line-height: 0;
+    font-size: 1.5rem;
+    color:red;
+}
+.account-overlay__left-col {
+    padding-right: 1rem;
+    flex: 0 1 70%;
+    border-right: 1px solid lightgray;
+}
+.account-overlay__left-col__header img {
+    margin-right: 0.5rem;
+}
+.account-overlay__left-col__header {
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+.account-overlay__right-col {
+    margin-top: 3rem;
+    margin-left: 1rem;
+}
+.account-overlay__right-col a {
+    display: block;
+    margin: 0.7rem 0;
+    font-size: 0.8rem;
+}
+.account-overlay__product {
+    display: flex;
+    font-size: 0.7rem;
+    margin-bottom: 0.5rem;
+}
+.account-overlay__product img {
+    margin-right: 0.5rem;
+}
+.account-overlay__product__info {
+    display: flex;
+}
+.account-overlay__product__info a{
+    margin: 0;
+    color: red;
+}
+.account-overlay__product__info__qty {
+    white-space: nowrap;
+}
+@media (max-width: 640px) {
+    .account-overlay {
+        right:-1rem;
+        min-width: unset;
+        width:100vw;
+        top:50px;
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+    }
+    .account-overlay__cols {
+        flex-direction: column;
+    }
+    .account-overlay__left-col {
+        border-right: 0;
+    }
+    .account-overlay__right-col {
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .account-overlay__right-col a {
+        font-size: 1rem;
+        margin: 1rem 0;
     }
 }
