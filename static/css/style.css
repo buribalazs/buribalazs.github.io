@@ -44,6 +44,13 @@ body.under-modal{
 .small-text{
     font-size:13px;
 }
+.caret-right::after {
+    content: '›';
+    display: inline-block;
+    position: relative;
+    bottom: 0.06em;
+    margin: 0 0.1em;
+}
 .grid {
     display: flex;
     flex-wrap: wrap;
@@ -792,6 +799,22 @@ footer {
 .product-group__productlist {
     margin-left: 1.5rem;
 }
+.cart .breadcrumbs {
+    display: none;
+}
+.cart .product-card__row__infobar__pdflink {
+    display: none;
+}
+.cart .product-card__pricebox small {
+    display: none;
+}
+.cart .product-card__row__cart__pricerow {
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+}
+.cart .product-card__image {
+    max-width: 80px;
+}
 @media (max-width: 639px){
     .product-card {
         margin: 1rem 0;
@@ -980,6 +1003,63 @@ footer {
         flex: 1 1 40%;
         margin: 0.2rem 0.5rem;
     }
+}
+.account-menu-button-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.5rem 0;
+}
+.account-menu-button-wrap h2 {
+    line-height: 1rem;
+    margin:0;
+}
+.account-menu-button {
+    line-height: 1rem;
+    display: none;
+    color:white;
+}
+.account-menu__linkwrap a{
+    display: block;
+    margin: 0.7rem 0;
+    font-size: 0.8rem;
+}
+.account__desktop-header {
+    font-weight: 100;
+}
+.account-menu-button-wrap h2 {
+    font-weight: 100;
+}
+.cart__total-row{
+    display: flex;
+    justify-content: space-between;
+}
+.cart__total-row span:first-child {
+    margin-right: 1rem;
+}
+.cart__checkout-btn {
+    border: none;
+    background: red;
+    color:white;
+    border-radius: 3px;
+    padding: 7px 12px;
+    
+}
+@media (max-width:640px){
+    .account-menu-button-wrap {
+        margin: 1rem 0;
+    }
+    .account-menu-button {
+        display: inline-block;
+    }
+    .cart__total {
+        margin-top: 1.5rem;
+    }
+    .cart__checkout-btn {
+        margin-top: 1.5rem;
+    }
+    
 }
 .account-overlay {
     position: absolute;
