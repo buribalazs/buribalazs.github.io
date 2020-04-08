@@ -261,6 +261,10 @@ body.under-modal{
     }
 
 }
+form fieldset {
+    border: none;
+    padding: 0;
+}
 form label{
     display: block;
     text-transform: uppercase;
@@ -865,6 +869,10 @@ footer {
     display: flex;
     align-items: center;
 }
+a.webstore__brand__logo-link {
+    margin: 0;
+    margin-left: 0;
+}
 .webstore .search-main {
     margin-top: 1rem;
 }
@@ -1025,11 +1033,20 @@ footer {
     margin: 0.7rem 0;
     font-size: 0.8rem;
 }
+.account-menu__linkwrap .account-menu__selected-link {
+    text-decoration: underline;
+}
 .account__desktop-header {
     font-weight: 100;
 }
 .account-menu-button-wrap h2 {
     font-weight: 100;
+}
+.cart__total {
+    margin-right: 1rem;
+}
+.cart__total-wrap {
+    display: flex;
 }
 .cart__total-row{
     display: flex;
@@ -1046,6 +1063,41 @@ footer {
     padding: 7px 12px;
     
 }
+.account-card {
+    min-height: 150px;
+    line-height: 1.5rem;
+    padding: 1.5rem;
+    background: white;
+    margin: 2rem 0;
+    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.15);
+    position: relative;
+}
+.account__address form {
+    max-width: 600px;
+}
+.account__address input {
+    display: block;
+}
+.account__address__row {
+    display: flex;
+    margin: 0 -1rem;
+}
+.account__address__row label {
+    margin: 0 1rem;
+}
+.account__address__delete {
+    position: absolute;
+    right:1rem;
+    top:0.7rem;
+    color:red;
+}
+.account__address__add-button {
+    background: red;
+    color:white;
+    border:none;
+    padding: 8px 14px;
+    border-radius: 3px;
+}
 @media (max-width:640px){
     .account-menu-button-wrap {
         margin: 1rem 0;
@@ -1058,6 +1110,13 @@ footer {
     }
     .cart__checkout-btn {
         margin-top: 1.5rem;
+    }
+    .cart__total-wrap {
+        flex: 1 1 auto;
+        justify-content: space-between;
+    }
+    .account__address__row {
+        display: block;
     }
     
 }

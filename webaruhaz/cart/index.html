@@ -13,7 +13,9 @@
 <header class="webstore">
     <div class="header-user">
         <div class="webstore__brand">
-            <img class="logo" src="/static/assets/logo.svg" alt="">
+            <a class="webstore__brand__logo-link" href="/">
+                <img class="logo" src="/static/assets/logo.svg" alt="">
+            </a>
         </div>
         <div class="header-account">
             <a href="#">FIÓK</a>
@@ -45,40 +47,44 @@
                     <h2 class="mobile-overlay__header">FIÓK</h2>
                     <div class="account-menu__linkwrap">
 
-                        <a href="/webaruhaz/cart"> Kosár (2 termék)</a>
-                        <a href="#"> Korábbi rendeléseim</a>
-                        <a href="#"> Szállítási címek</a>
-                        <a href="#"> Fizetési módok</a>
-                        <a href="#"> Saját listák / Elmentett kosarak</a>
-                        <a href="#"> Saját cikkszámok</a>
-                        <a href="#"> Beállítások</a>
-                        <a href="#"> Kijelentkezés</a>
+                        <a class="account-menu__selected-link" href="/webaruhaz/cart"> Kosár (2 termék)</a>
+                        <a  href="#"> Korábbi rendeléseim</a>
+                        <a  href="/webaruhaz/addresses"> Szállítási címek</a>
+                        <a  href="#"> Fizetési módok</a>
+                        <a  href="#"> Saját listák / Elmentett kosarak</a>
+                        <a  href="#"> Saját cikkszámok</a>
+                        <a  href="#"> Beállítások</a>
+                        <a  href="#"> Kijelentkezés</a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="webstore__main">
-            <div class="account-menu-button-wrap">
-                <h2>FIÓK <span class="caret-right"></span> KOSÁR</h2>
-                <a id="categories-button" class="search-button account-menu-button" href="#">
-                    ☰
-                </a>
-                <div class="cart__total">
-                    <div class="cart__total-row">
-                        <span>Nettó összeg:</span>
-                        <span>16.209 Ft.</span>
-                    </div>
-                    <div class="cart__total-row">
-                        <span>Bruttó összeg:</span>
-                        <span>20.585 Ft.</span>
-                    </div>
-                </div>
-                <button class="cart__checkout-btn">PÉNZTÁRHOZ</button>
+            
+<div class="account-menu-button-wrap">
+    <h2>FIÓK <span class="caret-right"></span> KOSÁR</h2>
+    <a id="categories-button" class="search-button account-menu-button" href="#">
+        ☰
+    </a>
+    <div class="cart__total-wrap">
+
+        <div class="cart__total">
+            <div class="cart__total-row">
+                <span>Nettó összeg:</span>
+                <span>16.209 Ft.</span>
             </div>
-            <div class="cart">
-                
-                
-                <article class="product-card">
+            <div class="cart__total-row">
+                <span>Bruttó összeg:</span>
+                <span>20.585 Ft.</span>
+            </div>
+        </div>
+        <button class="cart__checkout-btn">PÉNZTÁRHOZ</button>
+    </div>
+</div>
+<div class="cart">
+    
+    
+    <article class="product-card">
     <div class="breadcrumbs">
         <ul>
             <li><a href="#">
@@ -158,9 +164,9 @@
         
     </div>
 </article>
-                
-                
-                <article class="product-card">
+    
+    
+    <article class="product-card">
     <div class="breadcrumbs">
         <ul>
             <li><a href="#">
@@ -240,8 +246,9 @@
         
     </div>
 </article>
-                
-            </div>
+    
+</div>
+
         </div>
     </div>
 </main>
