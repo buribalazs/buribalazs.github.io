@@ -49,11 +49,11 @@
 
                         <a  href="/webaruhaz/cart"> Kosár (2 termék)</a>
                         <a  href="/webaruhaz/previous-orders"> Korábbi rendeléseim</a>
-                        <a class="account-menu__selected-link" href="/webaruhaz/addresses"> Szállítási címek</a>
+                        <a  href="/webaruhaz/addresses"> Szállítási címek</a>
                         <a  href="#"> Fizetési módok</a>
                         <a  href="#"> Saját listák / Elmentett kosarak</a>
                         <a  href="#"> Saját cikkszámok</a>
-                        <a  href="/webaruhaz/settings"> Beállítások</a>
+                        <a class="account-menu__selected-link" href="/webaruhaz/settings"> Beállítások</a>
                         <a  href="#"> Kijelentkezés</a>
                     </div>
                 </div>
@@ -62,61 +62,92 @@
         <div class="webstore__main">
             
 <div class="account-menu-button-wrap">
-    <h2>FIÓK <span class="caret-right"></span>Szállítási címek</h2>
+    <h2>Beállítások</h2>
     <a id="categories-button" class="search-button account-menu-button" href="#">
         ☰
     </a>
-    
 </div>
-<div class="account-card account__address">
-    <a class="account__address__delete" href="#">törlés</a>
+<div class="account-card account-card--big">
+    <h2>Belépési adatok</h2>
     <form action="">
         <fieldset>
-            <label>Cégnév
-                <input name="company" type="text" value="Pikk Pakk Bt.">
-            </label>
-            <div class="account__address__row">
-                <label>Irányítószám
-                    <input name="zip" type="text" value="1011">
+            <h3>
+                <div>
+                    Belépési név:
+                    <strong>Ukk</strong>
+                </div>
+                <div>
+                    Azonosító: <strong>1234567</strong>
+                </div>
+            </h3>
+            <div class="constrain-box">
+                <label>Jelszó
+                    <input name="contactperson" type="text">
+                    <div class="form__field-help">minimum 6, maximum 16 betűt és/vagy számot tartalmazhat, nem egyezhet meg a bejelentkező névvel és az e-mail cím @ előtti részével</div>
                 </label>
-                <label>Ország
-                    <input name="country" type="text" value="Magyarország">
+                <label>Jelszó megerősítése
+                    <input name="phone" type="text">
+                    <div class="form__field-help">meg kell egyeznie az egy sorral feljebb beírt jelszóval</div>
                 </label>
-                <label>Város
-                    <input name="city" type="text" value="Budapest">
-                </label>
+                <button>mentés</button>
             </div>
-            <label>Cím
-                <input name="address" type="text" value="Kozma utca 25. II/B">
-            </label>
         </fieldset>
     </form>
 </div>
-<div class="account-card account__address">
-    <a class="account__address__delete" href="#">törlés</a>
+<div class="account-card account-card--big">
+    <h2>Kapcsolat</h2>
     <form action="">
         <fieldset>
-            <label>Cégnév
+            <h3><span>E-mail cím:</span>
+                <strong>test@test.hu</strong>
+            </h3>
+            <!-- <br> -->
+            <label>Számlázási név (Cégnév)
                 <input name="company" type="text" value="Pikk Pakk Bt.">
             </label>
             <div class="account__address__row">
-                <label>Irányítószám
-                    <input name="zip" type="text" value="1011">
+                <label>Kapcsolattartó személy
+                    <input name="contactperson" type="text" value="Otto von Schnitzelpufkankengscheitsmeyer">
                 </label>
-                <label>Ország
-                    <input name="country" type="text" value="Magyarország">
+                <label>telefonszám
+                    <input name="phone" type="text" value="+36 20 303 3030">
                 </label>
-                <label>Város
-                    <input name="city" type="text" value="Budapest">
+                <label>Fax
+                    <input name="fax" type="text">
                 </label>
             </div>
-            <label>Cím
-                <input name="address" type="text" value="Kozma utca 25. II/B">
-            </label>
+            <div class="account__address__row">
+                <label>Weboldal
+                    <input name="website" type="text" value="www.example.com">
+                </label>
+                <label>Tevékenység
+                    <input name="field" type="text" value="IT">
+                </label>
+                <label class="short">Létszám
+                    <input name="headcount" type="number" step="1" min="1">
+                </label>
+            </div>
+            <br>
+            <button>mentés</button>
+
         </fieldset>
     </form>
 </div>
-<button class="account__address__add-button">Új cím hozzáadása</button>
+<div class="account-card account-card--big">
+    <h2>Számlázási adatok</h2>
+    <div class="form__readonly">
+        <label>Számlázási név (Cégnév)</label>
+        <span>Otto von Schnitzelpuffkankengescheitsmeyer</span>
+        <label>Ország</label>
+        <span>Magyarország</span>
+        <label>Város</label>
+        <span>Délegyháza</span>
+        <label>Irányítószám</label>
+        <span>1111</span>
+        <label>Cím</label>
+        <span>Ló utca 2</span>
+    </div>
+</div>
 
         </div>
     </div>

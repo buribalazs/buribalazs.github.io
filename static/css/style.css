@@ -291,6 +291,35 @@ form button {
     padding:0.5rem 1rem;
     box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
 }
+form h3 {
+    display: flex;
+    font-weight: normal;
+}
+form h3 > *:first-child {
+    margin-right: 1rem;
+}
+.form__readonly label {
+    text-transform: uppercase;
+    display: block;
+    color: gray;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+}
+.form__readonly-field {
+    text-transform: none;
+    color: black;
+    padding: 0.5rem;
+}
+form .constrain-box {
+    max-width: 400px;
+}
+.form__field-help {
+    text-transform: none;
+    font-size: 0.7rem;
+    line-height: 0.8rem;
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+}
 ::-webkit-input-placeholder{
     font-style: italic; 
     color: lightgray;
@@ -1135,6 +1164,15 @@ a.webstore__brand__logo-link {
     box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.15);
     position: relative;
 }
+.account-card--big {
+    padding: 2.3rem 2rem;
+}
+.account-card h2 {
+    text-transform: uppercase;
+}
+.account-card strong {
+    color: black;
+}
 .account__address form {
     max-width: 600px;
 }
@@ -1147,6 +1185,10 @@ a.webstore__brand__logo-link {
 }
 .account__address__row label {
     margin: 0 1rem;
+    flex: 1 1 auto;
+}
+.account__address__row label.short, label.short{
+    flex: 0 1 200px;
 }
 .account__address__delete {
     position: absolute;
