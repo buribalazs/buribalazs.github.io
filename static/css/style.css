@@ -1105,6 +1105,54 @@ a.webstore__brand__logo-link {
         margin: 0.2rem 0.5rem;
     }
 }
+.supplier-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.15);
+    padding: 1rem;
+    min-height: 360px;
+}
+.supplier-grid img {
+    max-width: 150px;
+    max-height: 75px;
+}
+.supplier-grid a {
+    display: block;
+    margin: 1.3rem;
+    background: white;
+}
+.supplier-header {
+    text-transform: uppercase;
+    font-weight: 100;
+    margin: 2rem 0;
+}
+.supplier-header-wrap {
+    display: flex;
+    align-items: center;
+}
+.supplier-header-wrap input {
+    margin-left: 1rem;
+    padding: 0.4rem 0.8rem;
+    border: 1px solid lightgray;
+}
+@media (max-width: 460px) {
+    .supplier-grid img {
+        max-width: 110px;
+    }
+    .supplier-header-wrap {
+        display: block;
+    }
+    .supplier-header {
+        margin-bottom: 0;
+    }
+    .supplier-header-wrap input {
+        margin:1rem 0;
+        width: 100%;
+    }
+}
 .account-menu-button-wrap {
     display: flex;
     flex-wrap: wrap;
