@@ -1074,7 +1074,11 @@ a.webstore__brand__logo-link {
     content: '–';
 }
 .webstore-menupagination {
-    /* max-width: 200px; */
+    overflow-x: hidden;
+    margin-left: -1rem;
+    padding-left: 1rem;
+    margin-right: -1rem;
+    padding-right: 1rem;
 }
 .webstore-menupagination__pagination{
     margin-left: -0.7rem;
