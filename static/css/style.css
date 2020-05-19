@@ -1156,6 +1156,9 @@ a.webstore__brand__logo-link {
     padding: 1rem;
     min-height: 360px;
 }
+.supplier-menu {
+    overflow-x: unset;
+}
 .supplier-grid img {
     max-width: 150px;
     max-height: 75px;
@@ -1383,16 +1386,16 @@ a.webstore__brand__logo-link {
     flex: 0 1 70%;
     border-right: 1px solid lightgray;
 }
-.account-overlay__left-col__header img {
+.account-overlay__col-header img {
     margin-right: 0.5rem;
 }
-.account-overlay__left-col__header {
+.account-overlay__col-header {
+    margin-top: 0.5rem;
     margin-bottom: 1.5rem;
     display: flex;
     align-items: center;
 }
 .account-overlay__right-col {
-    margin-top: 3rem;
     margin-left: 1rem;
 }
 .account-overlay__right-col a {
