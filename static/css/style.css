@@ -57,6 +57,37 @@ body.under-modal{
     margin: 2rem -1rem;
     
 }
+.grid__hero {
+    width: 100%;
+    margin: -2rem 1rem 0 1rem;
+    padding: 4rem 2rem;
+    background: rgb(72,58,180);
+    background: linear-gradient(112deg, rgba(72,58,180,1) 0%, rgba(29,150,253,1) 35%, rgba(35,145,253,1) 63%, rgba(75,69,252,1) 100%);
+    /* min-height: 300px; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.grid__hero h1 {
+    color:white;
+    font-size: 4rem;
+    max-width: 450px;
+    margin: 1rem 0;
+    line-height: 3.5rem;
+    letter-spacing: -0.2rem;
+}
+.grid__hero__button {
+    background: rgb(32, 32, 32);
+    border: none;
+    color:white;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    /* border-radius: 0.5rem; */
+    box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.5);
+}
 .grid__item {
     box-sizing: border-box;
     width: calc(33.3% - 2rem);
