@@ -604,6 +604,9 @@ footer {
     position: relative;
     /* margin-bottom: 1rem; */
 }
+.product-card--overstore {
+    border-left:10px solid red;
+}
 .product-card:first-child {
     margin-top: 0;
 }
