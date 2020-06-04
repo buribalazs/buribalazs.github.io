@@ -122,6 +122,18 @@ body.under-modal{
 .row {
     display: flex;
 }
+.row__item {
+    margin-right: 2rem;
+}
+@media (max-width:680px){
+    .row__item {
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+}
+.row--wrap {
+    flex-wrap: wrap;
+}
 .row--center-sb{
     align-items: center;
     justify-content: space-between;
@@ -392,6 +404,44 @@ form .constrain-box {
 }
 .form__actions-row--right {
     justify-content: flex-end;
+}
+.webstore__filter-container .range-input-container{
+    display: block;
+    min-width: 300px;
+    cursor: initial;
+}
+.range-input {
+    margin: 0.3rem 0;
+    height: 14px;
+    box-sizing: border-box;
+    background: lightgray;
+    position: relative;
+}
+.range-input .range-input__knob {
+    position: absolute;
+    background: red;
+    height: 100%;
+    width:14px;
+    cursor: pointer;
+}
+.range-input .range-input__bg {
+    background: red;
+    position: absolute;
+    height: 2px;
+    top: 40%;
+}
+.range-input__label {
+    position: absolute;
+    text-align: center;
+    bottom: -16px;
+}
+.webstore__filter-container .advanced-filter__label {
+    display: block;
+}
+.advanced-filter__label select {
+    margin-top: 3px;
+    display: block;
+    min-width: 150px;
 }
 .grid-item-highlight{
     height:100%;
@@ -1039,6 +1089,28 @@ a.webstore__brand__logo-link {
 .webstore__filter-container input[type="checkbox"] {
     margin-left: 0;
 }
+.webstore__filter-more {
+    flex: 1 1 auto;
+    margin-right: 0;
+    color:red;
+    font-weight: 900;
+    font-size: 13px;
+}
+.webstore__filter-more::after {
+    content: '⯆';
+    margin-left: 5px;
+}
+.webstore__filter-more.webstore__filter-more--active::after {
+    content: '⯅';
+}
+.webstore__filter-container .webstore__advanced-filters {
+    display: none;
+    flex: 1 1 100%;
+    margin: 1rem 0;
+}
+.webstore__advanced-filters.webstore__advanced-filters--active {
+    display: block;
+}
 .webstore-wrap {
     display: flex;
     margin-top: 1rem;
@@ -1140,6 +1212,10 @@ a.webstore__brand__logo-link {
     .webstore__filter-container {
         display: none;
     }
+    .webstore__filter-more {
+        flex-basis: 100%;
+        text-align: left;
+    }
 
     @-webkit-keyframes filters-container-open {
         from{
@@ -1178,6 +1254,9 @@ a.webstore__brand__logo-link {
     }
     .webstore-menupagination__pagination{
         margin-right: -1rem;
+    }
+    .webstore__filter-container .webstore__advanced-filters {
+        margin: 0.5rem 0.5rem;
     }
 }
 .supplier-grid {
