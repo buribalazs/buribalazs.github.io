@@ -121,6 +121,65 @@
             <input id="check-discount" type="checkbox" class="type">
             Leértékeltek
         </label>
+        <a href="#" id="filter-more-button" class="webstore__filter-more">Részletes szűrő</a>
+        <div id="advanced-filters" class="webstore__advanced-filters">
+            <div class="row row--wrap">
+                <div class="row__item">
+                    <label class="range-input-container">
+                        Ellenállás (Ohm)
+                        <div class="range-input" data-min="3" data-max="1000" draggable="false">
+                            <div class="range-input__bg" draggable="false"></div>
+                            <div class="range-input__knob range-input__left-knob" draggable="false"></div>
+                            <div class="range-input__knob range-input__right-knob" draggable="false"></div>
+                            <div class="range-input__label range-input__left-label" draggable="false"></div>
+                            <div class="range-input__label range-input__right-label" draggable="false"></div>
+                        </div>
+                    </label>
+                    <br>
+                    <label class="range-input-container">
+                        Jóság (Jó)
+                        <div class="range-input" data-min="6" data-max="100" draggable="false">
+                            <div class="range-input__bg" draggable="false"></div>
+                            <div class="range-input__knob range-input__left-knob" draggable="false"></div>
+                            <div class="range-input__knob range-input__right-knob" draggable="false"></div>
+                            <div class="range-input__label range-input__left-label" draggable="false"></div>
+                            <div class="range-input__label range-input__right-label" draggable="false"></div>
+                        </div>
+                    </label>
+                </div>
+                <div class="row__item">
+                    <label class="range-input-container">
+                        Ellenállás (Ohm)
+                        <div class="range-input" data-min="3" data-max="1000" draggable="false">
+                            <div class="range-input__bg" draggable="false"></div>
+                            <div class="range-input__knob range-input__left-knob" draggable="false"></div>
+                            <div class="range-input__knob range-input__right-knob" draggable="false"></div>
+                            <div class="range-input__label range-input__left-label" draggable="false"></div>
+                            <div class="range-input__label range-input__right-label" draggable="false"></div>
+                        </div>
+                    </label>
+                    <br>
+                    <label class="range-input-container">
+                        Jóság (Jó)
+                        <div class="range-input" data-min="6" data-max="100" draggable="false">
+                            <div class="range-input__bg" draggable="false"></div>
+                            <div class="range-input__knob range-input__left-knob" draggable="false"></div>
+                            <div class="range-input__knob range-input__right-knob" draggable="false"></div>
+                            <div class="range-input__label range-input__left-label" draggable="false"></div>
+                            <div class="range-input__label range-input__right-label" draggable="false"></div>
+                        </div>
+                    </label>
+                </div>
+                <div class="row__item">
+                    <label class="advanced-filter__label">Típus
+                        <select>
+                            <option value="">Listaelem A</option>
+                            <option value="">Listaelem B</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+        </div>
     </div>
 </header>
 <main>
@@ -2367,6 +2426,18 @@
         if(menuoffset < -2 * step) menuoffset = -2 * step
         updateMenu()
     })
+
+    var filterMoreOpened = false;
+    var filterMore = document.getElementById('filter-more-button')
+    var advancedFilters = document.getElementById('advanced-filters')
+    function clickFilterMore(){
+        filterMoreOpened = !filterMoreOpened
+        filterMore.classList[filterMoreOpened ? 'add' : 'remove']('webstore__filter-more--active')
+        advancedFilters.classList[filterMoreOpened ? 'add' : 'remove']('webstore__advanced-filters--active')
+    }
+    filterMore.addEventListener('click', clickFilterMore)
+    clickFilterMore()
+
 </script>
 
     <footer>

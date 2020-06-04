@@ -65,4 +65,59 @@
             overlay.classList[isOpen ? 'remove': 'add']('account-overlay--active')
         }
     }
+
+    document.querySelectorAll('.range-input').forEach(rangeInput => {
+        var bg = rangeInput.querySelector('.range-input__bg')
+        var leftKnob = rangeInput.querySelector('.range-input__left-knob')
+        var rightKnob = rangeInput.querySelector('.range-input__right-knob')
+        var leftLabel = rangeInput.querySelector('.range-input__left-label')
+        var rightLabel = rangeInput.querySelector('.range-input__right-label')
+        rightKnob.style.right = '0'
+        rightLabel.style.right = '0'
+        var minVal = Number(rangeInput.getAttribute('data-min'))
+        var maxVal = Number(rangeInput.getAttribute('data-max'))
+        leftLabel.innerText = minVal
+        rightLabel.innerText = maxVal
+        bg.style.left = '0'
+        bg.style.width = '100%'
+
+        var knob, move
+
+        leftKnob.addEventListener('mousedown', e => knob = leftKnob)
+        rightKnob.addEventListener('mousedown', e => knob = rightKnob)
+        leftKnob.addEventListener('drag', e => e.preventDefault())
+        rightKnob.addEventListener('drag', e => e.preventDefault())
+        document.addEventListener('mouseup', e => knob = null)
+        document.addEventListener('mousemove', e => {
+            if(knob){
+                if(!move){
+                    move = true
+                    requestAnimationFrame(()=>{
+                        move = false
+                        var rect = rangeInput.getBoundingClientRect()
+                        var left = leftKnob.getBoundingClientRect()
+                        var right = rightKnob.getBoundingClientRect()
+                        var x = e.clientX - rect.x
+                        x = Math.min(Math.max(7,x), rect.width - 7)
+                        if(knob === leftKnob){
+                            x = Math.min(x, right.left - rect.left - 14)
+                            knob.style.left = `${x-7}px`
+                            leftLabel.style.left = `${x-7}px`
+                            leftLabel.innerText = Math.round(minVal + ((x-7) / rect.width * (maxVal - minVal)))
+                        }
+                        else if(knob === rightKnob){
+                            x = Math.max(x, left.right - rect.left + 14)
+                            knob.style.right = `${rect.width-x-7}px`
+                            rightLabel.style.right = `${rect.width-x-7}px`
+                            rightLabel.innerText = Math.round(minVal + ((x+7) / rect.width * (maxVal - minVal)))
+                        }
+                        left = leftKnob.getBoundingClientRect()
+                        right = rightKnob.getBoundingClientRect()
+                        bg.style.left = leftKnob.style.left
+                        bg.style.width = right.left - left.left + 'px'
+                    })
+                }
+            }
+        })
+    })
 })()
