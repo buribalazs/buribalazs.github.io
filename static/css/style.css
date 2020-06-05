@@ -667,6 +667,9 @@ footer {
 .product-card header strong {
     white-space: nowrap;
 }
+.product-card__header-text {
+    width: calc(100% - 1.5rem);
+}
 .product-card__remove-from-cart {
     position: absolute;
     right:1rem;
