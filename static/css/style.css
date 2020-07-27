@@ -138,6 +138,44 @@ body.under-modal{
     align-items: center;
     justify-content: space-between;
 }
+.text-page {
+    background: white;
+    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.15);
+    padding: 2rem;
+    min-height: 360px;
+    width: 100%;
+}
+@media (min-width:960px){
+    .text-page {
+        padding: 2rem 4rem;
+        padding-right: 10rem;
+    }
+}
+.text-page h1 {
+    text-transform: uppercase;
+}
+.text-page h1, .text-page h2 {
+    margin: 3rem 0;
+}
+.text-page p, .text-page li {
+    line-height: 1.6rem;
+}
+.text-page li {
+    margin: 1rem 0;
+}
+.text-page .text-page__index li {
+    margin:0;
+}
+.text-page__index a {
+    text-decoration: underline;
+}
+.text-page ul {
+    margin: 2rem 0;
+    padding-left: 1rem;
+}
+.text-page img {
+    width: 100%;
+}
 .modal {
     position: fixed;
     top:0;
@@ -419,10 +457,17 @@ form .constrain-box {
 }
 .range-input .range-input__knob {
     position: absolute;
-    background: red;
-    height: 100%;
-    width:14px;
+    height: 0;
+    width:0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
     cursor: pointer;
+}
+.range-input .range-input__knob.range-input__left-knob {
+    border-left: 10px solid red;
+}
+.range-input .range-input__knob.range-input__right-knob {
+    border-right: 10px solid red;
 }
 .range-input .range-input__bg {
     background: red;
@@ -1092,12 +1137,18 @@ a.webstore__brand__logo-link {
 .webstore__filter-container input[type="checkbox"] {
     margin-left: 0;
 }
+.webstore__fiter-second-row {
+    flex: 1 1 100%;
+    font-size: 13px;
+    margin-top: 1rem;
+}
 .webstore__filter-more {
     flex: 1 1 auto;
     margin-right: 0;
     color:red;
     font-weight: 900;
     font-size: 13px;
+    text-align: right;
 }
 .webstore__filter-more::after {
     content: '⯆';
