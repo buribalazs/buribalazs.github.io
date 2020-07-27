@@ -78,18 +78,36 @@
         </div>
     </div>
     <nav>
-        <div class="nav-fade nav-fade--left"></div>
-        <div class="nav-fade nav-fade--right"></div>
-        <div class="nav-inner">
-            <ul>
-                <li><a href="/">nyitólap</a></li>
-                <li><a href="#">webáruház</a></li>
-                <li><a href="#">beszállítók</a></li>
-                <li><a href="#">céginfó</a></li>
-                <li><a href="#">aktualitások</a></li>
-            </ul>
-        </div>
-    </nav>
+    <div class="nav-fade nav-fade--left"></div>
+    <div class="nav-fade nav-fade--right"></div>
+    <div class="nav-inner">
+        <ul>
+            <li><a href="/">nyitólap</a></li>
+            <li><a href="/webaruhaz">webáruház</a></li>
+            <li><a href="/beszallitok">beszállítók</a></li>
+            <li><a href="/info">céginfó</a></li>
+            <li><a href="/news">aktualitások</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="modal" id="modal-login">
+    <div class="modal__body">
+        <h2 class="modal__body__title">Felhasználói fiók</h2>
+        <a href="javascript:closeLogin();" class="modal__body__close">×</a>
+        <form name="login">
+            <label for="username">Felhasználónév</label>
+            <input type="text" name="username">
+            <label for="password">Jelszó</label>
+            <input type="password" name="password">
+            <div class="form__actions-row form__actions-row--spaced">
+                <button>belépés</button>
+                <div>Még nincs fókja? <a href="#">regisztráció</a> </div>
+            </div>
+            <hr>
+            <div class="form__actions-row form__actions-row--right small-text"><a href="#">elfelejtett jelszó</a></div>
+        </form>
+    </div>
+</div>
     <div class="search-main">
         <input type="text" placeholder="termék keresés">
         <a class="search-button" href="#">
@@ -121,8 +139,9 @@
             <input id="check-discount" type="checkbox" class="type">
             Leértékeltek
         </label>
-        <a href="#" id="filter-more-button" class="webstore__filter-more">Részletes szűrő</a>
-        <div id="advanced-filters" class="webstore__advanced-filters">
+        <!-- <a href="#" id="filter-more-button" class="webstore__filter-more">Részletes szűrő</a> -->
+        <div class="webstore__fiter-second-row"></div>
+        <!-- <div id="advanced-filters" class="webstore__advanced-filters">
             <div class="row row--wrap">
                 <div class="row__item">
                     <label class="range-input-container">
@@ -179,7 +198,7 @@
                     </label>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 </header>
 <main>
@@ -2427,16 +2446,16 @@
         updateMenu()
     })
 
-    var filterMoreOpened = false;
-    var filterMore = document.getElementById('filter-more-button')
-    var advancedFilters = document.getElementById('advanced-filters')
-    function clickFilterMore(){
-        filterMoreOpened = !filterMoreOpened
-        filterMore.classList[filterMoreOpened ? 'add' : 'remove']('webstore__filter-more--active')
-        advancedFilters.classList[filterMoreOpened ? 'add' : 'remove']('webstore__advanced-filters--active')
-    }
-    filterMore.addEventListener('click', clickFilterMore)
-    clickFilterMore()
+    // var filterMoreOpened = false;
+    // var filterMore = document.getElementById('filter-more-button')
+    // var advancedFilters = document.getElementById('advanced-filters')
+    // function clickFilterMore(){
+    //     filterMoreOpened = !filterMoreOpened
+    //     filterMore.classList[filterMoreOpened ? 'add' : 'remove']('webstore__filter-more--active')
+    //     advancedFilters.classList[filterMoreOpened ? 'add' : 'remove']('webstore__advanced-filters--active')
+    // }
+    // filterMore.addEventListener('click', clickFilterMore)
+    // clickFilterMore()
 
 </script>
 

@@ -18,7 +18,7 @@
             </a>
         </div>
         <div>
-            <a href="#">belépés</a>
+            <a href="javascript:openLogin();">belépés</a>
             <a href="/webaruhaz/cart">kosár (0)</a>
         </div>
     </div>
@@ -31,18 +31,37 @@
         </div>
     </div>
     <nav>
-        <div class="nav-fade nav-fade--left"></div>
-        <div class="nav-fade nav-fade--right"></div>
-        <div class="nav-inner">
-            <ul>
-                <li><a href="/">nyitólap</a></li>
-                <li><a href="/webaruhaz">webáruház</a></li>
-                <li><a href="/beszallitok">beszállítók</a></li>
-                <li><a href="#">céginfó</a></li>
-                <li><a href="#">aktualitások</a></li>
-            </ul>
-        </div>
-    </nav>
+    <div class="nav-fade nav-fade--left"></div>
+    <div class="nav-fade nav-fade--right"></div>
+    <div class="nav-inner">
+        <ul>
+            <li><a href="/">nyitólap</a></li>
+            <li><a href="/webaruhaz">webáruház</a></li>
+            <li><a href="/beszallitok">beszállítók</a></li>
+            <li><a href="/info">céginfó</a></li>
+            <li><a href="/news">aktualitások</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="modal" id="modal-login">
+    <div class="modal__body">
+        <h2 class="modal__body__title">Felhasználói fiók</h2>
+        <a href="javascript:closeLogin();" class="modal__body__close">×</a>
+        <form name="login">
+            <label for="username">Felhasználónév</label>
+            <input type="text" name="username">
+            <label for="password">Jelszó</label>
+            <input type="password" name="password">
+            <div class="form__actions-row form__actions-row--spaced">
+                <button>belépés</button>
+                <div>Még nincs fókja? <a href="#">regisztráció</a> </div>
+            </div>
+            <hr>
+            <div class="form__actions-row form__actions-row--right small-text"><a href="#">elfelejtett jelszó</a></div>
+        </form>
+    </div>
+</div>
+    
 </header>
 <main>
     <div class="webstore-wrap">
@@ -190,32 +209,6 @@
                     <a href="http://www.21yangjie.com/en" target="_blank"><img src=" /static/img/beszallitok/yangjie_2.jpg"></a>
                 </div>
             </div>
-        <script>
-            const suppliergrid = document.getElementById('suppliergrid')
-            const supplierfilter = document.getElementById('supplierfilter')
-            const links = Array.prototype.slice.call(suppliergrid.querySelectorAll('a')).map(l => {
-                return {
-                    el: l,
-                    link: l.getAttribute('href').replace('-','')
-                }
-            })
-            supplierfilter.addEventListener('input', e => {
-                if(supplierfilter.value){
-                    let val = supplierfilter.value.toLowerCase().split(' ').join('')
-                    links.forEach(l => {
-                        if (l.link.includes(val)){
-                            l.el.style.display = "block"
-                        }else{
-                            l.el.style.display = "none"
-                        }
-                    });
-                }else{
-                    links.forEach(l => {
-                        l.el.style.display = "block"
-                    });
-                }
-            })
-        </script>
     </div>
 </main>
 

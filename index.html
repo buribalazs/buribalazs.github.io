@@ -31,18 +31,36 @@
         </div>
     </div>
     <nav>
-        <div class="nav-fade nav-fade--left"></div>
-        <div class="nav-fade nav-fade--right"></div>
-        <div class="nav-inner">
-            <ul>
-                <li><a href="/">nyitólap</a></li>
-                <li><a href="/webaruhaz">webáruház</a></li>
-                <li><a href="/beszallitok">beszállítók</a></li>
-                <li><a href="#">céginfó</a></li>
-                <li><a href="#">aktualitások</a></li>
-            </ul>
-        </div>
-    </nav>
+    <div class="nav-fade nav-fade--left"></div>
+    <div class="nav-fade nav-fade--right"></div>
+    <div class="nav-inner">
+        <ul>
+            <li><a href="/">nyitólap</a></li>
+            <li><a href="/webaruhaz">webáruház</a></li>
+            <li><a href="/beszallitok">beszállítók</a></li>
+            <li><a href="/info">céginfó</a></li>
+            <li><a href="/news">aktualitások</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="modal" id="modal-login">
+    <div class="modal__body">
+        <h2 class="modal__body__title">Felhasználói fiók</h2>
+        <a href="javascript:closeLogin();" class="modal__body__close">×</a>
+        <form name="login">
+            <label for="username">Felhasználónév</label>
+            <input type="text" name="username">
+            <label for="password">Jelszó</label>
+            <input type="password" name="password">
+            <div class="form__actions-row form__actions-row--spaced">
+                <button>belépés</button>
+                <div>Még nincs fókja? <a href="#">regisztráció</a> </div>
+            </div>
+            <hr>
+            <div class="form__actions-row form__actions-row--right small-text"><a href="#">elfelejtett jelszó</a></div>
+        </form>
+    </div>
+</div>
 </header>
 <main>
     <div class="grid">
@@ -138,24 +156,7 @@
         </div>
     </div>
 </main>
-<div class="modal" id="modal-login">
-    <div class="modal__body">
-        <h2 class="modal__body__title">Felhasználói fiók</h2>
-        <a href="javascript:closeLogin();" class="modal__body__close">×</a>
-        <form name="login">
-            <label for="username">Felhasználónév</label>
-            <input type="text" name="username">
-            <label for="password">Jelszó</label>
-            <input type="password" name="password">
-            <div class="form__actions-row form__actions-row--spaced">
-                <button>belépés</button>
-                <div>Még nincs fókja? <a href="#">regisztráció</a> </div>
-            </div>
-            <hr>
-            <div class="form__actions-row form__actions-row--right small-text"><a href="#">elfelejtett jelszó</a></div>
-        </form>
-    </div>
-</div>
+
 
     <footer>
         © 2020 Lomex Kft. Minden jog fenntartva.<br>
