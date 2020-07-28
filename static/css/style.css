@@ -191,6 +191,7 @@ body.under-modal{
             animation-name: modal-fade-in;
     -webkit-animation-duration: 0.3s;
             animation-duration: 0.3s;
+    z-index: 100;
 
 }
 @-webkit-keyframes modal-fade-in{
@@ -232,9 +233,10 @@ body.under-modal{
     border-radius: 50%;
     color:#555;
 }
-@media (max-width: 540px){
+@media (max-width: 960px){
     .modal__body {
         min-width: initial;
+        max-width: calc(100% - 4rem);
     }
 }
 @media (max-width: 360px){
@@ -368,6 +370,18 @@ form input {
     width: 100%;
 }
 form button {
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    border-radius: 2px;
+    background: #555;
+    color:white;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding:0.5rem 1rem;
+    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+}
+.btn {
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
     border: none;
@@ -993,7 +1007,7 @@ footer {
     font-size: 0.8rem;
     line-height: 1.1rem;
 }
-.cart .product-card__image {
+.product-card__image {
     max-width: 80px;
 }
 @media (max-width: 639px){
@@ -1311,6 +1325,84 @@ a.webstore__brand__logo-link {
     }
     .webstore__filter-container .webstore__advanced-filters {
         margin: 0.5rem 0.5rem;
+    }
+}
+.pricecalculator label {
+    /* font-weight: bolder; */
+}
+.pricecalculator__image{
+    display: none;
+}
+.pricecalculator__header {
+    display: flex;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+.pricecalculator__header__text {
+    max-width: 670px;
+}
+.pricecalculator__input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+.pricecalculator__image{
+    max-width: 90px;
+}
+.pricecalculator__input-container label span {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: bolder;
+}
+.pricecalculator__input-container label input {
+    border: 1px solid lightgray;
+    padding: 7px 10px;
+}
+.pricecalculator__header__productname {
+    margin-bottom: 1rem;
+    display: block;
+}
+.pricecalculator table {
+    width: 100%;
+    overflow-x: auto;
+    display: block;
+    margin: 1rem 0;
+}
+.pricecalculator table a {
+    color: red;
+    font-weight: bolder;
+}
+.pricecalculator td, .pricecalculator th {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0.5rem 2rem 0.5rem 0;
+    text-align: right;
+}
+.pricecalculator__table-container {
+    position: relative;
+}
+.pricecalculator__table-container__fade {
+    position: absolute;
+    pointer-events: none;
+    right:0;
+    top:0;
+    bottom:0;
+    right:-2rem;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+    width:100px;
+}
+@media (min-width:960px){
+    .pricecalculator__image{
+        display: block;
+    }
+    .pricecalculator__header__text {
+        margin-left: 1rem;
+    }
+    .pricecalculator__table-container__fade {
+        display: none;
     }
 }
 .supplier-grid {
