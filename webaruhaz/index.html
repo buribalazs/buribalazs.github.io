@@ -1515,7 +1515,7 @@
                 
                 <div class="product-card__row__cart__inputs">
                     <input  class="product-card__qtyinput" type="number" step="1" min="1"  placeholder="darab">
-                    <a href="#" class="product-card__cartbutton">
+                    <a href="javascript:openPriceCalculator()" class="product-card__cartbutton">
                         
                         <img src="/static/assets/cart.svg" alt="Kosárba">
                         
@@ -1679,7 +1679,7 @@
                 
                 <div class="product-card__row__cart__inputs">
                     <input  class="product-card__qtyinput" type="number" step="1" min="1"  placeholder="darab">
-                    <a href="#" class="product-card__cartbutton">
+                    <a href="javascript:openPriceCalculator()" class="product-card__cartbutton">
                         
                         <img src="/static/assets/cart.svg" alt="Kosárba">
                         
@@ -1761,7 +1761,7 @@
                 
                 <div class="product-card__row__cart__inputs">
                     <input  class="product-card__qtyinput" type="number" step="1" min="1"  placeholder="darab">
-                    <a href="#" class="product-card__cartbutton">
+                    <a href="javascript:openPriceCalculator()" class="product-card__cartbutton">
                         
                         <img src="/static/assets/cart.svg" alt="Kosárba">
                         
@@ -1853,7 +1853,7 @@
                 
                 <div class="product-card__row__cart__inputs">
                     <input  class="product-card__qtyinput" type="number" step="1" min="1"  placeholder="darab">
-                    <a href="#" class="product-card__cartbutton">
+                    <a href="javascript:openPriceCalculator()" class="product-card__cartbutton">
                         
                         <img src="/static/assets/cart.svg" alt="Kosárba">
                         
@@ -1935,7 +1935,7 @@
                 
                 <div class="product-card__row__cart__inputs">
                     <input  class="product-card__qtyinput" type="number" step="1" min="1"  placeholder="darab">
-                    <a href="#" class="product-card__cartbutton">
+                    <a href="javascript:openPriceCalculator()" class="product-card__cartbutton">
                         
                         <img src="/static/assets/cart.svg" alt="Kosárba">
                         
@@ -2027,7 +2027,7 @@
                 
                 <div class="product-card__row__cart__inputs">
                     <input  class="product-card__qtyinput" type="number" step="1" min="1"  placeholder="darab">
-                    <a href="#" class="product-card__cartbutton">
+                    <a href="javascript:openPriceCalculator()" class="product-card__cartbutton">
                         
                         <img src="/static/assets/cart.svg" alt="Kosárba">
                         
@@ -2119,7 +2119,7 @@
                 
                 <div class="product-card__row__cart__inputs">
                     <input  class="product-card__qtyinput" type="number" step="1" min="1"  placeholder="darab">
-                    <a href="#" class="product-card__cartbutton">
+                    <a href="javascript:openPriceCalculator()" class="product-card__cartbutton">
                         
                         <img src="/static/assets/cart.svg" alt="Kosárba">
                         
@@ -2207,7 +2207,7 @@
                 
                 <div class="product-card__row__cart__inputs">
                     <input  class="product-card__qtyinput" type="number" step="1" min="1"  placeholder="darab">
-                    <a href="#" class="product-card__cartbutton">
+                    <a href="javascript:openPriceCalculator()" class="product-card__cartbutton">
                         
                         <img src="/static/assets/cart.svg" alt="Kosárba">
                         
@@ -2292,7 +2292,7 @@
                 
                 <div class="product-card__row__cart__inputs">
                     <input  class="product-card__qtyinput" type="number" step="1" min="1"  placeholder="darab">
-                    <a href="#" class="product-card__cartbutton">
+                    <a href="javascript:openPriceCalculator()" class="product-card__cartbutton">
                         
                         <img src="/static/assets/cart.svg" alt="Kosárba">
                         
@@ -2375,7 +2375,7 @@
                 
                 <div class="product-card__row__cart__inputs">
                     <input  class="product-card__qtyinput" type="number" step="1" min="1"  placeholder="darab">
-                    <a href="#" class="product-card__cartbutton">
+                    <a href="javascript:openPriceCalculator()" class="product-card__cartbutton">
                         
                         <img src="/static/assets/cart.svg" alt="Kosárba">
                         
@@ -2394,6 +2394,94 @@
         </div>
     </div>
 </main>
+<div class="modal pricecalculator" id="pricecalculator">
+    <div class="modal__body">
+        <div class="modal__body__title">Árkalkulátor</div>
+        <a href="javascript:closePriceCalculator();" class="modal__body__close">×</a>
+        <div class="pricecalculator__header">
+            <div>
+                <img class="product-card__image pricecalculator__image" src="/static/img/product/fuse1.jpg">
+            </div>
+            <div class="pricecalculator__header__text">
+                <strong class="pricecalculator__header__productname">60x60x25mm 12V JF0625S1H-01 (JAM) SIKLÓCSAPÁGY 2.4W 21.56CFM 34.5dBA 4500RPM Ł [57-00-03]</strong>
+                <div>Csomagolási egység: <strong>100 db</strong></div>
+                <div>Készlet: <strong>5724 db</strong></div>
+            </div>
+        </div>
+        <hr>
+        <div class="pricecalculator__input-container">
+
+                <label><span>Mennyiség:</span>
+                    <input type="text" value="1000">
+                </label>
+            <small>
+                A kalkuláció a mezőbe beírt mennyiség alapján történik.
+            </small>
+            
+        </div>
+        <div class="pricecalculator__table-container">
+            <table>
+                <thead>
+                    <th>Korrigált bruttó ár</th>
+                    <th>Korrigált nettó ár</th>
+                    <th>Mennyiség</th>
+                    <th>Nettó sorösszeg</th>
+                    <th>Bruttó sorösszeg</th>
+                    <th></th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>462.28 Ft.</td>
+                        <td>364.00 Ft.</td>
+                        <td>1 db</td>
+                        <td>364.00 Ft.</td>
+                        <td>462.28 Ft.</td>
+                        <td><a href="#">Kosárba</a></td>
+                    </tr>
+                    <tr>
+                        <td>399.80 Ft.</td>
+                        <td>314.80 Ft.</td>
+                        <td>10 db</td>
+                        <td>3148.00 Ft.</td>
+                        <td>3997.96 Ft.</td>
+                        <td><a href="#">Kosárba</a></td>
+                    </tr>
+                    <tr>
+                        <td>385.23 Ft.</td>
+                        <td>303.33 Ft.</td>
+                        <td>30 db</td>
+                        <td>9100.00 Ft.</td>
+                        <td>11557.00 Ft.</td>
+                        <td><a href="#">Kosárba</a></td>
+                    </tr>
+                    <tr>
+                        <td>366.78 Ft.</td>
+                        <td>288.80 Ft.</td>
+                        <td>100 db</td>
+                        <td>28880.00 Ft.</td>
+                        <td>36677.60 Ft.</td>
+                        <td><a href="#">Kosárba</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="pricecalculator__table-container__fade"></div>
+        </div>
+        <label>
+            <input type="checkbox">
+            <small>Ne mutassa ezt az árkalkulátort automatikusan</small>
+        </label>
+        <hr>
+        <button class="btn" onclick="closePriceCalculator()">Bezár</button>
+    </div>
+    <script>
+        function openPriceCalculator(){
+            document.getElementById('pricecalculator').classList.add('modal--active')
+        }
+        function closePriceCalculator(){
+            document.getElementById('pricecalculator').classList.remove('modal--active')
+        }
+    </script>
+</div>
 <script>
     var categoriesButton = document.getElementById('categories-button')
     var categories = document.getElementById('categories')
