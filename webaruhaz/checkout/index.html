@@ -90,13 +90,13 @@
                 <span>Személyes átvétel</span>
             </label>
             <label >
-                <input type="radio" name="deliverymethod">
+                <input type="radio" name="deliverymethod" value="delivery">
                 <span>Házhozszállítás (Ingyenes kiszállítással)</span>
             </label>
             
         </form>
     </div>
-    <div class="account-card">
+    <div id="addressbox" class="account-card checkout-addressbox">
         <h2>Szállítási cím</h2>
         
         
@@ -190,6 +190,11 @@
         </form>
     </div>
 </div>
+<script>
+    document.querySelectorAll('[name="deliverymethod"]').forEach(el => el.addEventListener('change', e => {
+        document.getElementById('addressbox').classList[e.target.value === 'delivery' ? 'add' : 'remove']('checkout-addressbox--active')
+    }))
+</script>
 
         </div>
     </div>
