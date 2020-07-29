@@ -47,9 +47,9 @@
                     <h2 class="mobile-overlay__header">FIÓK</h2>
                     <div class="account-menu__linkwrap">
 
-                        <a  href="/webaruhaz/cart"> Kosár (2 termék)</a>
+                        <a class="account-menu__selected-link" href="/webaruhaz/cart"> Kosár (2 termék)</a>
                         <a  href="/webaruhaz/previous-orders"> Korábbi rendeléseim</a>
-                        <a class="account-menu__selected-link" href="/webaruhaz/addresses"> Szállítási címek</a>
+                        <a  href="/webaruhaz/addresses"> Szállítási címek</a>
                         <a  href="#"> Fizetési módok</a>
                         <a  href="#"> Saját listák / Elmentett kosarak</a>
                         <a  href="#"> Saját cikkszámok</a>
@@ -62,18 +62,42 @@
         <div class="webstore__main">
             
 <div class="account-menu-button-wrap">
-    <h2>FIÓK <span class="caret-right"></span>Szállítási címek</h2>
+    <h2>FIÓK <span class="caret-right"></span> MEGRENDELÉS</h2>
     <a id="categories-button" class="search-button account-menu-button" href="#">
         ☰
     </a>
-    
-</div>
-<div class="account-card account__address">
-    <a class="account__address__delete" href="#">törlés</a>
-    <form>
-        <fieldset>
+    <div class="cart__total-wrap">
 
-                    <label>Cégnév
+        <div class="cart__total">
+            <div class="cart__total-row">
+                <span>Nettó összeg:</span>
+                <span>16.209 Ft.</span>
+            </div>
+            <div class="cart__total-row">
+                <span>Bruttó összeg:</span>
+                <span>20.585 Ft.</span>
+            </div>
+        </div>
+        <a href="#" class="cart__checkout-btn">Megrendelés</a>
+    </div>
+</div>
+<div class="webstore__main">
+    <div class="account-card">
+        <h2>Összegzés</h2>
+        <table class="cart__summary">
+            <tr><td>Nettó végösszeg:</td><td>54.500 Ft.</td></tr>
+            <tr><td>27%-os ÁFA összege:</td><td>14.715 Ft.</td></tr>
+            <tr><td>Bruttó végösszeg:</td><td>69.214 Ft.</td></tr>
+            <tr><td>Fizetési mód:</td><td>Utánvétes fizetés kiszállításkor (készpénzes, vagy bankkártyás fizetés)</td></tr>
+            <tr><td>Áruátvételi mód:</td><td>Házhozszállítással ( 0 Ft.)</td></tr>
+            <tr><td>Megrendelés azonosítója:</td><td>Teszt id</td></tr>
+            <tr><td>Megjegyzés:</td><td>Ez egy teszt rendelés</td></tr>
+        </table>
+        <h2>Kiszállítási adatok</h2>
+        <form action="">
+            <fieldset disabled>
+
+                        <label>Cégnév
             <input name="company" type="text" value="Pikk Pakk Bt.">
         </label>
         <div class="account__address__row">
@@ -90,35 +114,11 @@
         <label>Cím
             <input name="address" type="text" value="Kozma utca 25. II/B">
         </label>
-        </fieldset>
-    </form>
-</div>
-<div class="account-card account__address">
-    <a class="account__address__delete" href="#">törlés</a>
-    <form>
-        <fieldset>
+            </fieldset>
+        </form>
 
-                    <label>Cégnév
-            <input name="company" type="text" value="Pikk Pakk Bt.">
-        </label>
-        <div class="account__address__row">
-            <label>Irányítószám
-                <input name="zip" type="text" value="1011">
-            </label>
-            <label>Ország
-                <input name="country" type="text" value="Magyarország">
-            </label>
-            <label>Város
-                <input name="city" type="text" value="Budapest">
-            </label>
-        </div>
-        <label>Cím
-            <input name="address" type="text" value="Kozma utca 25. II/B">
-        </label>
-        </fieldset>
-    </form>
+    </div>
 </div>
-<button class="account__address__add-button">Új cím hozzáadása</button>
 
         </div>
     </div>

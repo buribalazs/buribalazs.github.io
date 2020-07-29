@@ -369,6 +369,17 @@ form input {
     margin-bottom: 1.5rem;
     width: 100%;
 }
+form input[type="radio"] {
+    width: initial;
+    position: relative;
+    top:2px;
+    margin-bottom: 0;
+}
+form textarea {
+    width: 100%;
+    resize: none;
+    border: 1px solid lightgray;
+}
 form button {
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
@@ -1509,7 +1520,8 @@ a.webstore__brand__logo-link {
     background: red;
     color:white;
     border-radius: 3px;
-    padding: 7px 12px;
+    padding: 12px 12px;
+    font-size: 0.8rem;
     
 }
 .account-card {
@@ -1520,6 +1532,12 @@ a.webstore__brand__logo-link {
     margin: 2rem 0;
     box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.15);
     position: relative;
+}
+.account-card--nobg {
+    box-shadow: none;
+}
+.account-block {
+    margin: 2rem 0;
 }
 .account-card--big {
     padding: 2.3rem 2rem;
@@ -1532,6 +1550,15 @@ a.webstore__brand__logo-link {
 }
 .account__address form {
     max-width: 600px;
+}
+.address-actions {
+    display: flex;
+}
+.address-actions a {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: gray;
+    margin-left: 2rem;
 }
 .account__address input {
     display: block;
@@ -1559,6 +1586,28 @@ a.webstore__brand__logo-link {
     border:none;
     padding: 8px 14px;
     border-radius: 3px;
+}
+.account__info {
+    display: block;
+    margin-bottom: 1rem;
+    margin-top: -0.5rem;
+    max-width: 400px;
+    line-height: 1rem;
+    color: gray;
+}
+.cart__summary {
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+
+}
+.cart__summary td {
+    vertical-align: top;
+    border: none;
+    /* padding: 1rem 0.5rem 0.5rem 0; */
+    font-size: 0.8rem;
+}
+.cart__summary td:first-child{
+    white-space: nowrap;
 }
 @media (max-width:640px){
     .account-menu-button-wrap {
