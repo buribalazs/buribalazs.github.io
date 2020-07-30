@@ -369,7 +369,7 @@ form input {
     margin-bottom: 1.5rem;
     width: 100%;
 }
-form input[type="radio"] {
+form input[type="radio"], form input[type="checkbox"] {
     width: initial;
     position: relative;
     top:2px;
@@ -403,6 +403,20 @@ form button {
     font-weight: 700;
     padding:0.5rem 1rem;
     box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+}
+.btn--small {
+    padding: 0.2rem 0.4rem;
+    font-size: 0.8rem;
+}
+.btn-register {
+    border: none;
+    background: red;
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    font-weight: bolder;
 }
 form h3 {
     display: flex;
@@ -1608,6 +1622,17 @@ a.webstore__brand__logo-link {
 }
 .cart__summary td:first-child{
     white-space: nowrap;
+}
+.registration-header {
+    text-transform: uppercase;
+    margin-top: 2rem;
+}
+.account-card__header--withsubscript {
+    margin-bottom: 0;
+}
+.account-card__header--subscript {
+    display: block;
+    margin-bottom: 2rem;
 }
 @-webkit-keyframes addressesfadein {
     from {
