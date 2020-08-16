@@ -60,33 +60,41 @@ body.under-modal{
 .grid__hero {
     width: 100%;
     margin: -2rem 1rem 0 1rem;
-    padding: 4rem 2rem;
-    background: rgb(72,58,180);
-    background: linear-gradient(112deg, rgba(72,58,180,1) 0%, rgba(29,150,253,1) 35%, rgba(35,145,253,1) 63%, rgba(75,69,252,1) 100%);
-    /* min-height: 300px; */
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
 }
-.grid__hero h1 {
-    color:white;
-    font-size: 4rem;
-    max-width: 450px;
-    margin: 1rem 0;
-    line-height: 3.5rem;
-    letter-spacing: -0.2rem;
+.grid__hero__item {
+    flex: 33.3%;
+    position: relative;
 }
-.grid__hero__button {
-    background: rgb(32, 32, 32);
-    border: none;
+.grid__hero__item__text {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
     color:white;
-    font-weight: bolder;
-    font-size: 1.5rem;
-    padding: 0.5rem 2rem;
-    cursor: pointer;
-    /* border-radius: 0.5rem; */
-    box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.5);
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 1);
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.grid__hero__item__text h2 {
+    color: white;
+}
+.grid__hero__item img{
+    width: 100%;
+    height: 100%;
+    border-right:1px solid lightgray;
+    border-bottom:1px solid lightgray;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+@media(max-width:640px){
+    .grid__hero {
+        margin: -2rem 0 0 0;
+    }   
+    .grid__hero__item {
+        flex: 100%;
+        max-height: 128px;
+    }
 }
 .grid__item {
     box-sizing: border-box;
@@ -175,6 +183,12 @@ body.under-modal{
 }
 .text-page img {
     width: 100%;
+}
+.marginbottom {
+    margin-bottom: 1rem;
+}
+.marginleft--small {
+    margin-left: 0.5rem;
 }
 .modal {
     position: fixed;
@@ -754,6 +768,11 @@ footer {
 .product-card__header-text {
     width: calc(100% - 1.5rem);
 }
+.product-page__header-text {
+    font-size: 1.4rem;
+    display: block;
+    line-height: 1.6rem;
+}
 .product-card__remove-from-cart {
     position: absolute;
     right:1rem;
@@ -786,6 +805,9 @@ footer {
     display: flex;
     align-items: center;
     white-space: nowrap;
+}
+.product-page__toprow .product-card__row__cart {
+    align-items: initial;
 }
 .product-card__row__cart__inputs {
     display: flex;
@@ -878,6 +900,8 @@ footer {
 .breadcrumbs ul {
     padding: 0;
     margin:0;
+    margin-bottom: 0.5rem;
+    line-height: 1rem;
 }
 .breadcrumbs li {
     display: inline;
@@ -916,8 +940,9 @@ footer {
     line-height: 0.8rem;
 }
 .product-card__custom-name__pencil {
-    transform: scaleX(-1);
     display: inline-block;
+    text-decoration: underline;
+    font-size: 0.7rem;
 }
 .product-card__custom-name__save {
     display: none;
@@ -1035,6 +1060,56 @@ footer {
 .product-card__image {
     max-width: 80px;
 }
+.product-card .product-page__image {
+    margin-bottom: 0;
+    max-width: 250px;
+}
+.product-page__thumbs {
+    display: flex;
+    margin: 0.5rem 0;
+}
+.product-page__thumbs img {
+    margin: 0;
+    margin-right: 0.3rem;
+    max-width: 59px;
+    border: 1px solid lightgray;
+}
+.product-page__toprow {
+    flex-wrap: wrap;
+}
+.product-page__gallery {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.product-page__descriptionblock {
+    margin: 2rem 0;
+}
+.product-page__descriptionblock h2 {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.product-page__descriptionblock p {
+    font-size: 0.8rem;
+}
+@media (max-width:480px){
+    .product-card .product-page__gallery .product-page__image {
+        margin-right: 0;
+    }
+    .product-page__gallery {
+        align-items: center;
+    }
+}
+.product-page__toprow .product-card__infocol {
+    justify-content: initial;
+}
+.product-page__toprow .product-card__row__cart-wrap{
+    align-items: initial;
+    margin-left: initial;
+}
+.product-page__toprow .product-card__calculatorlink {
+    text-align: initial;
+}
 @media (max-width: 639px){
     .product-card {
         margin: 1rem 0;
@@ -1075,6 +1150,9 @@ footer {
         margin-right: 0;
         width:100%;
         text-align: right;
+    }
+    .product-page__toprow .product-card__row__cart__in-cart {
+        text-align: left;
     }
 }
 .product-card-simple {
@@ -1176,10 +1254,30 @@ a.webstore__brand__logo-link {
 .webstore__filter-container input[type="checkbox"] {
     margin-left: 0;
 }
-.webstore__fiter-second-row {
+.webstore__filter-full-row {
     flex: 1 1 100%;
     font-size: 13px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.webstore__filter-full-row.marginbottom {
+    margin-bottom: 1.5rem;
+}
+.webstore__filter-container .webstore__filter__toplabel {
+    flex-direction: column;
+    align-items: initial;
+    margin-right: 1rem;
     margin-top: 1rem;
+}
+.webstore__filter__toplabel select {
+    min-width: 100px;
+    width: 100%;
+}
+.webstore__filter__toplabel option {
+    padding: 0.3rem;
+}
+.webstore__filter__toplabel span {
+    font-weight: 600;
 }
 .webstore__filter-more {
     flex: 1 1 auto;
@@ -1298,6 +1396,18 @@ a.webstore__brand__logo-link {
 .webstore-menupagination__pages__page {
     flex: 0 0 115%;
 }
+.webstore__fiter__buttons {
+}
+.webstore__fiter__button {
+    border:1px solid lightgray;
+    border-bottom:2px solid lightgray;
+    background: white;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.2rem;
+}
+.webstore__fiter__button--active {
+    border-bottom: 2px solid red;
+}
 @media (max-width: 639px) {
     .search-button-webstore-filter {
         display: block;
@@ -1308,6 +1418,10 @@ a.webstore__brand__logo-link {
     .webstore__filter-more {
         flex-basis: 100%;
         text-align: left;
+    }
+    .webstore__filter-container .webstore__filter__toplabel {
+        margin-right: 0;
+        flex:  calc(50% - 0.5rem);
     }
 
     @-webkit-keyframes filters-container-open {
@@ -1341,6 +1455,9 @@ a.webstore__brand__logo-link {
     .webstore__filter-container--active > * {
         flex: 1 1 40%;
         margin: 0.2rem 0.5rem;
+    }
+    .webstore__filter-container--active .webstore__filter-full-row {
+        flex: 1 1 100%;
     }
     .webstore-menupagination {
         margin-top: 2rem;
@@ -1379,6 +1496,10 @@ a.webstore__brand__logo-link {
     text-transform: uppercase;
     font-size: 0.8rem;
     font-weight: bolder;
+}
+.pricecalculator__customid {
+    display: block;
+    margin-bottom: 1rem;
 }
 .pricecalculator__input-container label input {
     border: 1px solid lightgray;

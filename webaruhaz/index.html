@@ -121,6 +121,62 @@
         </a>
     </div>
     <div id="filters" class="webstore__filter-container">
+        <div class="webstore__filter-full-row">
+            <div class="webstore__fiter__buttons">
+                <button class="webstore__fiter__button">Paraméter 1</button>
+                <button class="webstore__fiter__button">Fontos Paraméter</button>
+                <button class="webstore__fiter__button">Speciális</button>
+                <button class="webstore__fiter__button webstore__fiter__button--active">Erős</button>
+            </div>
+        </div>
+        <div class="webstore__filter-full-row marginbottom">
+            <label class="webstore__filter__toplabel">
+                <span>Keresősegéd</span>
+                <select size="5">
+                    <option value="0">-</option>
+                    <option value="402">Fix fesz.</option>
+                    <option value="403">Változ. fesz.</option>
+                    <option value="835">Pozitiv</option>
+                    <option value="834">Negativ</option>
+                    <option value="407">TO-220</option>
+                    <option value="410">TO-220/5</option>
+                    <option value="408">TO-92</option>
+                    <option value="409">TO-3</option>
+                    <option value="820">DIP-8</option>
+                    <option value="821">DIP-16</option>
+                    <option value="411">Egyéb tokozás</option>
+                </select>
+            </label>
+            <label class="webstore__filter__toplabel">
+                <span>Érték</span>
+                <select size="5">
+                    <option value="0">-</option>
+                    <option value="402">0 - 100</option>
+                    <option value="403">101 - 20000</option>
+                    <option value="835">21000 - 200000</option>
+                </select>
+            </label>
+            <label class="webstore__filter__toplabel">
+                <span>Tulajdonság 2</span>
+                <select size="5">
+                    <option value="0">-</option>
+                    <option value="402">10</option>
+                    <option value="403">50</option>
+                    <option value="835">100</option>
+                    <option value="835">200</option>
+                </select>
+            </label>
+            <label class="webstore__filter__toplabel">
+                <span>Tulajdonság 3</span>
+                <select size="5">
+                    <option value="0">-</option>
+                    <option value="402">10-20</option>
+                    <option value="403">21-200</option>
+                    <option value="835">200-500</option>
+                    <option value="835">500-1000</option>
+                </select>
+            </label>
+        </div>
         <select name="money" id="">
             <option value="HUF">HUF</option>
             <option value="EUR">EUR</option>
@@ -139,66 +195,28 @@
             <input id="check-discount" type="checkbox" class="type">
             Leértékeltek
         </label>
+        <label for="check-discount">
+            <select id="itemsperpage">
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="50">50</option>
+            </select>
+            <span class="marginleft--small">
+                tétel / oldal
+            </span>
+        </label>
+        <label for="check-discount">
+            <select id="itemsperpage">
+                <option value="1">1 / 3</option>
+                <option value="2">2 / 3</option>
+                <option value="3">3 / 3</option>
+            </select>
+            <span class="marginleft--small">
+                oldal
+            </span>
+        </label>
         <!-- <a href="#" id="filter-more-button" class="webstore__filter-more">Részletes szűrő</a> -->
-        <div class="webstore__fiter-second-row"></div>
-        <!-- <div id="advanced-filters" class="webstore__advanced-filters">
-            <div class="row row--wrap">
-                <div class="row__item">
-                    <label class="range-input-container">
-                        Ellenállás (Ohm)
-                        <div class="range-input" data-min="3" data-max="1000" draggable="false">
-                            <div class="range-input__bg" draggable="false"></div>
-                            <div class="range-input__knob range-input__left-knob" draggable="false"></div>
-                            <div class="range-input__knob range-input__right-knob" draggable="false"></div>
-                            <div class="range-input__label range-input__left-label" draggable="false"></div>
-                            <div class="range-input__label range-input__right-label" draggable="false"></div>
-                        </div>
-                    </label>
-                    <br>
-                    <label class="range-input-container">
-                        Jóság (Jó)
-                        <div class="range-input" data-min="6" data-max="100" draggable="false">
-                            <div class="range-input__bg" draggable="false"></div>
-                            <div class="range-input__knob range-input__left-knob" draggable="false"></div>
-                            <div class="range-input__knob range-input__right-knob" draggable="false"></div>
-                            <div class="range-input__label range-input__left-label" draggable="false"></div>
-                            <div class="range-input__label range-input__right-label" draggable="false"></div>
-                        </div>
-                    </label>
-                </div>
-                <div class="row__item">
-                    <label class="range-input-container">
-                        Ellenállás (Ohm)
-                        <div class="range-input" data-min="3" data-max="1000" draggable="false">
-                            <div class="range-input__bg" draggable="false"></div>
-                            <div class="range-input__knob range-input__left-knob" draggable="false"></div>
-                            <div class="range-input__knob range-input__right-knob" draggable="false"></div>
-                            <div class="range-input__label range-input__left-label" draggable="false"></div>
-                            <div class="range-input__label range-input__right-label" draggable="false"></div>
-                        </div>
-                    </label>
-                    <br>
-                    <label class="range-input-container">
-                        Jóság (Jó)
-                        <div class="range-input" data-min="6" data-max="100" draggable="false">
-                            <div class="range-input__bg" draggable="false"></div>
-                            <div class="range-input__knob range-input__left-knob" draggable="false"></div>
-                            <div class="range-input__knob range-input__right-knob" draggable="false"></div>
-                            <div class="range-input__label range-input__left-label" draggable="false"></div>
-                            <div class="range-input__label range-input__right-label" draggable="false"></div>
-                        </div>
-                    </label>
-                </div>
-                <div class="row__item">
-                    <label class="advanced-filter__label">Típus
-                        <select>
-                            <option value="">Listaelem A</option>
-                            <option value="">Listaelem B</option>
-                        </select>
-                    </label>
-                </div>
-            </div>
-        </div> -->
+        
     </div>
 </header>
 <main>
@@ -338,544 +356,6 @@
                                     
                                     <li class="tree-icon tree-icon--active">Egyéb (1)</li>
                                     
-                                    <li class="tree-icon tree-icon--active">Egyéb dióda SMD (19)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Egyéb érzékelő (35)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Egyéb Integrált ák. (179)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Egyéb integrált ák. SMD (299)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Egyéb kapcsoló (60)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Egyéb relé (11)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Egyéb termék (gyűjtőcsoport) (297)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Egyéb tranzisztor (7)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Egyéb tranzisztor SMD (20)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Egyenirányító dióda (118)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Egyenirányító dióda SMD (57)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Elektrolit kond. (gyűjtő) (720)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Elektrolit kond. (gyűjtő) SMD (216)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Elektrolit kondenzátor ALU (598)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Elektrolit kondenzátor ALU SMD (80)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Elem (50)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Elem, akku, táp (gyűjtőcsoport) (306)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Elemtartó (40)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Elfordulás érzékelő (20)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Ellenállás ( gyűjtő.) fix (1760)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Ellenállás ( gyűjtő.) fix SMD (7365)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Ellenállás ( gyűjtő.) fur.szer. (2533)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Ellenállás ( gyűjtő.) SMD (7428)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Ellenállás ( gyűjtőcsoport) (9961)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Ellenállás SMD 1% (4944)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Ellenállás SMD 5% (2235)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Érintkező (45)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Erő(force) érzékelő (2)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Érvéghüvely (61)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Érzékelő (gyűjtőcsoport) (408)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">ESD suppressor (7)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Eurodin csatlakozó (24)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Fémoxidréteg ellenállás (495)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Fémréteg ellenállás (966)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Ferrite Bead (1)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Ferrite Chip Bead SMD (48)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Feszültség szabályzó IC (255)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Feszültség szabályzó IC SMD (260)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Feszültségfüggő ellenállás (134)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Fólia kondenzátor (351)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Fólia kondenzátor SMD (13)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Folyadékszint érzékelő (19)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Forrasztóanyag (39)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Fotoelektromos érzékelő (33)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Gáztöltésű túlfesz. levezető (22)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Goldcap kondenzátor (11)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Hajó navigációs fény LED (5)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Hálóellenállás (67)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Hálóellenállás SMD (186)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Hálózati csatlakozó (29)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Hálózati transzformátor (752)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Hangsugárzó (105)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Ház (114)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Hőbiztosíték (19)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Hőkapcsoló (2)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Hőmérséklet érzékelő (41)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">HTS csatlakozó (305)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Hűtőborda (85)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Hüvelysor (101)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Huzalellenállás (197)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">IC foglalat (53)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Időrelé (23)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">IGBT tranzisztor (65)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Induktív illesztők, szűrők SMD (14)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Induktív illesztők,szűrők (3)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Induktivitás (156)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Induktivitás (gyűjtő.) fur.szer. (160)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Induktivitás (gyűjtő.) SMD (401)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Induktivitás (gyűjtőcsoport) (570)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Induktivitás SMD (348)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Infra adó,vevő eszköz (66)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Infra adó,vevő eszköz SMD (15)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Integrált ák.(gyűjtő.) fur.szer. (1291)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Integrált ák.(gyűjtő.) SMD (2100)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Integrált áramkör (gyűjtő.) (3684)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Inverterek DC/AC (4)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Ipari csatlakozó (gyűjtőcsoport) (321)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Jelzőizzó (39)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Jumper (11)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Kábel,vezeték (95)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Kábelrögzítő (65)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Kábelsaru (311)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Kapcsoló (gyűjtőcsoport) (776)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Kapcsoló dióda (10)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Kapcsoló dióda SMD (59)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Kapcsoló tartozékok (45)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Kártyacsatlakozó (11)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Kerámia kondenzátor (160)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Kerámia kondenzátor SMD (1330)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Kerámia szűrő (14)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Kerámia szűrő SMD (1)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Kétszínű SMD LED (10)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Kimenő transzfor. elektroncsőhöz (8)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Kondenzátor (gyűjtő.) fur.szer. (1276)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Kondenzátor (gyűjtőcsoport) (2835)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Kondenzátor (gyűjtőcsoport) SMD (1559)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Kontroller IC (37)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Kontroller IC SMD (30)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Konverter IC (49)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Konverter IC SMD (56)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Konverterek AC/AC (7)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Konverterek DC/DC (5)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Körcsatlakozó (18)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Közelítés érzékelő (71)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Kvarc (gyűjtő.) fur.szer. (144)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Kvarc (gyűjtő.) SMD (73)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Kvarc (gyűjtőcsoport) (217)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Kvarc oszcillátor (22)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Kvarc oszcillátor SMD (13)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Kvarc rezgőkristály (94)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Kvarc rezgőkristály SMD (50)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Laser modul (1)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">LCD kijelző (58)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Led dióda (537)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Led dióda SMD (250)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Led kijelző (367)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Led kijelző SMD (28)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">LED modul (9)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">LED szalag (19)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">LED szalag tartozék (17)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">LED szalag vezeték (2)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Lineár IC audió (35)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Lineár IC audió SMD (26)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Locking clip (32)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Logikai IC ( gyűjtő.) fur.szer. (561)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Logikai IC ( gyűjtő.) SMD (797)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Logikai IC - ECL áramk. (42)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Logikai IC - ECL áramk. SMD (39)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Logikai IC 4000-széria (102)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Logikai IC 4000-széria SMD (150)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Logikai IC 74-széria (417)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Logikai IC 74-széria SMD (608)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Mágnestér érzékelő (HALL) (30)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Magnetikus érzékelő (12)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Más egyéb (7)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Meghajtó IC (156)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Meghajtó IC SMD (207)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Memória IC (70)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Memória IC SMD (113)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Mérőcsatlakozók (68)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Metrikus csavar (23)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Micro-Match (3)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Mikro-végállás kapcsoló (263)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Mikrocontr.,mikroproc. IC (35)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Mikrocontr.,mikroproc.IC SMD (76)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Mikrofonbetét (9)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Modul (9)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Modular contact (10)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Motorindító kondenzátor (31)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Műszerdoboz (gyűjtőcsoport) (358)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Műszerdoboz ALU (97)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Műszerdoboz műanyag (229)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Műszerdoboz tartozék (25)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Műveleti erősítő IC (164)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Műveleti erősítő IC SMD (167)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Nemlineáris ellenállás (161)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">NTC ellenállás (23)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Nyáklemez (31)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Nyomás érzékelő (96)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Nyomó kapcsoló (119)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Olvadóbiztosíték (248)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Optocsatoló (154)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Optocsatoló SMD (59)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Optoelektronika (gyűjtő.) SMD (401)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Optoelektronika (gyűjtő.)fur.sze (1245)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Optoelektronika (gyűjtőcsop.) (1646)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Páratartalom érzékelő (5)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Polyfuse, Multifuse (77)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Potenciométer (261)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Power LED (72)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Próbapanel (21)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Programozható logikai IC (26)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Programozható logikai IC SMD (47)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Programozható UJT (PUT) (1)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">PTC ellenállás (4)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Reed kapcsoló mágnes (7)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Reed relé (88)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Referencia áramkör IC (28)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Referencia áramkör IC SMD (32)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Relé (gyűjtőcsoport) (589)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Relé elektromechanikus (352)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Relé foglalat (38)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Rezonátor (10)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Rezonátor SMD (9)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">RF csatlakozó (110)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">RGB SMD LED (13)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Schottky dióda (64)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Schottky dióda SMD (123)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Sidac (2)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Side clip (71)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Sorkapocs (230)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Stab.táp (142)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Superseal csatlakozó (21)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Suppressor dióda (95)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Suppressor dióda SMD (356)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Szalagkábel csatlakozó (97)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Száloptikai eszköz (41)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Szénréteg ellenállás (35)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Szerszám (8)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Szerszám, műszer (82)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Szigetelőcső (210)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Szilárdtest relé (79)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Tact kapcsoló (100)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Tantál kondenzátor (111)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Tantál kondenzátor SMD (136)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Tápcsatlakozó (gyűjtőcsoport) (557)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Tápcsatlakozó 1.00mm (14)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Tápcsatlakozó 1.25mm (34)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Tápcsatlakozó 2.00mm (38)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Tápcsatlakozó 2.50mm (25)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Tápcsatlakozó 2.54mm (128)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Tápcsatlakozó 3.00mm (63)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Tápcsatlakozó 3.96mm (97)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Tápcsatlakozó 4.20mm (Min iFit) (72)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Tápcsatlakozó 4.50mm (12)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Tápcsatlakozó 5.08mm (15)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Tápcsatlakozó 6.20mm (10)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Tápcsatlakozó 6.35mm (37)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Tápcsatlakozó adapterhez (44)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Tápegység (206)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Tápegység kiegészítők (9)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Tápegység, adapter (206)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Tápegységek (169)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Távtartó (54)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Telefon csatlakozó (69)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Tirisztor (SCR) (35)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Tirisztor SMD (6)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Tömszelence (25)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Transiens suppressor (451)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Transzformátor (gyűjtőcsoport) (760)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Tranzisztor (gyűjtő.) fur.szer. (856)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Tranzisztor (gyűjtő.) SMD (484)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Tranzisztor (gyűjtőcsoport) (1340)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Tranzisztor bipoláris (454)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Tranzisztor bipoláris SMD (210)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Tranzisztor FET N-csatornás (275)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Tranzisztor FET N-csatornás SMD (180)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Tranzisztor FET P-csatornás (42)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Tranzisztor FET P-csatornás SMD (74)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Tranzisztor NPN (292)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Tranzisztor NPN SMD (131)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Tranzisztor PNP (162)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Tranzisztor PNP SMD (84)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Tranzisztor tartozékok (12)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Tranzisztor(FET)térvezérlésű (318)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Tranzisztor(FET)térvezérlésű SMD (263)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Triad csatlakozó (16)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Triak (73)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Triak SMD (5)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Trimmer ellenállás (512)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Trimmer ellenállás SMD (63)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Trimmer kondenzátor (3)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Trimmer kondenzátor SMD (6)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Tüskesor (87)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">USB csatlakozó (35)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Változtatható ellenáll. (gyűjtő) (773)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Varisztor (134)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Vasmag (72)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Vegyi termékek (41)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Ventilátor (88)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Ventilátor rács (9)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Vezérelt egyenirányító (106)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Vezérelt egyenirányító (gyűjtő) (120)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Vezérelt egyenirányító SMD (5)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Világítás (gyűjtőcsoport) (69)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Villanócső (1)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Zéner dióda furatszerelt (132)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Zéner dióda SMD (158)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Zsugorcső (185)</li>
-                                    
                                 </ul>
                             </div>
                             <div class="webstore-menupagination__pages__page" data-header="Gyártók">
@@ -975,468 +455,6 @@
                                     
                                     <li class="tree-icon tree-icon--active">Egyéb gyártó (FEM)</li>
                                     
-                                    <li class="tree-icon tree-icon--active">EKULIT GmbH (EKM)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Electronic Relay (India) Pvt. Ltd (ERI)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">ELNA Co.,Ltd. (ELN)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">EPCOS (EPC)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Epson Toyocom (EPS)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Everel Group S.p.A. (EVL)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Everlight Electronics Co.,Ltd. (EVE)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Fair-Rite Products Corp (FRT)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Fairchild Semiconductor (FAI)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">FCI Electronics (FCI)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Fenghua (FNG)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Feryster (FRY)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Foryard Optoelectronics Co., (FYL)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">FOX Electronics (FOX)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Fractus,S.A. (FRA)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Freescale Semiconductor (FRS)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Frontier Electronics Corp. (FRE)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Fujitsu Componenet Limited (FUJ)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Fujitsu Takamisawa (TAK)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Future Technology Devices International Ltd. (FTD)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">G.Luxon (LUX)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Gainta Industries Ltd. (GAI)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">General Electric (GE)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Gold Star Connectors Co.,Ltd (G-S)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Hahn (HAH)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Hamlin (HAM)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Harris Semiconductor (HAR)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Hewlett Packard (HP)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Heyco (HEY)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Highly (HLY)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Hitachi (HIT)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Hitano Enterprise Corp. (HTN)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Hittite Microwave Corporation (HMC)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Honeywell (HWL)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Hongli Tronic (HON)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Hope Microelectronics Co. LTD (HRF)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Hosiden (HOS)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Huey Jann Electronics Ind.Co. (HYA)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Hynix (HYN)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Indel (IND)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Infineon Technologies (INF)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Integrated Device Technology Inc. (IDT)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Integrated Silicon Solution Inc. (ISS)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Intel Corporation (INT)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Intermos (INM)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Interrnational Rectifier (IR)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Intersil (INC)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">IQD Frequency Product Ltd. (IQD)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Iskra (ISK)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">ITT Industries (ITT)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">IXYS (IXY)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Jamicon (JAM)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Jauch Quartz GmbH. (JAU)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Jenjaan Quartek Corp. (NSK)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">JST Corporation (JST)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Kaschke KG.GmbH&amp;Co. (KAS)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">KDS Daishinku Corps. (KDS)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Kemet (KEM)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Kepo (KEP)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Kingbright (KIN)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Kingtronics International (KIC)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Knitter-Switch (KNI)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">KOA (KOA)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Kőporc (KPR)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Korea Electronics Co Ltd (KEC)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Kyocera (KYO)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Lattice (LAT)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Lelon (LEL)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">LianSheng Electronic Co.,Ltd. (LSE)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Linear Technology (LTC)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Linfinity (LIN)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Lite-On Technology Corp. (LTO)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Littelfuse (LFS)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Lucky Gold Star (LGS)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Luxeon (LLE)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Macronix Internacional Co. (MAC)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Magnetics (MAG)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Makrai Elektronik (ME)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Marquadt (MAR)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Maxim Integrated Products (MAX)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Mean Well (MW)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Meder Electronic (MDR)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Micrel (MCL)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Micro Analog Systems (MAS)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Microchip (MCH)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Micrometalls (MCM)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Micron (MIC)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Mikroelektronikai Vállalat (MEV)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Mini-Circuits (MCI)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Mitsubishi Electric (MIT)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Molex (MOL)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Monolithic Memories Inc. (MMI)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Monolithic Power Systems Inc. (MPS)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Motorola (MOT)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Murata (MUR)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Nais Matsushita Electric (NAI)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">National Semiconductor (NSC)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">NEC Electronics Inc. (NEC)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">NEC Tokin (TKN)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Neltron Idustrial Co.,Ltd. (NTR)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Nic Components.Corp. (NCC)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Nichicon (NIC)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Nihon Dempa Kogyo Co.,Ltd (NDK)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Nippon Chemi-Con (NIP)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Novatek (NVT)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Numonix (NUM)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">NVE Corp. (NVE)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">NXP Semiconductor (NXP)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Ohmite (OHM)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">OKI Semiconductor (OKI)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Ole Wolff Electronics (OWF)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Omron (OMR)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">ON Semiconductor (ONS)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">OPTEK (OPT)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Osram Opto Semiconductor (OSR)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Panasonic (PAN)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Panjit Semiconductor (PJT)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Pericom (PER)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Philips Passive Components (PCH)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Philips Semiconductors (PHI)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Phycomp (PHY)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Piher (PIH)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Power Integrations Inc. (PWR)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Preci-Dip (PRE)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Preh (PRH)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">PTR Messtechnik (PTR)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Pulse A Technitrol Company (PUL)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Qimonda (QIM)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Quality Technology (QTC)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Rakon (RAK)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Ramtron (RAM)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Rayex (RAY)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Raystar (RST)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Realtek (RLT)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">RECOM (REC)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Remix (REM)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Renesas (REN)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">RFMD (RFM)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Ricoh Company (RIC)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Rifa (RIF)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Roederstein (ROE)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">ROHM (ROH)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Rubycon (RUB)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Samsung (SAM)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Samwha (SHA)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Samyoung (SAY)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Sanyo (SAN)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Schaffner (SFR)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Schurter (SCH)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Scott (SCO)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Secme (SEC)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Seiko Epson (SEI)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Semikron (SEM)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Semtech (STC)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Sharp (SHP)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Shiny-Space (S-S)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">SIBA GmbH. (SIB)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Siemens (SIE)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Signal-Lux (SLX)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Silicon Labs (SLA)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Sino-American Electronics.Co.,Ltd. (SAC)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Sirenza (SIR)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Siward (SIW)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Sony (SNY)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Sony Ericsson (SER)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Spansion (SPA)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">SPC-Multicomp (SPC)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Spectrol (SPE)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Sprague (SPR)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Stackpole Electronics Inc. (STP)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Stanley (STY)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Stelvio (STE)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">STMicroelectronic (STM)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Sumida (SUM)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Sunlord (SLD)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Sunon (SUN)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Supertex (STX)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Supertronic (SUP)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Suzhou Xusheng Electronic Co. (JTE)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Syfer Technology Ltd. (SYF)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">T&amp;T Connection System Co.,Ltd. (T-T)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">TA-I Technology Co.,Ltd. (TIT)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Taiwan Semicon (TSC)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Taiyo Yuden (T-Y)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Talema (TAL)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">TDK (TDK)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Teapo Electronic Corp. (TEA)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Tele Quartz Group Crystal (TLQ)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Temic (TEM)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Tesla (TES)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Texas Instruments (TI)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">THine (THI)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Tianli (TLM)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Toshiba (TOS)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Transcom (TRA)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Triquint Semiconductor (TRQ)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Triwoods Holding Ltd. (THL)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Tronser Trimmer (TRO)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Trxcom Electronic Co. (TRX)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Tungsram (TUN)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">TXC Corporation (TXC)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Tyco Electronic Corp. (TYC)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Uchiya (UCH)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">United MicroelectronicCorp. (UMC)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Upec (UEC)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Vacuuschmelze GmbH. (VAC)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Viking Tech Corp. (VIK)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Viking Tech Corp. (TCL)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Vishay (VIS)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Vishay Beyschlag (BEY)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">VLSI Solution (VLS)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">W.Günther (GÜN)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Walsin (WAL)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Weller Cooper Hand Tools (CHT)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Wickmann (WIC)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Wima (WIM)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Winbond (WIN)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Woer (WOE)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Wolf (WLF)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Wolfson Microelectronics (WOL)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Würth Elektronik (WÜR)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Xilinx (XIL)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Yageo Corp. (YAG)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Yamatake (YAM)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Yangjie Electronic Technology (YET)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">YOLDAL (YOL)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Zarlink Semiconductor (ZRL)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Zentrum Mikroelektronic Dresden Ag. (ZMD)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Zetex Semiconductors (ZTX)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Zilog (ZIL)</li>
-                                    
-                                    <li class="tree-icon tree-icon--active">Zippy (ZIP)</li>
-                                    
                                 </ul>
                             </div>
                         </div>
@@ -1463,17 +481,19 @@
             </a></li>
         </ul>
     </div>
-    <header><div class="product-card__header-text">1.1A 16V 1812L110/16DR POLYFUSE SMD 1812 (LFS) ˝LF110-16˝ <strong>[ 44-02-36 ]</strong></div>
+    <header><a href="/webaruhaz/product/" class="product-card__header-text">1.1A 16V 1812L110/16DR POLYFUSE SMD 1812 (LFS) ˝LF110-16˝ <strong>[ 44-02-36 ]</strong></a>
         <div class="product-card__custom-name">
             <input placeholder="Egyedi termékazonosító" class="product-card__custom-name__input" type="text">
             <span class="product-card__custom-name__label"></span>
-            <a class="product-card__custom-name__pencil" href="">✎</a>
+            <a class="product-card__custom-name__pencil" href="">egyedi termékazonosító</a>
             <a class="product-card__custom-name__save" href="">✓</a>
         </div>
     </header>
     <div class="product-card__row">
         <div class="product-card__left-third">
-            <img class="product-card__image" src="/static/img/product/fuse1.jpg">
+            <a href="/webaruhaz/product/">
+                <img class="product-card__image" src="/static/img/product/fuse1.jpg">
+            </a>
             <div class="product-card__infocol">
                 <div class="product-card__row__packinfo">
                     <div><span>Csomagolási egység: </span><strong>1500 db</strong>
@@ -1548,17 +568,19 @@
             </a></li>
         </ul>
     </div>
-    <header><div class="product-card__header-text">1.1A 30V 30R110UU POLYFUSE 7.4x7.4mm (LFS) <strong>[ 44-02-36 ]</strong></div>
+    <header><a href="/webaruhaz/product/" class="product-card__header-text">1.1A 30V 30R110UU POLYFUSE 7.4x7.4mm (LFS) <strong>[ 44-02-36 ]</strong></a>
         <div class="product-card__custom-name">
             <input placeholder="Egyedi termékazonosító" class="product-card__custom-name__input" type="text">
             <span class="product-card__custom-name__label"></span>
-            <a class="product-card__custom-name__pencil" href="">✎</a>
+            <a class="product-card__custom-name__pencil" href="">egyedi termékazonosító</a>
             <a class="product-card__custom-name__save" href="">✓</a>
         </div>
     </header>
     <div class="product-card__row">
         <div class="product-card__left-third">
-            <img class="product-card__image" src="/static/img/product/fuse2.jpg">
+            <a href="/webaruhaz/product/">
+                <img class="product-card__image" src="/static/img/product/fuse2.jpg">
+            </a>
             <div class="product-card__infocol">
                 <div class="product-card__row__packinfo">
                     <div><span>Csomagolási egység: </span><strong>1500 db</strong>
@@ -1627,17 +649,19 @@
             </a></li>
         </ul>
     </div>
-    <header><div class="product-card__header-text">SZERSZÁM FOGÓ  HT-236N RoHS KRIMPELŐ FOGÓ SZIGETELETLEN SZEMES SARUHOZ AWG20-18;16-14;12-10;8  DIN1.5/2.5/6/10mm2  JIS 1.25/2.0/5.5/8 mm2 (NON-INSULATED TERMINAL) RACSNIS</div>
+    <header><a href="/webaruhaz/product/" class="product-card__header-text">SZERSZÁM FOGÓ  HT-236N RoHS KRIMPELŐ FOGÓ SZIGETELETLEN SZEMES SARUHOZ AWG20-18;16-14;12-10;8  DIN1.5/2.5/6/10mm2  JIS 1.25/2.0/5.5/8 mm2 (NON-INSULATED TERMINAL) RACSNIS</a>
         <div class="product-card__custom-name">
             <input placeholder="Egyedi termékazonosító" class="product-card__custom-name__input" type="text">
             <span class="product-card__custom-name__label"></span>
-            <a class="product-card__custom-name__pencil" href="">✎</a>
+            <a class="product-card__custom-name__pencil" href="">egyedi termékazonosító</a>
             <a class="product-card__custom-name__save" href="">✓</a>
         </div>
     </header>
     <div class="product-card__row">
         <div class="product-card__left-third">
-            <img class="product-card__image" src="/static/img/product/fuse3.jpg">
+            <a href="/webaruhaz/product/">
+                <img class="product-card__image" src="/static/img/product/fuse3.jpg">
+            </a>
             <div class="product-card__infocol">
                 <div class="product-card__row__packinfo">
                     <div><span>Csomagolási egység: </span><strong>1500 db</strong>
@@ -1709,17 +733,19 @@
             </a></li>
         </ul>
     </div>
-    <header><div class="product-card__header-text">1.1A 33V 1812L110/33MR POLYFUSE SMD 1812 (LFS) ˝LF110-33˝ <strong>[ 44-02-36 ]</strong></div>
+    <header><a href="/webaruhaz/product/" class="product-card__header-text">1.1A 33V 1812L110/33MR POLYFUSE SMD 1812 (LFS) ˝LF110-33˝ <strong>[ 44-02-36 ]</strong></a>
         <div class="product-card__custom-name">
             <input placeholder="Egyedi termékazonosító" class="product-card__custom-name__input" type="text">
             <span class="product-card__custom-name__label"></span>
-            <a class="product-card__custom-name__pencil" href="">✎</a>
+            <a class="product-card__custom-name__pencil" href="">egyedi termékazonosító</a>
             <a class="product-card__custom-name__save" href="">✓</a>
         </div>
     </header>
     <div class="product-card__row">
         <div class="product-card__left-third">
-            <img class="product-card__image" src="/static/img/product/fuse4.jpg">
+            <a href="/webaruhaz/product/">
+                <img class="product-card__image" src="/static/img/product/fuse4.jpg">
+            </a>
             <div class="product-card__infocol">
                 <div class="product-card__row__packinfo">
                     <div><span>Csomagolási egység: </span><strong>1500 db</strong>
@@ -1801,17 +827,19 @@
             </a></li>
         </ul>
     </div>
-    <header><div class="product-card__header-text">SZERSZÁM FOGÓ  HT-236N RoHS KRIMPELŐ FOGÓ SZIGETELETLEN SZEMES SARUHOZ AWG20-18;16-14;12-10;8  DIN1.5/2.5/6/10mm2  JIS 1.25/2.0/5.5/8 mm2 (NON-INSULATED TERMINAL) RACSNIS</div>
+    <header><a href="/webaruhaz/product/" class="product-card__header-text">SZERSZÁM FOGÓ  HT-236N RoHS KRIMPELŐ FOGÓ SZIGETELETLEN SZEMES SARUHOZ AWG20-18;16-14;12-10;8  DIN1.5/2.5/6/10mm2  JIS 1.25/2.0/5.5/8 mm2 (NON-INSULATED TERMINAL) RACSNIS</a>
         <div class="product-card__custom-name">
             <input placeholder="Egyedi termékazonosító" class="product-card__custom-name__input" type="text">
             <span class="product-card__custom-name__label"></span>
-            <a class="product-card__custom-name__pencil" href="">✎</a>
+            <a class="product-card__custom-name__pencil" href="">egyedi termékazonosító</a>
             <a class="product-card__custom-name__save" href="">✓</a>
         </div>
     </header>
     <div class="product-card__row">
         <div class="product-card__left-third">
-            <img class="product-card__image" src="/static/img/product/fuse3.jpg">
+            <a href="/webaruhaz/product/">
+                <img class="product-card__image" src="/static/img/product/fuse3.jpg">
+            </a>
             <div class="product-card__infocol">
                 <div class="product-card__row__packinfo">
                     <div><span>Csomagolási egység: </span><strong>1500 db</strong>
@@ -1883,17 +911,19 @@
             </a></li>
         </ul>
     </div>
-    <header><div class="product-card__header-text">1.1A 33V 1812L110/33MR POLYFUSE SMD 1812 (LFS) ˝LF110-33˝ <strong>[ 44-02-36 ]</strong></div>
+    <header><a href="/webaruhaz/product/" class="product-card__header-text">1.1A 33V 1812L110/33MR POLYFUSE SMD 1812 (LFS) ˝LF110-33˝ <strong>[ 44-02-36 ]</strong></a>
         <div class="product-card__custom-name">
             <input placeholder="Egyedi termékazonosító" class="product-card__custom-name__input" type="text">
             <span class="product-card__custom-name__label"></span>
-            <a class="product-card__custom-name__pencil" href="">✎</a>
+            <a class="product-card__custom-name__pencil" href="">egyedi termékazonosító</a>
             <a class="product-card__custom-name__save" href="">✓</a>
         </div>
     </header>
     <div class="product-card__row">
         <div class="product-card__left-third">
-            <img class="product-card__image" src="/static/img/product/fuse4.jpg">
+            <a href="/webaruhaz/product/">
+                <img class="product-card__image" src="/static/img/product/fuse4.jpg">
+            </a>
             <div class="product-card__infocol">
                 <div class="product-card__row__packinfo">
                     <div><span>Csomagolási egység: </span><strong>1500 db</strong>
@@ -1975,17 +1005,19 @@
             </a></li>
         </ul>
     </div>
-    <header><div class="product-card__header-text">1.1A 33V 1812L110/33MR POLYFUSE SMD 1812 (LFS) ˝LF110-33˝ <strong>[ 44-02-36 ]</strong></div>
+    <header><a href="/webaruhaz/product/" class="product-card__header-text">1.1A 33V 1812L110/33MR POLYFUSE SMD 1812 (LFS) ˝LF110-33˝ <strong>[ 44-02-36 ]</strong></a>
         <div class="product-card__custom-name">
             <input placeholder="Egyedi termékazonosító" class="product-card__custom-name__input" type="text">
             <span class="product-card__custom-name__label"></span>
-            <a class="product-card__custom-name__pencil" href="">✎</a>
+            <a class="product-card__custom-name__pencil" href="">egyedi termékazonosító</a>
             <a class="product-card__custom-name__save" href="">✓</a>
         </div>
     </header>
     <div class="product-card__row">
         <div class="product-card__left-third">
-            <img class="product-card__image" src="/static/img/product/fuse4.jpg">
+            <a href="/webaruhaz/product/">
+                <img class="product-card__image" src="/static/img/product/fuse4.jpg">
+            </a>
             <div class="product-card__infocol">
                 <div class="product-card__row__packinfo">
                     <div><span>Csomagolási egység: </span><strong>1500 db</strong>
@@ -2067,17 +1099,19 @@
             </a></li>
         </ul>
     </div>
-    <header><div class="product-card__header-text">1.1A 33V 1812L110/33MR POLYFUSE SMD 1812 (LFS) ˝LF110-33˝ <strong>[ 44-02-36 ]</strong></div>
+    <header><a href="/webaruhaz/product/" class="product-card__header-text">1.1A 33V 1812L110/33MR POLYFUSE SMD 1812 (LFS) ˝LF110-33˝ <strong>[ 44-02-36 ]</strong></a>
         <div class="product-card__custom-name">
             <input placeholder="Egyedi termékazonosító" class="product-card__custom-name__input" type="text">
             <span class="product-card__custom-name__label"></span>
-            <a class="product-card__custom-name__pencil" href="">✎</a>
+            <a class="product-card__custom-name__pencil" href="">egyedi termékazonosító</a>
             <a class="product-card__custom-name__save" href="">✓</a>
         </div>
     </header>
     <div class="product-card__row">
         <div class="product-card__left-third">
-            <img class="product-card__image" src="/static/img/product/fuse4.jpg">
+            <a href="/webaruhaz/product/">
+                <img class="product-card__image" src="/static/img/product/fuse4.jpg">
+            </a>
             <div class="product-card__infocol">
                 <div class="product-card__row__packinfo">
                     <div><span>Csomagolási egység: </span><strong>1500 db</strong>
@@ -2155,17 +1189,19 @@
             </a></li>
         </ul>
     </div>
-    <header><div class="product-card__header-text">SZERSZÁM FOGÓ  HT-236N RoHS KRIMPELŐ FOGÓ SZIGETELETLEN SZEMES SARUHOZ AWG20-18;16-14;12-10;8  DIN1.5/2.5/6/10mm2  JIS 1.25/2.0/5.5/8 mm2 (NON-INSULATED TERMINAL) RACSNIS</div>
+    <header><a href="/webaruhaz/product/" class="product-card__header-text">SZERSZÁM FOGÓ  HT-236N RoHS KRIMPELŐ FOGÓ SZIGETELETLEN SZEMES SARUHOZ AWG20-18;16-14;12-10;8  DIN1.5/2.5/6/10mm2  JIS 1.25/2.0/5.5/8 mm2 (NON-INSULATED TERMINAL) RACSNIS</a>
         <div class="product-card__custom-name">
             <input placeholder="Egyedi termékazonosító" class="product-card__custom-name__input" type="text">
             <span class="product-card__custom-name__label"></span>
-            <a class="product-card__custom-name__pencil" href="">✎</a>
+            <a class="product-card__custom-name__pencil" href="">egyedi termékazonosító</a>
             <a class="product-card__custom-name__save" href="">✓</a>
         </div>
     </header>
     <div class="product-card__row">
         <div class="product-card__left-third">
-            <img class="product-card__image" src="/static/img/product/fuse3.jpg">
+            <a href="/webaruhaz/product/">
+                <img class="product-card__image" src="/static/img/product/fuse3.jpg">
+            </a>
             <div class="product-card__infocol">
                 <div class="product-card__row__packinfo">
                     <div><span>Csomagolási egység: </span><strong>1500 db</strong>
@@ -2240,17 +1276,19 @@
             </a></li>
         </ul>
     </div>
-    <header><div class="product-card__header-text">1.1A 33V 1812L110/33MR POLYFUSE SMD 1812 (LFS) ˝LF110-33˝ <strong>[ 44-02-36 ]</strong></div>
+    <header><a href="/webaruhaz/product/" class="product-card__header-text">1.1A 33V 1812L110/33MR POLYFUSE SMD 1812 (LFS) ˝LF110-33˝ <strong>[ 44-02-36 ]</strong></a>
         <div class="product-card__custom-name">
             <input placeholder="Egyedi termékazonosító" class="product-card__custom-name__input" type="text">
             <span class="product-card__custom-name__label"></span>
-            <a class="product-card__custom-name__pencil" href="">✎</a>
+            <a class="product-card__custom-name__pencil" href="">egyedi termékazonosító</a>
             <a class="product-card__custom-name__save" href="">✓</a>
         </div>
     </header>
     <div class="product-card__row">
         <div class="product-card__left-third">
-            <img class="product-card__image" src="/static/img/product/fuse4.jpg">
+            <a href="/webaruhaz/product/">
+                <img class="product-card__image" src="/static/img/product/fuse4.jpg">
+            </a>
             <div class="product-card__infocol">
                 <div class="product-card__row__packinfo">
                     <div><span>Csomagolási egység: </span><strong>1500 db</strong>
@@ -2325,17 +1363,19 @@
             </a></li>
         </ul>
     </div>
-    <header><div class="product-card__header-text">1.1A 33V 1812L110/33MR POLYFUSE SMD 1812 <strong>[ 44-02-37 ]</strong></div>
+    <header><a href="/webaruhaz/product/" class="product-card__header-text">1.1A 33V 1812L110/33MR POLYFUSE SMD 1812 <strong>[ 44-02-37 ]</strong></a>
         <div class="product-card__custom-name">
             <input placeholder="Egyedi termékazonosító" class="product-card__custom-name__input" type="text">
             <span class="product-card__custom-name__label"></span>
-            <a class="product-card__custom-name__pencil" href="">✎</a>
+            <a class="product-card__custom-name__pencil" href="">egyedi termékazonosító</a>
             <a class="product-card__custom-name__save" href="">✓</a>
         </div>
     </header>
     <div class="product-card__row">
         <div class="product-card__left-third">
-            <img class="product-card__image" src="/static/img/product/fuse4.jpg">
+            <a href="/webaruhaz/product/">
+                <img class="product-card__image" src="/static/img/product/fuse4.jpg">
+            </a>
             <div class="product-card__infocol">
                 <div class="product-card__row__packinfo">
                     <div><span>Csomagolási egység: </span><strong>1500 db</strong>
@@ -2391,8 +1431,36 @@
 </article>
             
             
+            <div  class="webstore__filter-container">
+                
+                <label for="check-discount">
+                    <select id="itemsperpage">
+                        <option value="10">10</option>
+                        <option value="20">20</option>
+                        <option value="50">50</option>
+                    </select>
+                    <span class="marginleft--small">
+                        tétel / oldal
+                    </span>
+                </label>
+                <label for="check-discount">
+                    <select id="itemsperpage">
+                        <option value="1">1 / 3</option>
+                        <option value="2">2 / 3</option>
+                        <option value="3">3 / 3</option>
+                    </select>
+                    <span class="marginleft--small">
+                        oldal
+                    </span>
+                </label>
+                <!-- <a href="#" id="filter-more-button" class="webstore__filter-more">Részletes szűrő</a> -->
+                <div class="webstore__fiter-second-row">
+        
+                </div>
+            </div>
         </div>
     </div>
+    
 </main>
 <div class="modal pricecalculator" id="pricecalculator">
     <div class="modal__body">
@@ -2408,8 +1476,15 @@
                 <div>Készlet: <strong>5724 db</strong></div>
             </div>
         </div>
+        <small>
+            Ez a termék 1 esetben szerepel a kosárban. A kosárban már szereplő termékekre árat csak a kosárban tud kalkulálni.
+        </small>
         <hr>
+        <small class="pricecalculator__customid">
+            Egyedi azonosító: 12DDAA
+        </small>
         <div class="pricecalculator__input-container">
+            
 
                 <label><span>Mennyiség:</span>
                     <input type="text" value="1000">
