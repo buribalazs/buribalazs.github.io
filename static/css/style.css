@@ -266,8 +266,8 @@ body.under-modal{
         position: fixed;
         z-index: 10;
         top:0;
-        bottom:0;
         left: 0;
+        bottom:0;
         right:0;
         display:none;
     }
@@ -1313,7 +1313,7 @@ a.webstore__brand__logo-link {
     margin-right: 2rem;
     padding-left: 0.7rem;
     max-width: 250px;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 .webstore__categories ul {
     line-height: 1.5rem;
