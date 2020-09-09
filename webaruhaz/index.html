@@ -120,104 +120,7 @@
             <img class="search-button__icon" src="/static/assets/icon-categories.svg">
         </a>
     </div>
-    <div id="filters" class="webstore__filter-container">
-        <div class="webstore__filter-full-row">
-            <div class="webstore__fiter__buttons">
-                <button class="webstore__fiter__button">Paraméter 1</button>
-                <button class="webstore__fiter__button">Fontos Paraméter</button>
-                <button class="webstore__fiter__button">Speciális</button>
-                <button class="webstore__fiter__button webstore__fiter__button--active">Erős</button>
-            </div>
-        </div>
-        <div class="webstore__filter-full-row marginbottom">
-            <label class="webstore__filter__toplabel">
-                <span>Keresősegéd</span>
-                <select size="5">
-                    <option value="0">-</option>
-                    <option value="402">Fix fesz.</option>
-                    <option value="403">Változ. fesz.</option>
-                    <option value="835">Pozitiv</option>
-                    <option value="834">Negativ</option>
-                    <option value="407">TO-220</option>
-                    <option value="410">TO-220/5</option>
-                    <option value="408">TO-92</option>
-                    <option value="409">TO-3</option>
-                    <option value="820">DIP-8</option>
-                    <option value="821">DIP-16</option>
-                    <option value="411">Egyéb tokozás</option>
-                </select>
-            </label>
-            <label class="webstore__filter__toplabel">
-                <span>Érték</span>
-                <select size="5">
-                    <option value="0">-</option>
-                    <option value="402">0 - 100</option>
-                    <option value="403">101 - 20000</option>
-                    <option value="835">21000 - 200000</option>
-                </select>
-            </label>
-            <label class="webstore__filter__toplabel">
-                <span>Tulajdonság 2</span>
-                <select size="5">
-                    <option value="0">-</option>
-                    <option value="402">10</option>
-                    <option value="403">50</option>
-                    <option value="835">100</option>
-                    <option value="835">200</option>
-                </select>
-            </label>
-            <label class="webstore__filter__toplabel">
-                <span>Tulajdonság 3</span>
-                <select size="5">
-                    <option value="0">-</option>
-                    <option value="402">10-20</option>
-                    <option value="403">21-200</option>
-                    <option value="835">200-500</option>
-                    <option value="835">500-1000</option>
-                </select>
-            </label>
-        </div>
-        <select name="money" id="">
-            <option value="HUF">HUF</option>
-            <option value="EUR">EUR</option>
-        </select>
-        <select name="orderby" id="">
-            <option value="">Legolcsóbb elöl</option>
-            <option value="">Legdrágább elöl</option>
-            <option value="">A-Z</option>
-            <option value="">Z-A</option>
-        </select>
-        <label for="check-only-on-store">
-            <input id="check-only-on-store" type="checkbox" class="type">
-            Csak raktáron lévők
-        </label>
-        <label for="check-discount">
-            <input id="check-discount" type="checkbox" class="type">
-            Leértékeltek
-        </label>
-        <label for="check-discount">
-            <select id="itemsperpage">
-                <option value="10">10</option>
-                <option value="20">20</option>
-                <option value="50">50</option>
-            </select>
-            <span class="marginleft--small">
-                tétel / oldal
-            </span>
-        </label>
-        <label for="check-discount">
-            <select id="itemsperpage">
-                <option value="1">1 / 3</option>
-                <option value="2">2 / 3</option>
-                <option value="3">3 / 3</option>
-            </select>
-            <span class="marginleft--small">
-                oldal
-            </span>
-        </label>
-        <!-- <a href="#" id="filter-more-button" class="webstore__filter-more">Részletes szűrő</a> -->
-        
-    </div>
+
 </header>
 <main>
     <div class="webstore-wrap">
@@ -463,6 +366,102 @@
             </div>
         </div>
         <div class="webstore__main">
+            <div id="filters" class="webstore__filter-container">
+                <div class="webstore__filter-full-row">
+                    <div class="webstore__fiter__buttons">
+                        <button class="webstore__fiter__button">Paraméter 1</button>
+                        <button class="webstore__fiter__button">Fontos Paraméter</button>
+                        <button class="webstore__fiter__button">Speciális</button>
+                        <button class="webstore__fiter__button webstore__fiter__button--active">Erős</button>
+                    </div>
+                </div>
+                <div class="webstore__filter-full-row marginbottom">
+                    <label class="webstore__filter__toplabel">
+                        <span>Keresősegéd</span>
+                        <select size="5">
+                            <option value="0">-</option>
+                            <option value="402">Fix fesz.</option>
+                            <option value="403">Változ. fesz.</option>
+                            <option value="835">Pozitiv</option>
+                            <option value="834">Negativ</option>
+                            <option value="407">TO-220</option>
+                            <option value="410">TO-220/5</option>
+                            <option value="408">TO-92</option>
+                            <option value="409">TO-3</option>
+                            <option value="820">DIP-8</option>
+                            <option value="821">DIP-16</option>
+                            <option value="411">Egyéb tokozás</option>
+                        </select>
+                    </label>
+                    <label class="webstore__filter__toplabel">
+                        <span>Érték</span>
+                        <select size="5">
+                            <option value="0">-</option>
+                            <option value="402">0 - 100</option>
+                            <option value="403">101 - 20000</option>
+                            <option value="835">21000 - 200000</option>
+                        </select>
+                    </label>
+                    <label class="webstore__filter__toplabel">
+                        <span>Tulajdonság 2</span>
+                        <select size="5">
+                            <option value="0">-</option>
+                            <option value="402">10</option>
+                            <option value="403">50</option>
+                            <option value="835">100</option>
+                            <option value="835">200</option>
+                        </select>
+                    </label>
+                    <label class="webstore__filter__toplabel">
+                        <span>Tulajdonság 3</span>
+                        <select size="5">
+                            <option value="0">-</option>
+                            <option value="402">10-20</option>
+                            <option value="403">21-200</option>
+                            <option value="835">200-500</option>
+                            <option value="835">500-1000</option>
+                        </select>
+                    </label>
+                </div>
+                <select name="money" id="">
+                    <option value="HUF">HUF</option>
+                    <option value="EUR">EUR</option>
+                </select>
+                <select name="orderby" id="">
+                    <option value="">Legolcsóbb elöl</option>
+                    <option value="">Legdrágább elöl</option>
+                    <option value="">A-Z</option>
+                    <option value="">Z-A</option>
+                </select>
+                <label for="check-only-on-store">
+                    <input id="check-only-on-store" type="checkbox" class="type">
+                    Csak raktáron lévők
+                </label>
+                <label for="check-discount">
+                    <input id="check-discount" type="checkbox" class="type">
+                    Leértékeltek
+                </label>
+                <label for="check-discount">
+                    <select id="itemsperpage">
+                        <option value="10">10</option>
+                        <option value="20">20</option>
+                        <option value="50">50</option>
+                    </select>
+                    <span class="marginleft--small">
+                        tétel / oldal
+                    </span>
+                </label>
+                <label for="check-discount">
+                    <select id="itemsperpage">
+                        <option value="1">1 / 3</option>
+                        <option value="2">2 / 3</option>
+                        <option value="3">3 / 3</option>
+                    </select>
+                    <span class="marginleft--small">
+                        oldal
+                    </span>
+                </label>
+            </div>
             
             
                 
