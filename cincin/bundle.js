@@ -562,7 +562,7 @@
                     let scale = Math.max(10 / (n.z - state.Z),0);
                     n.scale.set(scale * n._baseScale);
                     n.x = 1920 / 2 + (n._x - 1920 / 2) * scale;
-                    n.y = n._y * scale + (1 - scale) * -200; // todo make 200 const
+                    n.y = n._y * scale + (1 - scale) * -300; // todo make 200 const
                     n.zIndex = -n.z;
                 });
             });
