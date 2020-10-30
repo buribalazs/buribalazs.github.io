@@ -1,1365 +1,1365 @@
 {"frames": {
 
-"kezek_arnyek_00000.png":
+"kezek_anim_00000.png":
 {
-	"frame": {"x":1769,"y":222,"w":167,"h":219},
+	"frame": {"x":3687,"y":1,"w":368,"h":458},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":167,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
+	"spriteSourceSize": {"x":91,"y":57,"w":368,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
 },
-"kezek_arnyek_00001.png":
+"kezek_anim_00001.png":
 {
-	"frame": {"x":1769,"y":222,"w":167,"h":219},
+	"frame": {"x":3687,"y":1,"w":368,"h":458},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":167,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
+	"spriteSourceSize": {"x":91,"y":57,"w":368,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
 },
-"kezek_arnyek_00002.png":
+"kezek_anim_00002.png":
 {
-	"frame": {"x":1769,"y":222,"w":167,"h":219},
+	"frame": {"x":3687,"y":1,"w":368,"h":458},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":167,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
+	"spriteSourceSize": {"x":91,"y":57,"w":368,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
 },
-"kezek_arnyek_00003.png":
+"kezek_anim_00003.png":
 {
-	"frame": {"x":1549,"y":307,"w":165,"h":219},
+	"frame": {"x":3687,"y":461,"w":366,"h":458},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":165,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
+	"spriteSourceSize": {"x":91,"y":57,"w":366,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
 },
-"kezek_arnyek_00004.png":
+"kezek_anim_00004.png":
 {
-	"frame": {"x":1549,"y":307,"w":165,"h":219},
+	"frame": {"x":3687,"y":461,"w":366,"h":458},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":165,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
+	"spriteSourceSize": {"x":91,"y":57,"w":366,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
 },
-"kezek_arnyek_00005.png":
+"kezek_anim_00005.png":
 {
-	"frame": {"x":1549,"y":307,"w":165,"h":219},
+	"frame": {"x":3687,"y":461,"w":366,"h":458},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":165,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
+	"spriteSourceSize": {"x":91,"y":57,"w":366,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
 },
-"kezek_arnyek_00006.png":
+"kezek_anim_00006.png":
 {
-	"frame": {"x":1772,"y":1,"w":164,"h":219},
+	"frame": {"x":3689,"y":921,"w":362,"h":458},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":164,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
+	"spriteSourceSize": {"x":91,"y":57,"w":362,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
 },
-"kezek_arnyek_00007.png":
+"kezek_anim_00007.png":
 {
-	"frame": {"x":1772,"y":1,"w":164,"h":219},
+	"frame": {"x":3689,"y":921,"w":362,"h":458},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":164,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
+	"spriteSourceSize": {"x":91,"y":57,"w":362,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
 },
-"kezek_arnyek_00008.png":
+"kezek_anim_00008.png":
 {
-	"frame": {"x":665,"y":1411,"w":164,"h":220},
+	"frame": {"x":2307,"y":3104,"w":362,"h":460},
 	"rotated": true,
 	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":9,"w":164,"h":220},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
+	"spriteSourceSize": {"x":91,"y":55,"w":362,"h":460},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
 },
-"kezek_arnyek_00009.png":
+"kezek_anim_00009.png":
 {
-	"frame": {"x":1,"y":1405,"w":163,"h":220},
+	"frame": {"x":1845,"y":3101,"w":360,"h":460},
 	"rotated": true,
 	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":9,"w":163,"h":220},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
+	"spriteSourceSize": {"x":91,"y":55,"w":360,"h":460},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
 },
-"kezek_arnyek_00010.png":
+"kezek_anim_00010.png":
 {
-	"frame": {"x":1,"y":1405,"w":163,"h":220},
+	"frame": {"x":1845,"y":3101,"w":360,"h":460},
 	"rotated": true,
 	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":9,"w":163,"h":220},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
+	"spriteSourceSize": {"x":91,"y":55,"w":360,"h":460},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
 },
-"kezek_arnyek_00011.png":
+"kezek_anim_00011.png":
 {
-	"frame": {"x":1,"y":1405,"w":163,"h":220},
+	"frame": {"x":1845,"y":3101,"w":360,"h":460},
 	"rotated": true,
 	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":9,"w":163,"h":220},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
+	"spriteSourceSize": {"x":91,"y":55,"w":360,"h":460},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
 },
-"kezek_arnyek_00012.png":
+"kezek_anim_00012.png":
 {
-	"frame": {"x":1329,"y":461,"w":162,"h":219},
+	"frame": {"x":3687,"y":1381,"w":358,"h":458},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":162,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
+	"spriteSourceSize": {"x":91,"y":57,"w":358,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
 },
-"kezek_arnyek_00013.png":
+"kezek_anim_00013.png":
 {
-	"frame": {"x":1329,"y":461,"w":162,"h":219},
+	"frame": {"x":3687,"y":1381,"w":358,"h":458},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":162,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
+	"spriteSourceSize": {"x":91,"y":57,"w":358,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
 },
-"kezek_arnyek_00014.png":
+"kezek_anim_00014.png":
 {
-	"frame": {"x":1329,"y":461,"w":162,"h":219},
+	"frame": {"x":3687,"y":1381,"w":358,"h":458},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":162,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
+	"spriteSourceSize": {"x":91,"y":57,"w":358,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
 },
-"kezek_arnyek_00015.png":
+"kezek_anim_00015.png":
 {
-	"frame": {"x":1548,"y":683,"w":160,"h":219},
+	"frame": {"x":1384,"y":2732,"w":355,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":355,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00016.png":
+{
+	"frame": {"x":1845,"y":2744,"w":355,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":355,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00017.png":
+{
+	"frame": {"x":1845,"y":2744,"w":355,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":355,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00018.png":
+{
+	"frame": {"x":2767,"y":2393,"w":352,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":352,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00019.png":
+{
+	"frame": {"x":3582,"y":2652,"w":352,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":352,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00020.png":
+{
+	"frame": {"x":3582,"y":2652,"w":352,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":352,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00021.png":
+{
+	"frame": {"x":3583,"y":2301,"w":349,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":349,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00022.png":
+{
+	"frame": {"x":1,"y":2378,"w":349,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":349,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00023.png":
+{
+	"frame": {"x":1,"y":2378,"w":349,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":349,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00024.png":
+{
+	"frame": {"x":2305,"y":1695,"w":347,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":347,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00025.png":
+{
+	"frame": {"x":2766,"y":1695,"w":347,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":347,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00026.png":
+{
+	"frame": {"x":2766,"y":1695,"w":347,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":347,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00027.png":
+{
+	"frame": {"x":2304,"y":1351,"w":342,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":342,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00028.png":
+{
+	"frame": {"x":2765,"y":1351,"w":342,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":342,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00029.png":
+{
+	"frame": {"x":2765,"y":1351,"w":342,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":342,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00030.png":
+{
+	"frame": {"x":2308,"y":1011,"w":338,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":338,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00031.png":
+{
+	"frame": {"x":2769,"y":1011,"w":338,"h":458},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":57,"w":338,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00032.png":
+{
+	"frame": {"x":3229,"y":1011,"w":338,"h":458},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":57,"w":338,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00033.png":
+{
+	"frame": {"x":1844,"y":672,"w":336,"h":458},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":57,"w":336,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00034.png":
+{
+	"frame": {"x":2765,"y":673,"w":336,"h":460},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":55,"w":336,"h":460},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00035.png":
+{
+	"frame": {"x":2765,"y":673,"w":336,"h":460},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":55,"w":336,"h":460},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00036.png":
+{
+	"frame": {"x":1843,"y":335,"w":335,"h":460},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":55,"w":335,"h":460},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00037.png":
+{
+	"frame": {"x":1843,"y":335,"w":335,"h":460},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":55,"w":335,"h":460},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00038.png":
+{
+	"frame": {"x":2305,"y":335,"w":335,"h":458},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":57,"w":335,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00039.png":
+{
+	"frame": {"x":2767,"y":1,"w":333,"h":458},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":57,"w":333,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00040.png":
+{
+	"frame": {"x":2767,"y":1,"w":333,"h":458},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":57,"w":333,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00041.png":
+{
+	"frame": {"x":2767,"y":1,"w":333,"h":458},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":57,"w":333,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00042.png":
+{
+	"frame": {"x":1,"y":1,"w":332,"h":458},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":57,"w":332,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00043.png":
+{
+	"frame": {"x":1,"y":1,"w":332,"h":458},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":57,"w":332,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00044.png":
+{
+	"frame": {"x":461,"y":1,"w":332,"h":458},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":57,"w":332,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00045.png":
+{
+	"frame": {"x":461,"y":1,"w":332,"h":458},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":57,"w":332,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00046.png":
+{
+	"frame": {"x":921,"y":1,"w":332,"h":460},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":55,"w":332,"h":460},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00047.png":
+{
+	"frame": {"x":921,"y":1,"w":332,"h":460},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":55,"w":332,"h":460},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00048.png":
+{
+	"frame": {"x":1383,"y":1,"w":332,"h":460},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":55,"w":332,"h":460},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00049.png":
+{
+	"frame": {"x":1383,"y":1,"w":332,"h":460},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":55,"w":332,"h":460},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00050.png":
+{
+	"frame": {"x":3227,"y":1,"w":333,"h":458},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":57,"w":333,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00051.png":
+{
+	"frame": {"x":3227,"y":1,"w":333,"h":458},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":57,"w":333,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00052.png":
+{
+	"frame": {"x":1,"y":335,"w":333,"h":458},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":57,"w":333,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00053.png":
+{
+	"frame": {"x":2765,"y":336,"w":335,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":335,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00054.png":
+{
+	"frame": {"x":3226,"y":336,"w":335,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":335,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00055.png":
+{
+	"frame": {"x":1,"y":670,"w":335,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":335,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00056.png":
+{
+	"frame": {"x":2304,"y":672,"w":336,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":336,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00057.png":
+{
+	"frame": {"x":1,"y":1007,"w":336,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":336,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00058.png":
+{
+	"frame": {"x":462,"y":1007,"w":336,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":336,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00059.png":
+{
+	"frame": {"x":1,"y":1345,"w":338,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":338,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00060.png":
+{
+	"frame": {"x":462,"y":1345,"w":338,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":338,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00061.png":
+{
+	"frame": {"x":923,"y":1345,"w":338,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":338,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00062.png":
+{
+	"frame": {"x":3226,"y":1351,"w":342,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":342,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00063.png":
+{
+	"frame": {"x":1,"y":1685,"w":342,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":342,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00064.png":
+{
+	"frame": {"x":462,"y":1685,"w":342,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":342,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00065.png":
+{
+	"frame": {"x":1,"y":2029,"w":347,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":347,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00066.png":
+{
+	"frame": {"x":462,"y":2029,"w":347,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":347,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00067.png":
+{
+	"frame": {"x":462,"y":2029,"w":347,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":347,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00068.png":
+{
+	"frame": {"x":462,"y":2378,"w":349,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":349,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00069.png":
+{
+	"frame": {"x":3687,"y":1841,"w":349,"h":458},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":160,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
+	"spriteSourceSize": {"x":91,"y":57,"w":349,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
 },
-"kezek_arnyek_00016.png":
+"kezek_anim_00070.png":
 {
-	"frame": {"x":1107,"y":773,"w":160,"h":219},
+	"frame": {"x":3687,"y":1841,"w":349,"h":458},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":160,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
+	"spriteSourceSize": {"x":91,"y":57,"w":349,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
 },
-"kezek_arnyek_00017.png":
+"kezek_anim_00071.png":
 {
-	"frame": {"x":1107,"y":773,"w":160,"h":219},
+	"frame": {"x":3229,"y":2044,"w":352,"h":458},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":160,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
+	"spriteSourceSize": {"x":91,"y":57,"w":352,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
 },
-"kezek_arnyek_00018.png":
+"kezek_anim_00072.png":
 {
-	"frame": {"x":1329,"y":999,"w":159,"h":219},
+	"frame": {"x":1,"y":2729,"w":352,"h":460},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":55,"w":352,"h":460},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00073.png":
+{
+	"frame": {"x":1,"y":2729,"w":352,"h":460},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":55,"w":352,"h":460},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00074.png":
+{
+	"frame": {"x":1,"y":2729,"w":352,"h":460},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":55,"w":352,"h":460},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00075.png":
+{
+	"frame": {"x":1,"y":2729,"w":352,"h":460},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":55,"w":352,"h":460},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00076.png":
+{
+	"frame": {"x":3228,"y":2504,"w":352,"h":458},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":159,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
+	"spriteSourceSize": {"x":91,"y":57,"w":352,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
 },
-"kezek_arnyek_00019.png":
+"kezek_anim_00077.png":
 {
-	"frame": {"x":1550,"y":1228,"w":159,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":159,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00020.png":
-{
-	"frame": {"x":1550,"y":1228,"w":159,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":159,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00021.png":
-{
-	"frame": {"x":886,"y":930,"w":158,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":158,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00022.png":
-{
-	"frame": {"x":1712,"y":1068,"w":158,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":158,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00023.png":
-{
-	"frame": {"x":1712,"y":1068,"w":158,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":158,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00024.png":
-{
-	"frame": {"x":1269,"y":840,"w":157,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":157,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00025.png":
-{
-	"frame": {"x":1490,"y":909,"w":157,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":157,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00026.png":
-{
-	"frame": {"x":1490,"y":909,"w":157,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":157,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00027.png":
-{
-	"frame": {"x":1106,"y":616,"w":155,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":155,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00028.png":
-{
-	"frame": {"x":1327,"y":683,"w":155,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":155,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00029.png":
-{
-	"frame": {"x":1327,"y":683,"w":155,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":155,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00030.png":
-{
-	"frame": {"x":1108,"y":461,"w":153,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":153,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00031.png":
-{
-	"frame": {"x":1493,"y":528,"w":153,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":153,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00032.png":
-{
-	"frame": {"x":1714,"y":597,"w":153,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":153,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00033.png":
-{
-	"frame": {"x":885,"y":306,"w":152,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":152,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00034.png":
-{
-	"frame": {"x":1327,"y":307,"w":152,"h":220},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":9,"w":152,"h":220},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00035.png":
-{
-	"frame": {"x":1327,"y":307,"w":152,"h":220},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":9,"w":152,"h":220},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00036.png":
-{
-	"frame": {"x":1329,"y":1,"w":151,"h":220},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":9,"w":151,"h":220},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00037.png":
-{
-	"frame": {"x":1329,"y":1,"w":151,"h":220},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":9,"w":151,"h":220},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00038.png":
-{
-	"frame": {"x":1551,"y":1,"w":151,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":151,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00039.png":
-{
-	"frame": {"x":1,"y":153,"w":151,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":151,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00040.png":
-{
-	"frame": {"x":1,"y":153,"w":151,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":151,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00041.png":
-{
-	"frame": {"x":1,"y":153,"w":151,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":151,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00042.png":
-{
-	"frame": {"x":1,"y":1,"w":150,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":150,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00043.png":
-{
-	"frame": {"x":1,"y":1,"w":150,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":150,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00044.png":
-{
-	"frame": {"x":222,"y":1,"w":150,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":150,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00045.png":
-{
-	"frame": {"x":222,"y":1,"w":150,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":150,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00046.png":
-{
-	"frame": {"x":443,"y":1,"w":150,"h":220},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":9,"w":150,"h":220},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00047.png":
-{
-	"frame": {"x":443,"y":1,"w":150,"h":220},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":9,"w":150,"h":220},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00048.png":
-{
-	"frame": {"x":665,"y":1,"w":150,"h":220},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":9,"w":150,"h":220},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00049.png":
-{
-	"frame": {"x":665,"y":1,"w":150,"h":220},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":9,"w":150,"h":220},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00050.png":
-{
-	"frame": {"x":222,"y":153,"w":151,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":151,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00051.png":
-{
-	"frame": {"x":222,"y":153,"w":151,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":151,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00052.png":
-{
-	"frame": {"x":443,"y":153,"w":151,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":151,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00053.png":
-{
-	"frame": {"x":664,"y":153,"w":151,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":151,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00054.png":
-{
-	"frame": {"x":885,"y":153,"w":151,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":151,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00055.png":
-{
-	"frame": {"x":1106,"y":153,"w":151,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":151,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00056.png":
-{
-	"frame": {"x":1106,"y":306,"w":152,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":152,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00057.png":
-{
-	"frame": {"x":1716,"y":443,"w":152,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":152,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00058.png":
-{
-	"frame": {"x":1,"y":459,"w":152,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":152,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00059.png":
-{
-	"frame": {"x":1,"y":613,"w":153,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":153,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00060.png":
-{
-	"frame": {"x":222,"y":613,"w":153,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":153,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00061.png":
-{
-	"frame": {"x":443,"y":613,"w":153,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":153,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00062.png":
-{
-	"frame": {"x":1710,"y":752,"w":155,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":155,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00063.png":
-{
-	"frame": {"x":1,"y":768,"w":155,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":155,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00064.png":
-{
-	"frame": {"x":222,"y":768,"w":155,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":155,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00065.png":
-{
-	"frame": {"x":1711,"y":909,"w":157,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":157,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00066.png":
-{
-	"frame": {"x":1,"y":925,"w":157,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":157,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00067.png":
-{
-	"frame": {"x":1,"y":925,"w":157,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":157,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00068.png":
-{
-	"frame": {"x":1,"y":1084,"w":158,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":158,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00069.png":
-{
-	"frame": {"x":222,"y":1084,"w":158,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":158,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00070.png":
-{
-	"frame": {"x":222,"y":1084,"w":158,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":158,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00071.png":
-{
-	"frame": {"x":1,"y":1244,"w":159,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":159,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00072.png":
-{
-	"frame": {"x":222,"y":1244,"w":159,"h":220},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":9,"w":159,"h":220},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00073.png":
-{
-	"frame": {"x":222,"y":1244,"w":159,"h":220},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":9,"w":159,"h":220},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00074.png":
-{
-	"frame": {"x":222,"y":1244,"w":159,"h":220},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":9,"w":159,"h":220},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00075.png":
-{
-	"frame": {"x":222,"y":1244,"w":159,"h":220},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":9,"w":159,"h":220},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00076.png":
-{
-	"frame": {"x":444,"y":1245,"w":159,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":159,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00077.png":
-{
-	"frame": {"x":444,"y":1245,"w":159,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":159,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00078.png":
-{
-	"frame": {"x":444,"y":1245,"w":159,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":159,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00079.png":
-{
-	"frame": {"x":443,"y":1084,"w":158,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":158,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00080.png":
-{
-	"frame": {"x":664,"y":1085,"w":158,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":158,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00081.png":
-{
-	"frame": {"x":664,"y":1085,"w":158,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":158,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00082.png":
-{
-	"frame": {"x":222,"y":925,"w":157,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":157,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00083.png":
-{
-	"frame": {"x":222,"y":925,"w":157,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":157,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00084.png":
-{
-	"frame": {"x":664,"y":926,"w":157,"h":220},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":9,"w":157,"h":220},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00085.png":
-{
-	"frame": {"x":664,"y":769,"w":155,"h":220},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":9,"w":155,"h":220},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00086.png":
-{
-	"frame": {"x":664,"y":769,"w":155,"h":220},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":9,"w":155,"h":220},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00087.png":
-{
-	"frame": {"x":664,"y":769,"w":155,"h":220},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":9,"w":155,"h":220},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00088.png":
-{
-	"frame": {"x":664,"y":614,"w":153,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":153,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00089.png":
-{
-	"frame": {"x":664,"y":614,"w":153,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":153,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00090.png":
-{
-	"frame": {"x":664,"y":614,"w":153,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":153,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00091.png":
-{
-	"frame": {"x":222,"y":459,"w":152,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":152,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00092.png":
-{
-	"frame": {"x":222,"y":459,"w":152,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":152,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00093.png":
-{
-	"frame": {"x":222,"y":459,"w":152,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":152,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00094.png":
-{
-	"frame": {"x":1327,"y":154,"w":151,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":151,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00095.png":
-{
-	"frame": {"x":1548,"y":154,"w":151,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":151,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00096.png":
-{
-	"frame": {"x":1548,"y":154,"w":151,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":151,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00097.png":
-{
-	"frame": {"x":1,"y":306,"w":151,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":151,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00098.png":
-{
-	"frame": {"x":1,"y":306,"w":151,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":151,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00099.png":
-{
-	"frame": {"x":1,"y":306,"w":151,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":151,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00100.png":
-{
-	"frame": {"x":887,"y":1,"w":150,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":150,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00101.png":
-{
-	"frame": {"x":887,"y":1,"w":150,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":150,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00102.png":
-{
-	"frame": {"x":887,"y":1,"w":150,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":150,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00103.png":
-{
-	"frame": {"x":1108,"y":1,"w":150,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":150,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00104.png":
-{
-	"frame": {"x":1108,"y":1,"w":150,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":150,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00105.png":
-{
-	"frame": {"x":1108,"y":1,"w":150,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":150,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00106.png":
-{
-	"frame": {"x":222,"y":306,"w":151,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":151,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00107.png":
-{
-	"frame": {"x":443,"y":306,"w":151,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":151,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00108.png":
-{
-	"frame": {"x":443,"y":306,"w":151,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":151,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00109.png":
-{
-	"frame": {"x":664,"y":306,"w":151,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":151,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00110.png":
-{
-	"frame": {"x":1329,"y":1,"w":151,"h":220},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":9,"w":151,"h":220},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00111.png":
-{
-	"frame": {"x":1329,"y":1,"w":151,"h":220},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":9,"w":151,"h":220},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00112.png":
-{
-	"frame": {"x":443,"y":459,"w":152,"h":220},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":9,"w":152,"h":220},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00113.png":
-{
-	"frame": {"x":665,"y":460,"w":152,"h":220},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":9,"w":152,"h":220},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00114.png":
-{
-	"frame": {"x":887,"y":460,"w":152,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":152,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00115.png":
-{
-	"frame": {"x":885,"y":614,"w":153,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":153,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00116.png":
-{
-	"frame": {"x":885,"y":614,"w":153,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":153,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00117.png":
-{
-	"frame": {"x":885,"y":614,"w":153,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":153,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00118.png":
-{
-	"frame": {"x":443,"y":768,"w":155,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":155,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00119.png":
-{
-	"frame": {"x":886,"y":773,"w":155,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":155,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00120.png":
-{
-	"frame": {"x":886,"y":773,"w":155,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":155,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00121.png":
-{
-	"frame": {"x":443,"y":925,"w":157,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":157,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00122.png":
-{
-	"frame": {"x":1107,"y":999,"w":157,"h":220},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":9,"w":157,"h":220},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00123.png":
-{
-	"frame": {"x":1490,"y":1068,"w":157,"h":220},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":9,"w":157,"h":220},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00124.png":
-{
-	"frame": {"x":885,"y":1090,"w":158,"h":220},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":9,"w":158,"h":220},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00125.png":
-{
-	"frame": {"x":1107,"y":1158,"w":158,"h":220},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":9,"w":158,"h":220},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00126.png":
-{
-	"frame": {"x":1329,"y":1227,"w":158,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":158,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00127.png":
-{
-	"frame": {"x":665,"y":1250,"w":159,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":159,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00128.png":
-{
-	"frame": {"x":665,"y":1250,"w":159,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":159,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00129.png":
-{
-	"frame": {"x":886,"y":1250,"w":159,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":159,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00130.png":
-{
-	"frame": {"x":1771,"y":1228,"w":160,"h":219},
+	"frame": {"x":3228,"y":2504,"w":352,"h":458},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":160,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
+	"spriteSourceSize": {"x":91,"y":57,"w":352,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
 },
-"kezek_arnyek_00131.png":
+"kezek_anim_00078.png":
 {
-	"frame": {"x":1771,"y":1228,"w":160,"h":219},
+	"frame": {"x":3228,"y":2504,"w":352,"h":458},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":160,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
+	"spriteSourceSize": {"x":91,"y":57,"w":352,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
 },
-"kezek_arnyek_00132.png":
+"kezek_anim_00079.png":
 {
-	"frame": {"x":1107,"y":1318,"w":160,"h":219},
+	"frame": {"x":1845,"y":2039,"w":349,"h":458},
 	"rotated": true,
 	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":160,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
+	"spriteSourceSize": {"x":91,"y":57,"w":349,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
 },
-"kezek_arnyek_00133.png":
+"kezek_anim_00080.png":
 {
-	"frame": {"x":1328,"y":1387,"w":162,"h":219},
+	"frame": {"x":923,"y":2378,"w":349,"h":458},
 	"rotated": true,
 	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":162,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
+	"spriteSourceSize": {"x":91,"y":57,"w":349,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
 },
-"kezek_arnyek_00134.png":
+"kezek_anim_00081.png":
 {
-	"frame": {"x":1328,"y":1387,"w":162,"h":219},
+	"frame": {"x":923,"y":2378,"w":349,"h":458},
 	"rotated": true,
 	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":162,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
+	"spriteSourceSize": {"x":91,"y":57,"w":349,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
 },
-"kezek_arnyek_00135.png":
+"kezek_anim_00082.png":
 {
-	"frame": {"x":1549,"y":1389,"w":162,"h":219},
+	"frame": {"x":3227,"y":1695,"w":347,"h":458},
 	"rotated": true,
 	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":162,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
+	"spriteSourceSize": {"x":91,"y":57,"w":347,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
 },
-"kezek_arnyek_00136.png":
+"kezek_anim_00083.png":
 {
-	"frame": {"x":223,"y":1405,"w":163,"h":219},
+	"frame": {"x":3227,"y":1695,"w":347,"h":458},
 	"rotated": true,
 	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":163,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
+	"spriteSourceSize": {"x":91,"y":57,"w":347,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
 },
-"kezek_arnyek_00137.png":
+"kezek_anim_00084.png":
 {
-	"frame": {"x":223,"y":1405,"w":163,"h":219},
+	"frame": {"x":1383,"y":2032,"w":347,"h":460},
 	"rotated": true,
 	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":163,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
+	"spriteSourceSize": {"x":91,"y":55,"w":347,"h":460},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
 },
-"kezek_arnyek_00138.png":
+"kezek_anim_00085.png":
 {
-	"frame": {"x":444,"y":1406,"w":163,"h":219},
+	"frame": {"x":1383,"y":1688,"w":342,"h":460},
 	"rotated": true,
 	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":163,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
+	"spriteSourceSize": {"x":91,"y":55,"w":342,"h":460},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
 },
-"kezek_arnyek_00139.png":
+"kezek_anim_00086.png":
 {
-	"frame": {"x":887,"y":1411,"w":164,"h":219},
+	"frame": {"x":1383,"y":1688,"w":342,"h":460},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":55,"w":342,"h":460},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00087.png":
+{
+	"frame": {"x":1383,"y":1688,"w":342,"h":460},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":55,"w":342,"h":460},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00088.png":
+{
+	"frame": {"x":1384,"y":1348,"w":338,"h":458},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":57,"w":338,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00089.png":
+{
+	"frame": {"x":1384,"y":1348,"w":338,"h":458},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":57,"w":338,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00090.png":
+{
+	"frame": {"x":1384,"y":1348,"w":338,"h":458},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":57,"w":338,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00091.png":
+{
+	"frame": {"x":923,"y":1007,"w":336,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":336,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00092.png":
+{
+	"frame": {"x":923,"y":1007,"w":336,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":336,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00093.png":
+{
+	"frame": {"x":923,"y":1007,"w":336,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":336,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00094.png":
+{
+	"frame": {"x":462,"y":670,"w":335,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":335,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00095.png":
+{
+	"frame": {"x":923,"y":670,"w":335,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":335,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00096.png":
+{
+	"frame": {"x":923,"y":670,"w":335,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":335,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00097.png":
+{
+	"frame": {"x":461,"y":335,"w":333,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":333,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00098.png":
+{
+	"frame": {"x":461,"y":335,"w":333,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":333,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00099.png":
+{
+	"frame": {"x":461,"y":335,"w":333,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":333,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00100.png":
+{
+	"frame": {"x":1845,"y":1,"w":332,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":332,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00101.png":
+{
+	"frame": {"x":1845,"y":1,"w":332,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":332,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00102.png":
+{
+	"frame": {"x":1845,"y":1,"w":332,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":332,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00103.png":
+{
+	"frame": {"x":2306,"y":1,"w":332,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":332,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00104.png":
+{
+	"frame": {"x":2306,"y":1,"w":332,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":332,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00105.png":
+{
+	"frame": {"x":2306,"y":1,"w":332,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":332,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00106.png":
+{
+	"frame": {"x":922,"y":335,"w":333,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":333,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00107.png":
+{
+	"frame": {"x":1383,"y":335,"w":333,"h":458},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":57,"w":333,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00108.png":
+{
+	"frame": {"x":1383,"y":335,"w":333,"h":458},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":57,"w":333,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00109.png":
+{
+	"frame": {"x":1384,"y":672,"w":335,"h":458},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":57,"w":335,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00110.png":
+{
+	"frame": {"x":1843,"y":335,"w":335,"h":460},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":55,"w":335,"h":460},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00111.png":
+{
+	"frame": {"x":1843,"y":335,"w":335,"h":460},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":55,"w":335,"h":460},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00112.png":
+{
+	"frame": {"x":1384,"y":1010,"w":336,"h":460},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":55,"w":336,"h":460},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00113.png":
+{
+	"frame": {"x":1846,"y":1010,"w":336,"h":460},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":55,"w":336,"h":460},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00114.png":
+{
+	"frame": {"x":3227,"y":673,"w":336,"h":458},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":57,"w":336,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00115.png":
+{
+	"frame": {"x":1844,"y":1348,"w":338,"h":458},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":57,"w":338,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00116.png":
+{
+	"frame": {"x":1844,"y":1348,"w":338,"h":458},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":57,"w":338,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00117.png":
+{
+	"frame": {"x":1844,"y":1348,"w":338,"h":458},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":57,"w":338,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00118.png":
+{
+	"frame": {"x":923,"y":1685,"w":342,"h":458},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":57,"w":342,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00119.png":
+{
+	"frame": {"x":1845,"y":1695,"w":342,"h":458},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":57,"w":342,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00120.png":
+{
+	"frame": {"x":1845,"y":1695,"w":342,"h":458},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":57,"w":342,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00121.png":
+{
+	"frame": {"x":923,"y":2029,"w":347,"h":458},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":57,"w":347,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00122.png":
+{
+	"frame": {"x":2305,"y":2044,"w":347,"h":460},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":55,"w":347,"h":460},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00123.png":
+{
+	"frame": {"x":2767,"y":2044,"w":347,"h":460},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":55,"w":347,"h":460},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00124.png":
+{
+	"frame": {"x":1383,"y":2381,"w":349,"h":460},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":55,"w":349,"h":460},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00125.png":
+{
+	"frame": {"x":2305,"y":2393,"w":349,"h":460},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":55,"w":349,"h":460},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00126.png":
+{
+	"frame": {"x":1845,"y":2390,"w":349,"h":458},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":57,"w":349,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00127.png":
+{
+	"frame": {"x":463,"y":2729,"w":352,"h":458},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":57,"w":352,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00128.png":
+{
+	"frame": {"x":463,"y":2729,"w":352,"h":458},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":57,"w":352,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00129.png":
+{
+	"frame": {"x":923,"y":2732,"w":352,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":352,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00130.png":
+{
+	"frame": {"x":2306,"y":2744,"w":355,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":355,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00131.png":
+{
+	"frame": {"x":2306,"y":2744,"w":355,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":355,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00132.png":
+{
+	"frame": {"x":2767,"y":2747,"w":355,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":355,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00133.png":
+{
+	"frame": {"x":3228,"y":3006,"w":358,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":358,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00134.png":
+{
+	"frame": {"x":3228,"y":3006,"w":358,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":358,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00135.png":
+{
+	"frame": {"x":1,"y":3083,"w":358,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":358,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00136.png":
+{
+	"frame": {"x":462,"y":3083,"w":360,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":360,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00137.png":
+{
+	"frame": {"x":462,"y":3083,"w":360,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":360,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00138.png":
+{
+	"frame": {"x":923,"y":3086,"w":360,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":360,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00139.png":
+{
+	"frame": {"x":1384,"y":3089,"w":362,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":362,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00140.png":
+{
+	"frame": {"x":3137,"y":3366,"w":362,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":362,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00141.png":
+{
+	"frame": {"x":1,"y":3443,"w":362,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":362,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00142.png":
+{
+	"frame": {"x":462,"y":3445,"w":366,"h":459},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":56,"w":366,"h":459},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
+},
+"kezek_anim_00143.png":
+{
+	"frame": {"x":3689,"y":3006,"w":366,"h":458},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":164,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
+	"spriteSourceSize": {"x":91,"y":57,"w":366,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
 },
-"kezek_arnyek_00140.png":
+"kezek_anim_00144.png":
 {
-	"frame": {"x":1053,"y":1480,"w":164,"h":219},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":164,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00141.png":
-{
-	"frame": {"x":1770,"y":1449,"w":164,"h":219},
+	"frame": {"x":2769,"y":3104,"w":366,"h":458},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":164,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
+	"spriteSourceSize": {"x":91,"y":57,"w":366,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
 },
-"kezek_arnyek_00142.png":
+"kezek_anim_00145.png":
 {
-	"frame": {"x":1274,"y":1551,"w":165,"h":219},
+	"frame": {"x":923,"y":3448,"w":368,"h":458},
 	"rotated": true,
 	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":165,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
+	"spriteSourceSize": {"x":91,"y":57,"w":368,"h":458},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
 },
-"kezek_arnyek_00143.png":
+"kezek_anim_00146.png":
 {
-	"frame": {"x":1495,"y":1553,"w":165,"h":219},
+	"frame": {"x":1383,"y":3453,"w":368,"h":460},
 	"rotated": true,
 	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":165,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
+	"spriteSourceSize": {"x":91,"y":55,"w":368,"h":460},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
 },
-"kezek_arnyek_00144.png":
+"kezek_anim_00147.png":
 {
-	"frame": {"x":1,"y":1570,"w":165,"h":219},
+	"frame": {"x":1845,"y":3463,"w":368,"h":460},
 	"rotated": true,
 	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":165,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
+	"spriteSourceSize": {"x":91,"y":55,"w":368,"h":460},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
 },
-"kezek_arnyek_00145.png":
+"kezek_anim_00148.png":
 {
-	"frame": {"x":222,"y":1570,"w":167,"h":219},
+	"frame": {"x":1845,"y":3463,"w":368,"h":460},
 	"rotated": true,
 	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":10,"w":167,"h":219},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
+	"spriteSourceSize": {"x":91,"y":55,"w":368,"h":460},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
 },
-"kezek_arnyek_00146.png":
+"kezek_anim_00149.png":
 {
-	"frame": {"x":443,"y":1571,"w":167,"h":220},
+	"frame": {"x":1845,"y":3463,"w":368,"h":460},
 	"rotated": true,
 	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":9,"w":167,"h":220},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00147.png":
-{
-	"frame": {"x":665,"y":1577,"w":167,"h":220},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":9,"w":167,"h":220},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00148.png":
-{
-	"frame": {"x":665,"y":1577,"w":167,"h":220},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":9,"w":167,"h":220},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
-},
-"kezek_arnyek_00149.png":
-{
-	"frame": {"x":665,"y":1577,"w":167,"h":220},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":9,"w":167,"h":220},
-	"sourceSize": {"w":204,"h":229},
-	"anchor": {"x":0.432941,"y":0.911904}
+	"spriteSourceSize": {"x":91,"y":55,"w":368,"h":460},
+	"sourceSize": {"w":459,"h":515},
+	"anchor": {"x":0.5,"y":0.988988}
 }},
 "animations": {
-	"kezek_arnyek": ["kezek_arnyek_00000.png","kezek_arnyek_00001.png","kezek_arnyek_00002.png","kezek_arnyek_00003.png","kezek_arnyek_00004.png","kezek_arnyek_00005.png","kezek_arnyek_00006.png","kezek_arnyek_00007.png","kezek_arnyek_00008.png","kezek_arnyek_00009.png","kezek_arnyek_00010.png","kezek_arnyek_00011.png","kezek_arnyek_00012.png","kezek_arnyek_00013.png","kezek_arnyek_00014.png","kezek_arnyek_00015.png","kezek_arnyek_00016.png","kezek_arnyek_00017.png","kezek_arnyek_00018.png","kezek_arnyek_00019.png","kezek_arnyek_00020.png","kezek_arnyek_00021.png","kezek_arnyek_00022.png","kezek_arnyek_00023.png","kezek_arnyek_00024.png","kezek_arnyek_00025.png","kezek_arnyek_00026.png","kezek_arnyek_00027.png","kezek_arnyek_00028.png","kezek_arnyek_00029.png","kezek_arnyek_00030.png","kezek_arnyek_00031.png","kezek_arnyek_00032.png","kezek_arnyek_00033.png","kezek_arnyek_00034.png","kezek_arnyek_00035.png","kezek_arnyek_00036.png","kezek_arnyek_00037.png","kezek_arnyek_00038.png","kezek_arnyek_00039.png","kezek_arnyek_00040.png","kezek_arnyek_00041.png","kezek_arnyek_00042.png","kezek_arnyek_00043.png","kezek_arnyek_00044.png","kezek_arnyek_00045.png","kezek_arnyek_00046.png","kezek_arnyek_00047.png","kezek_arnyek_00048.png","kezek_arnyek_00049.png","kezek_arnyek_00050.png","kezek_arnyek_00051.png","kezek_arnyek_00052.png","kezek_arnyek_00053.png","kezek_arnyek_00054.png","kezek_arnyek_00055.png","kezek_arnyek_00056.png","kezek_arnyek_00057.png","kezek_arnyek_00058.png","kezek_arnyek_00059.png","kezek_arnyek_00060.png","kezek_arnyek_00061.png","kezek_arnyek_00062.png","kezek_arnyek_00063.png","kezek_arnyek_00064.png","kezek_arnyek_00065.png","kezek_arnyek_00066.png","kezek_arnyek_00067.png","kezek_arnyek_00068.png","kezek_arnyek_00069.png","kezek_arnyek_00070.png","kezek_arnyek_00071.png","kezek_arnyek_00072.png","kezek_arnyek_00073.png","kezek_arnyek_00074.png","kezek_arnyek_00075.png","kezek_arnyek_00076.png","kezek_arnyek_00077.png","kezek_arnyek_00078.png","kezek_arnyek_00079.png","kezek_arnyek_00080.png","kezek_arnyek_00081.png","kezek_arnyek_00082.png","kezek_arnyek_00083.png","kezek_arnyek_00084.png","kezek_arnyek_00085.png","kezek_arnyek_00086.png","kezek_arnyek_00087.png","kezek_arnyek_00088.png","kezek_arnyek_00089.png","kezek_arnyek_00090.png","kezek_arnyek_00091.png","kezek_arnyek_00092.png","kezek_arnyek_00093.png","kezek_arnyek_00094.png","kezek_arnyek_00095.png","kezek_arnyek_00096.png","kezek_arnyek_00097.png","kezek_arnyek_00098.png","kezek_arnyek_00099.png","kezek_arnyek_00100.png","kezek_arnyek_00101.png","kezek_arnyek_00102.png","kezek_arnyek_00103.png","kezek_arnyek_00104.png","kezek_arnyek_00105.png","kezek_arnyek_00106.png","kezek_arnyek_00107.png","kezek_arnyek_00108.png","kezek_arnyek_00109.png","kezek_arnyek_00110.png","kezek_arnyek_00111.png","kezek_arnyek_00112.png","kezek_arnyek_00113.png","kezek_arnyek_00114.png","kezek_arnyek_00115.png","kezek_arnyek_00116.png","kezek_arnyek_00117.png","kezek_arnyek_00118.png","kezek_arnyek_00119.png","kezek_arnyek_00120.png","kezek_arnyek_00121.png","kezek_arnyek_00122.png","kezek_arnyek_00123.png","kezek_arnyek_00124.png","kezek_arnyek_00125.png","kezek_arnyek_00126.png","kezek_arnyek_00127.png","kezek_arnyek_00128.png","kezek_arnyek_00129.png","kezek_arnyek_00130.png","kezek_arnyek_00131.png","kezek_arnyek_00132.png","kezek_arnyek_00133.png","kezek_arnyek_00134.png","kezek_arnyek_00135.png","kezek_arnyek_00136.png","kezek_arnyek_00137.png","kezek_arnyek_00138.png","kezek_arnyek_00139.png","kezek_arnyek_00140.png","kezek_arnyek_00141.png","kezek_arnyek_00142.png","kezek_arnyek_00143.png","kezek_arnyek_00144.png","kezek_arnyek_00145.png","kezek_arnyek_00146.png","kezek_arnyek_00147.png","kezek_arnyek_00148.png","kezek_arnyek_00149.png"]
+	"kezek_anim": ["kezek_anim_00000.png","kezek_anim_00001.png","kezek_anim_00002.png","kezek_anim_00003.png","kezek_anim_00004.png","kezek_anim_00005.png","kezek_anim_00006.png","kezek_anim_00007.png","kezek_anim_00008.png","kezek_anim_00009.png","kezek_anim_00010.png","kezek_anim_00011.png","kezek_anim_00012.png","kezek_anim_00013.png","kezek_anim_00014.png","kezek_anim_00015.png","kezek_anim_00016.png","kezek_anim_00017.png","kezek_anim_00018.png","kezek_anim_00019.png","kezek_anim_00020.png","kezek_anim_00021.png","kezek_anim_00022.png","kezek_anim_00023.png","kezek_anim_00024.png","kezek_anim_00025.png","kezek_anim_00026.png","kezek_anim_00027.png","kezek_anim_00028.png","kezek_anim_00029.png","kezek_anim_00030.png","kezek_anim_00031.png","kezek_anim_00032.png","kezek_anim_00033.png","kezek_anim_00034.png","kezek_anim_00035.png","kezek_anim_00036.png","kezek_anim_00037.png","kezek_anim_00038.png","kezek_anim_00039.png","kezek_anim_00040.png","kezek_anim_00041.png","kezek_anim_00042.png","kezek_anim_00043.png","kezek_anim_00044.png","kezek_anim_00045.png","kezek_anim_00046.png","kezek_anim_00047.png","kezek_anim_00048.png","kezek_anim_00049.png","kezek_anim_00050.png","kezek_anim_00051.png","kezek_anim_00052.png","kezek_anim_00053.png","kezek_anim_00054.png","kezek_anim_00055.png","kezek_anim_00056.png","kezek_anim_00057.png","kezek_anim_00058.png","kezek_anim_00059.png","kezek_anim_00060.png","kezek_anim_00061.png","kezek_anim_00062.png","kezek_anim_00063.png","kezek_anim_00064.png","kezek_anim_00065.png","kezek_anim_00066.png","kezek_anim_00067.png","kezek_anim_00068.png","kezek_anim_00069.png","kezek_anim_00070.png","kezek_anim_00071.png","kezek_anim_00072.png","kezek_anim_00073.png","kezek_anim_00074.png","kezek_anim_00075.png","kezek_anim_00076.png","kezek_anim_00077.png","kezek_anim_00078.png","kezek_anim_00079.png","kezek_anim_00080.png","kezek_anim_00081.png","kezek_anim_00082.png","kezek_anim_00083.png","kezek_anim_00084.png","kezek_anim_00085.png","kezek_anim_00086.png","kezek_anim_00087.png","kezek_anim_00088.png","kezek_anim_00089.png","kezek_anim_00090.png","kezek_anim_00091.png","kezek_anim_00092.png","kezek_anim_00093.png","kezek_anim_00094.png","kezek_anim_00095.png","kezek_anim_00096.png","kezek_anim_00097.png","kezek_anim_00098.png","kezek_anim_00099.png","kezek_anim_00100.png","kezek_anim_00101.png","kezek_anim_00102.png","kezek_anim_00103.png","kezek_anim_00104.png","kezek_anim_00105.png","kezek_anim_00106.png","kezek_anim_00107.png","kezek_anim_00108.png","kezek_anim_00109.png","kezek_anim_00110.png","kezek_anim_00111.png","kezek_anim_00112.png","kezek_anim_00113.png","kezek_anim_00114.png","kezek_anim_00115.png","kezek_anim_00116.png","kezek_anim_00117.png","kezek_anim_00118.png","kezek_anim_00119.png","kezek_anim_00120.png","kezek_anim_00121.png","kezek_anim_00122.png","kezek_anim_00123.png","kezek_anim_00124.png","kezek_anim_00125.png","kezek_anim_00126.png","kezek_anim_00127.png","kezek_anim_00128.png","kezek_anim_00129.png","kezek_anim_00130.png","kezek_anim_00131.png","kezek_anim_00132.png","kezek_anim_00133.png","kezek_anim_00134.png","kezek_anim_00135.png","kezek_anim_00136.png","kezek_anim_00137.png","kezek_anim_00138.png","kezek_anim_00139.png","kezek_anim_00140.png","kezek_anim_00141.png","kezek_anim_00142.png","kezek_anim_00143.png","kezek_anim_00144.png","kezek_anim_00145.png","kezek_anim_00146.png","kezek_anim_00147.png","kezek_anim_00148.png","kezek_anim_00149.png"]
 },
 "meta": {
 	"app": "https://www.codeandweb.com/texturepacker",
 	"version": "1.0",
 	"image": "kezek.png",
 	"format": "RGBA8888",
-	"size": {"w":1937,"h":1745},
-	"scale": "0.12",
-	"smartupdate": "$TexturePacker:SmartUpdate:b4299ad10cb39eb061a5e4679fe944b7:7b029489472ae9c85e74e6ce7e29606c:1f352e2f552cc6a64d18758731213071$"
+	"size": {"w":4096,"h":4096},
+	"scale": "0.27",
+	"smartupdate": "$TexturePacker:SmartUpdate:dec149a9e0147feeb8bb641b1441df84:0c837b9eb5cf7e59b23c9422f661a531:1f352e2f552cc6a64d18758731213071$"
 }
 }
