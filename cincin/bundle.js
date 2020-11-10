@@ -67,160 +67,40 @@
             makeProp,
         };
 
-        let Z = 0;
-        function setZ(z){
-            Z = z;
-        }
-        function init(stage, nodes, animatedSprites, props){
-            const div = document.getElementById('editor');
-            animatedSprites.forEach(el => {
-                const b = document.createElement('button');
-                b.innerText = el;
-                div.appendChild(b);
-                b.addEventListener('click', e => {
-                    const s = actorFactory.makeAnimatedSprite(e.currentTarget.innerText);
-                    s.type = 'ANIMATED';
-                    s.assetKey = e.currentTarget.innerText;
-                    nodes.push(s);
-                    stage.addChild(s);
-                    makeInteractive(s);
-                    s.play();
-                    s.animationSpeed = 24 / 60;
-                    s.hitArea = new PIXI.Rectangle(-200, -200, 400, 400);
-                    s._x = 1920 / 2;
-                    s._y = 1080;
-                    s.z = Z + 11;
-                    updateOutput();
-                });
-            });
-            div.appendChild(document.createElement('br'));
-            props.forEach((el) => {
-                const b = document.createElement('button');
-                b.innerText = el;
-                div.appendChild(b);
-                b.addEventListener('click', e => {
-                    const s = actorFactory.makeProp(e.currentTarget.innerText);
-                    s.type = 'PROP';
-                    s.assetKey = e.currentTarget.innerText;
-                    s.hitArea = new PIXI.Rectangle(-200, -200, 400, 400);
-                    nodes.push(s);
-                    stage.addChild(s);
-                    makeInteractive(s);
-                    s._x = 1920 / 2;
-                    s._y = 1080;
-                    s.z = Z + 11;
-                    updateOutput();
-                });
-            });
-            div.appendChild(document.createElement('br'));
-            const ta = document.createElement('textarea');
-            ta.cols = 200;
-            div.appendChild(ta);
-            ta.addEventListener('click', e => {
-                ta.select();
-                document.execCommand("copy");
-            });
-            function updateOutput(){
-                ta.innerText = JSON.stringify(nodes.map(n => {
-                    return {
-                        x: n._x,
-                        y: n._y,
-                        flip: n._flip,
-                        baseScale: n._baseScale,
-                        z: n.z,
-                        assetKey: n.assetKey,
-                        type: n.type,
-                    }
-                }));
-            }
-            document.addEventListener('keydown', e => {
-                if(!currentEl) return
-                switch (e.key){
-                    case 'Delete':
-                        nodes.splice(nodes.indexOf(currentEl),1);
-                        stage.removeChild(currentEl);
-                        break;
-                    case 'ArrowLeft':
-                        currentEl._x -= 20;
-                        break;
-                    case 'ArrowRight':
-                        currentEl._x += 20;
-                        break;
-                    case '+':
-                        currentEl._baseScale += .05;
-                        break;
-                    case '-':
-                        currentEl._baseScale -= .05;
-                        break;
-                    case 'q':
-                        currentEl.z += .5;
-                        break;
-                    case 'a':
-                        currentEl.z -= .5;
-                        break;
-                    case 'w':
-                        currentEl._y -= 10;
-                        console.log(currentEl._y);
-                        break;
-                    case 's':
-                        currentEl._y += 10;
-                        console.log(currentEl._y);
-                        break;
-                    case 'f':
-                        currentEl._flip = !currentEl._flip;
-                        break;
-                    }
-                updateOutput();
-            });
-            return div
-        }
-
-        let currentEl = null;
-
-        function makeInteractive(s){
-            s.interactive = true;
-            s.mouseover = function(){
-                if(currentEl) currentEl.tint = 0xFFFFFF;
-                this.tint = 0x00FF00;
-                currentEl = this;
-            }; 
-        }
-
-        var editor = {
-            init,
-            setZ,
-        };
-
         var population = [
         	[
         		{
-        			x: 360,
+        			x: 240,
         			y: 1080,
+        			flip: false,
         			baseScale: 0.7999999999999998,
-        			z: 12.5,
+        			z: 11.5,
         			assetKey: "gomba.png",
         			type: "PROP"
         		},
         		{
-        			x: 260,
-        			y: 830,
-        			baseScale: 1,
+        			x: 220,
+        			y: 970,
+        			flip: false,
+        			baseScale: 1.2500000000000002,
         			z: 13.5,
         			assetKey: "image_placeholder.png",
         			type: "PROP"
         		},
         		{
         			x: 980,
-        			y: 830,
-        			baseScale: 1,
+        			y: 970,
+        			flip: false,
+        			baseScale: 1.2500000000000002,
         			z: 13.5,
         			assetKey: "image_placeholder.png",
         			type: "PROP"
         		},
         		{
-        			x: 1700,
-        			y: 830,
-        			baseScale: 1,
+        			x: 1740,
+        			y: 970,
+        			flip: false,
+        			baseScale: 1.2500000000000002,
         			z: 13.5,
         			assetKey: "image_placeholder.png",
         			type: "PROP"
@@ -228,22 +108,25 @@
         		{
         			x: 1300,
         			y: 1080,
+        			flip: false,
         			baseScale: 0.4499999999999996,
         			z: 12.5,
         			assetKey: "tal_kis.png",
         			type: "PROP"
         		},
         		{
-        			x: 1040,
+        			x: 980,
         			y: 1080,
+        			flip: false,
         			baseScale: 0.29999999999999966,
-        			z: 14,
+        			z: 10.5,
         			assetKey: "tal_nagy.png",
         			type: "PROP"
         		},
         		{
         			x: -500,
         			y: 1080,
+        			flip: false,
         			baseScale: 1.2500000000000002,
         			z: 19.5,
         			assetKey: "kagyloszikla.png",
@@ -252,6 +135,7 @@
         		{
         			x: -720,
         			y: 1080,
+        			flip: false,
         			baseScale: 0.29999999999999966,
         			z: 18,
         			assetKey: "tal_nagy.png",
@@ -260,14 +144,16 @@
         		{
         			x: -320,
         			y: 1080,
+        			flip: false,
         			baseScale: 0.5499999999999996,
-        			z: 15,
+        			z: 15.5,
         			assetKey: "buborek3.png",
         			type: "PROP"
         		},
         		{
         			x: 2600,
         			y: 1080,
+        			flip: false,
         			baseScale: 1.4000000000000004,
         			z: 19,
         			assetKey: "buborek_1.png",
@@ -276,6 +162,7 @@
         		{
         			x: 1760,
         			y: 1080,
+        			flip: false,
         			baseScale: 0.6499999999999997,
         			z: 10,
         			assetKey: "homokpad.png",
@@ -284,6 +171,7 @@
         		{
         			x: 1680,
         			y: 840,
+        			flip: false,
         			baseScale: 0.34999999999999964,
         			z: 9.5,
         			assetKey: "csiga",
@@ -291,10 +179,38 @@
         		},
         		{
         			x: 980,
-        			y: 260,
+        			y: 270,
+        			flip: false,
         			baseScale: 0.6999999999999997,
         			z: 13.5,
         			assetKey: "header_long.png",
+        			type: "PROP"
+        		},
+        		{
+        			x: 960,
+        			y: 980,
+        			flip: false,
+        			baseScale: 0.95,
+        			z: 13.55,
+        			assetKey: "photo2_bigarnyek.png",
+        			type: "PROP"
+        		},
+        		{
+        			x: 200,
+        			y: 990,
+        			flip: false,
+        			baseScale: 0.8999999999999999,
+        			z: 13.55,
+        			assetKey: "photo2_bigarnyek.png",
+        			type: "PROP"
+        		},
+        		{
+        			x: 1700,
+        			y: 980,
+        			flip: false,
+        			baseScale: 0.95,
+        			z: 13.55,
+        			assetKey: "photo2_bigarnyek.png",
         			type: "PROP"
         		}
         	],
@@ -302,6 +218,7 @@
         		{
         			x: 2020,
         			y: 1080,
+        			flip: false,
         			baseScale: 0.4999999999999996,
         			z: 14,
         			assetKey: "csillag",
@@ -309,31 +226,35 @@
         		},
         		{
         			x: 80,
-        			y: 890,
-        			baseScale: 1,
+        			y: 950,
+        			flip: false,
+        			baseScale: 1.2500000000000002,
         			z: 14,
         			assetKey: "image_placeholder.png",
         			type: "PROP"
         		},
         		{
-        			x: 720,
-        			y: 890,
-        			baseScale: 1,
+        			x: 840,
+        			y: 950,
+        			flip: false,
+        			baseScale: 1.2500000000000002,
         			z: 14,
         			assetKey: "image_placeholder.png",
         			type: "PROP"
         		},
         		{
-        			x: 1560,
+        			x: 1720,
         			y: 510,
+        			flip: false,
         			baseScale: 1,
         			z: 14,
         			assetKey: "header_long.png",
         			type: "PROP"
         		},
         		{
-        			x: 1420,
+        			x: 1580,
         			y: 760,
+        			flip: false,
         			baseScale: 1.1,
         			z: 14,
         			assetKey: "paragraph_box.png",
@@ -342,6 +263,7 @@
         		{
         			x: -20,
         			y: 1080,
+        			flip: false,
         			baseScale: 0.7999999999999998,
         			z: 13,
         			assetKey: "buborek3.png",
@@ -350,14 +272,16 @@
         		{
         			x: 140,
         			y: 1080,
+        			flip: false,
         			baseScale: 1.05,
         			z: 12,
         			assetKey: "buborek_1.png",
         			type: "PROP"
         		},
         		{
-        			x: 960,
+        			x: 1200,
         			y: 1080,
+        			flip: false,
         			baseScale: 0.5499999999999996,
         			z: 11.5,
         			assetKey: "agancs_kis.png",
@@ -366,6 +290,7 @@
         		{
         			x: 1640,
         			y: 1080,
+        			flip: false,
         			baseScale: 2.0500000000000007,
         			z: 22,
         			assetKey: "hegy.png",
@@ -374,9 +299,26 @@
         		{
         			x: -580,
         			y: 1080,
+        			flip: false,
         			baseScale: 1.4000000000000004,
         			z: 18,
         			assetKey: "hatterkorall.png",
+        			type: "PROP"
+        		},
+        		{
+        			x: 820,
+        			y: 1000,
+        			baseScale: 1,
+        			z: 14.05,
+        			assetKey: "photoarnyek.png",
+        			type: "PROP"
+        		},
+        		{
+        			x: 60,
+        			y: 990,
+        			baseScale: 0.95,
+        			z: 14.05,
+        			assetKey: "photoarnyek.png",
         			type: "PROP"
         		}
         	],
@@ -2365,33 +2307,295 @@
         	]
         ];
 
+        function createMaskedImage(app, container, mask, image){
+            image.texture.baseTexture.on('loaded', e => {
+                let inner = new PIXI.Container();
+                inner.addChild(image);
+                inner.addChild(mask);
+                mask.x = mask.width * mask.anchor.x;
+                mask.y = mask.height * mask.anchor.y;
+                const scale = Math.max(mask.width / image.width, mask.height / image.height);
+                image.scale.set(scale);
+                image.x = (mask.width - image.width) / 2;
+                image.y = (mask.height - image.height) / 2;
+                image.mask = mask;
+                let renderTexture = PIXI.RenderTexture.create({ width: mask.width, height: mask.height });
+                app.renderer.render(inner, renderTexture);
+                let baked = PIXI.Sprite.from(renderTexture);
+                baked.anchor.set(mask.anchor.x, mask.anchor.y);
+                container.addChild(baked);
+                image.mask = null;
+                inner = null;
+            });
+        }
+
         const SLIDE_ZGAP = 40;
 
-        function init$1(stage, nodes){
-            population.forEach((slide, slideIdx) => {
-                slide.forEach(p => {
-                    let actor;
-                    if(p.type === 'PROP'){
-                        actor = actorFactory.makeProp(p.assetKey);
+        function uborkaBubbles(n, dt, state){
+            state.delay -= dt;
+            if(state.delay < 0) {
+                state.delay = (Math.random() * 600 + 60) / state.positions.length;
+                const bubble = actorFactory.makeProp('buborek_uborka.png');
+                const position = state.positions[Math.floor(state.positions.length * Math.random())];
+                bubble._x = position.x;
+                bubble.y = position.y;
+                state.bubbles.push(bubble);
+                bubble.life = 0;
+                bubble.alpha = 0.8;
+                bubble.rnd = Math.random();
+                n.addChild(bubble);
+            }
+            state.bubbles.forEach(b => {
+                b.life += dt;
+                b.y = b.y - dt;
+                b.x = b._x + Math.sin(b.life * 0.02 + b.rnd * 10) * 20;
+                if(b.life > 500){
+                    n.removeChild(b);
+                }
+                b.scale.set(Math.min(b.life / 30, Math.min(0.5, (500 - b.life) * 0.01)));
+
+            });
+            state.bubbles = state.bubbles.filter(b => b.life < 500);
+        }
+
+        const animationControllers = {
+            "csavar": n => {
+                const delay = (Math.random() * 330) + 300;
+                let t = 0;
+                n.loop = false;
+                return dt => {
+                    t += dt;
+                    if(t > delay){
+                        n.gotoAndPlay(0);
+                        t = 0;
+                    }
+                }
+            },
+            "uborka3.png": n=>{
+                const state = {
+                    delay:Math.random() * 330,
+                    positions:[{x:40,y:-750}],
+                    bubbles:[]
+                };
+                return dt => uborkaBubbles(n, dt, state)
+            },
+            "uborka4.png": n=>{
+                const state = {
+                    delay:Math.random() * 330,
+                    positions:[{x:15,y:-450}],
+                    bubbles:[]
+                };
+                return dt => uborkaBubbles(n, dt, state)
+            },
+            "ketuborka.png": n=>{
+                const state = {
+                    delay:Math.random() * 330,
+                    positions:[{x:105,y:-670},{x:-95,y:-400}],
+                    bubbles:[]
+                };
+                return dt => uborkaBubbles(n, dt, state)
+            }
+        };
+
+        const IMAGE_PLACEHOLDERS = ['image_placeholder.png', 'full_1_place.png', 'ikon_kagylo.png', 'photo_place.png', 'photo3_big_place.png', 'photobig_v1_place.png', 'photobig_v2_place.png'];
+
+        function pickFrom(arr){
+            return arr[Math.floor(Math.random() * arr.length)]
+        }
+
+        function buildSlide(app, nodes, slideData, slideIdx, isEditor) {
+            const stage = app.stage;
+            let createdNodes = [];
+            slideData.forEach(p => {
+                let actor;
+                if(p.type === 'PROP'){
+                    actor = actorFactory.makeProp(p.assetKey);
+                    if(!isEditor && IMAGE_PLACEHOLDERS.includes(p.assetKey)) {
+
+                        let placeholder = actor;
+                        actor = new PIXI.Container();
+                        createMaskedImage(app, actor, placeholder, PIXI.Sprite.from(pickFrom([
+                            '/dummy/image01.jpg',
+                            '/dummy/image02.jpg',
+                            '/dummy/image03.png',
+                            '/dummy/image04.png',
+                            '/dummy/image05.png',
+                            '/dummy/image06.jpg',
+                        ])));
+                    }
+                    let fn = animationControllers[p.assetKey];
+                    if(fn) actor.controller = fn(actor);
+                }else {
+                    actor = actorFactory.makeAnimatedSprite(p.assetKey);
+                    actor.animationSpeed = 24 / 60;
+                    let fn = animationControllers[p.assetKey];
+                    if(fn){
+                        actor.controller = fn(actor);
                     }else {
-                        actor = actorFactory.makeAnimatedSprite(p.assetKey);
-                        actor.animationSpeed = 24 / 60;
                         actor.play();
                     }
-                    actor._x = p.x;
-                    actor._y = p.y;
-                    actor.z = p.z + slideIdx * SLIDE_ZGAP;
-                    actor._baseScale = p.baseScale;
-                    actor._flip = !!p.flip;
-                    stage.addChild(actor);
-                    nodes.push(actor);
-                });
+                }
+                actor.assetKey = p.assetKey;
+                actor.type = p.type;
+                actor._x = p.x;
+                actor._y = p.y;
+                actor.z = p.z + slideIdx * SLIDE_ZGAP;
+                actor._baseScale = p.baseScale;
+                actor._flip = !!p.flip;
+                stage.addChild(actor);
+                nodes.push(actor);
+                createdNodes.push(actor);
+            });
+            return createdNodes
+        }
+
+        function init(app, nodes){
+            population.forEach((slideData, slideIdx) => {
+                buildSlide(app, nodes, slideData, slideIdx);
             });
         }
 
         var populator = {
-            init: init$1,
+            init,
+            buildSlide,
             slideCount: population.length,
+        };
+
+        let Z = 0;
+        function setZ(z){
+            Z = z;
+        }
+        function init$1(app, nodes, animatedSprites, props){
+            const stage = app.stage;
+            const div = document.getElementById('editor');
+            animatedSprites.forEach(el => {
+                const b = document.createElement('button');
+                b.innerText = el;
+                div.appendChild(b);
+                b.addEventListener('click', e => {
+                    const s = actorFactory.makeAnimatedSprite(e.currentTarget.innerText);
+                    s.type = 'ANIMATED';
+                    s.assetKey = e.currentTarget.innerText;
+                    nodes.push(s);
+                    stage.addChild(s);
+                    makeInteractive(s);
+                    s.play();
+                    s.animationSpeed = 24 / 60;
+                    s._x = 1920 / 2;
+                    s._y = 1080;
+                    s.z = Z + 11;
+                    updateOutput();
+                });
+            });
+            div.appendChild(document.createElement('br'));
+            props.forEach((el) => {
+                const b = document.createElement('button');
+                b.innerText = el;
+                div.appendChild(b);
+                b.addEventListener('click', e => {
+                    const s = actorFactory.makeProp(e.currentTarget.innerText);
+                    s.type = 'PROP';
+                    s.assetKey = e.currentTarget.innerText;
+                    nodes.push(s);
+                    stage.addChild(s);
+                    makeInteractive(s);
+                    s._x = 1920 / 2;
+                    s._y = 1080;
+                    s.z = Z + 11;
+                    updateOutput();
+                });
+            });
+            div.appendChild(document.createElement('br'));
+
+            const taImport = document.createElement('textarea');
+            div.appendChild(taImport);
+            taImport.addEventListener('change', e => {
+                populator.buildSlide(app, nodes, JSON.parse(e.currentTarget.value), 0, true).forEach(item => makeInteractive(item));
+                updateOutput();
+            });
+
+            const ta = document.createElement('textarea');
+            div.appendChild(ta);
+            ta.addEventListener('click', e => {
+                ta.select();
+                document.execCommand("copy");
+            });
+            function updateOutput(){
+                ta.innerText = JSON.stringify(nodes.map(n => {
+                    return {
+                        x: n._x,
+                        y: n._y,
+                        flip: n._flip,
+                        baseScale: n._baseScale,
+                        z: n.z,
+                        assetKey: n.assetKey,
+                        type: n.type,
+                    }
+                }));
+            }
+            document.addEventListener('keydown', e => {
+                if(!currentEl) return
+                switch (e.key){
+                    case 'Delete':
+                        nodes.splice(nodes.indexOf(currentEl),1);
+                        stage.removeChild(currentEl);
+                        break;
+                    case 'ArrowLeft':
+                        currentEl._x -= 20;
+                        break;
+                    case 'ArrowRight':
+                        currentEl._x += 20;
+                        break;
+                    case '+':
+                        currentEl._baseScale += .05;
+                        break;
+                    case '-':
+                        currentEl._baseScale -= .05;
+                        break;
+                    case 'q':
+                        currentEl.z += .5;
+                        break;
+                    case 'Q':
+                        currentEl.z += .05;
+                        break;
+                    case 'a':
+                        currentEl.z -= .5;
+                        break;
+                    case 'A':
+                        currentEl.z -= .05;
+                        break;
+                    case 'w':
+                        currentEl._y -= 10;
+                        console.log(currentEl._y);
+                        break;
+                    case 's':
+                        currentEl._y += 10;
+                        console.log(currentEl._y);
+                        break;
+                    case 'f':
+                        currentEl._flip = !currentEl._flip;
+                        break;
+                    }
+                updateOutput();
+            });
+            return div
+        }
+
+        let currentEl = null;
+
+        function makeInteractive(s){
+            s.interactive = true;
+            s.hitArea = new PIXI.Rectangle(-200, -200, 400, 400);
+            s.mouseover = function(){
+                if(currentEl) currentEl.tint = 0xFFFFFF;
+                this.tint = 0x00FF00;
+                currentEl = this;
+            }; 
+        }
+
+        var editor = {
+            init: init$1,
+            setZ,
         };
 
         gsap.registerPlugin(PixiPlugin);
@@ -2424,7 +2628,7 @@
         function setup(){
             {
                 populator.init(
-                    app.stage, 
+                    app, 
                     nodes, 
                     Object.keys(animSpriteData), 
                     Object.keys(PIXI.Loader.shared.resources['/assets/props.json'].textures)
@@ -2468,6 +2672,9 @@
                     n.x = 1920 / 2 + (n._x - 1920 / 2) * scale;
                     n.y = n._y * scale + (1 - scale) * -300; // todo make 200 const
                     n.zIndex = -n.z;
+                    if(n.controller){
+                        n.controller(dt);
+                    }
                 });
             });
 
@@ -2478,11 +2685,9 @@
                 if(e.key === 'ArrowUp') {
                     z+=transitionOffset;
                     gsap.to(state, transitionDuration, {Z: z});
-                    console.log(z);
                 }else if(e.key === 'ArrowDown'){
                     z-=transitionOffset;
                     gsap.to(state, transitionDuration, {Z: z});
-                    console.log(z);
                 }
             });
 
