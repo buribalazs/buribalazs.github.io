@@ -2308,7 +2308,14 @@
         ];
 
         function createMaskedImage(app, container, mask, image){
-            image.texture.baseTexture.on('loaded', e => {
+            if(image.texture.valid){
+                doit();
+            }else {
+                image.texture.baseTexture.on('loaded', e => {
+                    doit();
+                });
+            }
+            function doit(){
                 let inner = new PIXI.Container();
                 inner.addChild(image);
                 inner.addChild(mask);
@@ -2326,7 +2333,7 @@
                 container.addChild(baked);
                 image.mask = null;
                 inner = null;
-            });
+            }
         }
 
         const SLIDE_ZGAP = 40;
