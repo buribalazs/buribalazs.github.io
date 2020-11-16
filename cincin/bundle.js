@@ -62,9 +62,42 @@
             return res
         }
 
+        function makeText(fontSize, wordWrapWidth, charCount, textAlign){
+            const dummyTexts = [
+                'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters',
+                'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.',
+                'Richard McClintock, a Latin professor at Hampden - Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.',
+            ];
+            const text = new PIXI.Text('text');
+            // text._resolution = 2
+            text._baseScale = 1;
+            text.fontSize = fontSize || 30;
+            text.wordWrapWidth = wordWrapWidth || 200;
+            text.charCount = charCount || 30;
+            text.textAlign = textAlign;
+            text._dummytext = dummyTexts[Math.floor(Math.random() * dummyTexts.length)];
+            text.updateStyle = () => {
+                const style = new PIXI.TextStyle({
+                    // fontFamily: "Helvetica",
+                    fill: "white",
+                    align: text.textAlign,
+                    fontSize: text.fontSize,
+                    lineHeight: text.fontSize,
+                    fontWeight: 600,
+                    wordWrap: true,
+                    wordWrapWidth: text.wordWrapWidth
+                });
+                text.style = style;
+                text.text = text._dummytext.substr(0, text.charCount);
+            };
+            text.updateStyle();
+            return text
+        }
+
         var actorFactory = {
             makeAnimatedSprite,
             makeProp,
+            makeText,
         };
 
         var population = [
@@ -73,6 +106,7 @@
         			x: 240,
         			y: 1080,
         			flip: false,
+        			rotation: 0,
         			baseScale: 0.7999999999999998,
         			z: 11.5,
         			assetKey: "gomba.png",
@@ -82,6 +116,7 @@
         			x: 220,
         			y: 970,
         			flip: false,
+        			rotation: 0,
         			baseScale: 1.2500000000000002,
         			z: 13.5,
         			assetKey: "image_placeholder.png",
@@ -91,6 +126,7 @@
         			x: 980,
         			y: 970,
         			flip: false,
+        			rotation: 0,
         			baseScale: 1.2500000000000002,
         			z: 13.5,
         			assetKey: "image_placeholder.png",
@@ -100,6 +136,7 @@
         			x: 1740,
         			y: 970,
         			flip: false,
+        			rotation: 0,
         			baseScale: 1.2500000000000002,
         			z: 13.5,
         			assetKey: "image_placeholder.png",
@@ -109,6 +146,7 @@
         			x: 1300,
         			y: 1080,
         			flip: false,
+        			rotation: 0,
         			baseScale: 0.4499999999999996,
         			z: 12.5,
         			assetKey: "tal_kis.png",
@@ -118,6 +156,7 @@
         			x: 980,
         			y: 1080,
         			flip: false,
+        			rotation: 0,
         			baseScale: 0.29999999999999966,
         			z: 10.5,
         			assetKey: "tal_nagy.png",
@@ -127,6 +166,7 @@
         			x: -500,
         			y: 1080,
         			flip: false,
+        			rotation: 0,
         			baseScale: 1.2500000000000002,
         			z: 19.5,
         			assetKey: "kagyloszikla.png",
@@ -136,6 +176,7 @@
         			x: -720,
         			y: 1080,
         			flip: false,
+        			rotation: 0,
         			baseScale: 0.29999999999999966,
         			z: 18,
         			assetKey: "tal_nagy.png",
@@ -145,6 +186,7 @@
         			x: -320,
         			y: 1080,
         			flip: false,
+        			rotation: 0,
         			baseScale: 0.5499999999999996,
         			z: 15.5,
         			assetKey: "buborek3.png",
@@ -154,6 +196,7 @@
         			x: 2600,
         			y: 1080,
         			flip: false,
+        			rotation: 0,
         			baseScale: 1.4000000000000004,
         			z: 19,
         			assetKey: "buborek_1.png",
@@ -163,6 +206,7 @@
         			x: 1760,
         			y: 1080,
         			flip: false,
+        			rotation: 0,
         			baseScale: 0.6499999999999997,
         			z: 10,
         			assetKey: "homokpad.png",
@@ -172,24 +216,17 @@
         			x: 1680,
         			y: 840,
         			flip: false,
+        			rotation: 0,
         			baseScale: 0.34999999999999964,
         			z: 9.5,
         			assetKey: "csiga",
         			type: "ANIMATED"
         		},
         		{
-        			x: 980,
-        			y: 270,
-        			flip: false,
-        			baseScale: 0.6999999999999997,
-        			z: 13.5,
-        			assetKey: "header_long.png",
-        			type: "PROP"
-        		},
-        		{
         			x: 960,
         			y: 980,
         			flip: false,
+        			rotation: 0,
         			baseScale: 0.95,
         			z: 13.55,
         			assetKey: "photo2_bigarnyek.png",
@@ -199,6 +236,7 @@
         			x: 200,
         			y: 990,
         			flip: false,
+        			rotation: 0,
         			baseScale: 0.8999999999999999,
         			z: 13.55,
         			assetKey: "photo2_bigarnyek.png",
@@ -208,10 +246,25 @@
         			x: 1700,
         			y: 980,
         			flip: false,
+        			rotation: 0,
         			baseScale: 0.95,
         			z: 13.55,
         			assetKey: "photo2_bigarnyek.png",
         			type: "PROP"
+        		},
+        		{
+        			x: 400,
+        			y: 170,
+        			flip: false,
+        			rotation: 6.938893903907228e-18,
+        			baseScale: 1,
+        			z: 13.5,
+        			assetKey: "TEXT",
+        			type: "TEXT",
+        			fontSize: 82,
+        			wordWrapWidth: 1280,
+        			charCount: 50,
+        			textAlign: "center"
         		}
         	],
         	[
@@ -219,6 +272,7 @@
         			x: 2020,
         			y: 1080,
         			flip: false,
+        			rotation: 0,
         			baseScale: 0.4999999999999996,
         			z: 14,
         			assetKey: "csillag",
@@ -228,6 +282,7 @@
         			x: 80,
         			y: 950,
         			flip: false,
+        			rotation: 0,
         			baseScale: 1.2500000000000002,
         			z: 14,
         			assetKey: "image_placeholder.png",
@@ -237,33 +292,17 @@
         			x: 840,
         			y: 950,
         			flip: false,
+        			rotation: 0,
         			baseScale: 1.2500000000000002,
         			z: 14,
         			assetKey: "image_placeholder.png",
         			type: "PROP"
         		},
         		{
-        			x: 1720,
-        			y: 510,
-        			flip: false,
-        			baseScale: 1,
-        			z: 14,
-        			assetKey: "header_long.png",
-        			type: "PROP"
-        		},
-        		{
-        			x: 1580,
-        			y: 760,
-        			flip: false,
-        			baseScale: 1.1,
-        			z: 14,
-        			assetKey: "paragraph_box.png",
-        			type: "PROP"
-        		},
-        		{
         			x: -20,
         			y: 1080,
         			flip: false,
+        			rotation: 0,
         			baseScale: 0.7999999999999998,
         			z: 13,
         			assetKey: "buborek3.png",
@@ -273,6 +312,7 @@
         			x: 140,
         			y: 1080,
         			flip: false,
+        			rotation: 0,
         			baseScale: 1.05,
         			z: 12,
         			assetKey: "buborek_1.png",
@@ -282,6 +322,7 @@
         			x: 1200,
         			y: 1080,
         			flip: false,
+        			rotation: 0,
         			baseScale: 0.5499999999999996,
         			z: 11.5,
         			assetKey: "agancs_kis.png",
@@ -291,6 +332,7 @@
         			x: 1640,
         			y: 1080,
         			flip: false,
+        			rotation: 0,
         			baseScale: 2.0500000000000007,
         			z: 22,
         			assetKey: "hegy.png",
@@ -300,6 +342,7 @@
         			x: -580,
         			y: 1080,
         			flip: false,
+        			rotation: 0,
         			baseScale: 1.4000000000000004,
         			z: 18,
         			assetKey: "hatterkorall.png",
@@ -308,6 +351,8 @@
         		{
         			x: 820,
         			y: 1000,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1,
         			z: 14.05,
         			assetKey: "photoarnyek.png",
@@ -316,56 +361,55 @@
         		{
         			x: 60,
         			y: 990,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.95,
         			z: 14.05,
         			assetKey: "photoarnyek.png",
         			type: "PROP"
+        		},
+        		{
+        			x: 1240,
+        			y: 620,
+        			rotation: 0,
+        			baseScale: 1,
+        			z: 14,
+        			assetKey: "TEXT",
+        			type: "TEXT",
+        			fontSize: 53,
+        			wordWrapWidth: 980,
+        			charCount: 120
+        		},
+        		{
+        			x: 1240,
+        			y: 410,
+        			flip: false,
+        			rotation: 0,
+        			baseScale: 1,
+        			z: 14,
+        			assetKey: "TEXT",
+        			type: "TEXT",
+        			fontSize: 74,
+        			wordWrapWidth: 980,
+        			charCount: 50
         		}
         	],
         	[
         		{
         			x: 960,
         			y: 580,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1.5500000000000005,
         			z: 14,
         			assetKey: "lian_dot4.png",
         			type: "PROP"
         		},
         		{
-        			x: 20,
-        			y: 890,
-        			baseScale: 0.8499999999999999,
-        			z: 14,
-        			assetKey: "paragraph_box.png",
-        			type: "PROP"
-        		},
-        		{
-        			x: 600,
-        			y: 890,
-        			baseScale: 0.8499999999999999,
-        			z: 14,
-        			assetKey: "paragraph_box.png",
-        			type: "PROP"
-        		},
-        		{
-        			x: 1840,
-        			y: 890,
-        			baseScale: 0.8499999999999999,
-        			z: 14,
-        			assetKey: "paragraph_box.png",
-        			type: "PROP"
-        		},
-        		{
-        			x: 1220,
-        			y: 890,
-        			baseScale: 0.8499999999999999,
-        			z: 14,
-        			assetKey: "paragraph_box.png",
-        			type: "PROP"
-        		},
-        		{
         			x: -700,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.7999999999999998,
         			z: 20,
         			assetKey: "gombacsap.png",
@@ -374,6 +418,8 @@
         		{
         			x: 1920,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1.4500000000000004,
         			z: 20,
         			assetKey: "kiskorallok.png",
@@ -382,6 +428,8 @@
         		{
         			x: 940,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.7499999999999998,
         			z: 13,
         			assetKey: "buborek3.png",
@@ -390,6 +438,8 @@
         		{
         			x: 2620,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1.4500000000000004,
         			z: 17,
         			assetKey: "buborek_1.png",
@@ -398,6 +448,8 @@
         		{
         			x: 240,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.5499999999999996,
         			z: 11,
         			assetKey: "gombaszikla.png",
@@ -406,6 +458,8 @@
         		{
         			x: 1520,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.7499999999999998,
         			z: 10,
         			assetKey: "csillag_homok.png",
@@ -414,16 +468,75 @@
         		{
         			x: 1500,
         			y: 830,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.34999999999999964,
         			z: 9.5,
         			assetKey: "kagylo",
         			type: "ANIMATED"
+        		},
+        		{
+        			x: 1600,
+        			y: 720,
+        			rotation: 0,
+        			baseScale: 1,
+        			z: 14,
+        			assetKey: "TEXT",
+        			type: "TEXT",
+        			fontSize: 53,
+        			wordWrapWidth: 480,
+        			charCount: 60,
+        			textAlign: null
+        		},
+        		{
+        			x: -220,
+        			y: 720,
+        			flip: false,
+        			rotation: 0,
+        			baseScale: 1,
+        			z: 14,
+        			assetKey: "TEXT",
+        			type: "TEXT",
+        			fontSize: 53,
+        			wordWrapWidth: 480,
+        			charCount: 60,
+        			textAlign: null
+        		},
+        		{
+        			x: 360,
+        			y: 720,
+        			flip: false,
+        			rotation: 0,
+        			baseScale: 1,
+        			z: 14,
+        			assetKey: "TEXT",
+        			type: "TEXT",
+        			fontSize: 53,
+        			wordWrapWidth: 480,
+        			charCount: 60,
+        			textAlign: null
+        		},
+        		{
+        			x: 1020,
+        			y: 720,
+        			flip: false,
+        			rotation: 0,
+        			baseScale: 1,
+        			z: 14,
+        			assetKey: "TEXT",
+        			type: "TEXT",
+        			fontSize: 53,
+        			wordWrapWidth: 480,
+        			charCount: 60,
+        			textAlign: null
         		}
         	],
         	[
         		{
         			x: 960,
         			y: 690,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1.6500000000000006,
         			z: 15,
         			assetKey: "lian_dot2.png",
@@ -432,6 +545,8 @@
         		{
         			x: -60,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1.2000000000000002,
         			z: 19.5,
         			assetKey: "hegy.png",
@@ -440,6 +555,8 @@
         		{
         			x: -380,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1,
         			z: 17,
         			assetKey: "ketuborka.png",
@@ -448,6 +565,8 @@
         		{
         			x: 1000,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.6999999999999997,
         			z: 18.5,
         			assetKey: "uborka3.png",
@@ -456,15 +575,19 @@
         		{
         			x: 1200,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.6999999999999997,
         			z: 18,
         			assetKey: "uborka4.png",
         			type: "PROP"
         		},
         		{
-        			x: 1860,
+        			x: 2040,
         			y: 1080,
-        			baseScale: 1,
+        			flip: false,
+        			rotation: 0,
+        			baseScale: 0.8749999999999999,
         			z: 16,
         			assetKey: "homokpad.png",
         			type: "PROP"
@@ -472,14 +595,18 @@
         		{
         			x: 60,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.6999999999999997,
-        			z: 13,
+        			z: 12,
         			assetKey: "csillaghomok_jav.png",
         			type: "PROP"
         		},
         		{
         			x: -20,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.34999999999999964,
         			z: 12,
         			assetKey: "bluggy",
@@ -488,22 +615,28 @@
         		{
         			x: 120,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.29999999999999966,
-        			z: 11.5,
+        			z: 11,
         			assetKey: "bluggyBig",
         			type: "ANIMATED"
         		},
         		{
         			x: 300,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.19999999999999968,
-        			z: 12.5,
+        			z: 11.5,
         			assetKey: "bluggyBig",
         			type: "ANIMATED"
         		},
         		{
-        			x: 520,
+        			x: 760,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1,
         			z: 11,
         			assetKey: "buborek_1.png",
@@ -512,6 +645,8 @@
         		{
         			x: 1220,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.8499999999999999,
         			z: 12.5,
         			assetKey: "buborek_2.png",
@@ -520,6 +655,8 @@
         		{
         			x: 1740,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.4499999999999996,
         			z: 10.5,
         			assetKey: "tal_kis.png",
@@ -528,6 +665,8 @@
         		{
         			x: 1480,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.39999999999999963,
         			z: 11,
         			assetKey: "tal_kiszold.png",
@@ -536,40 +675,56 @@
         		{
         			x: 1640,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.34999999999999964,
-        			z: 13,
+        			z: 12.5,
         			assetKey: "tal_kis.png",
         			type: "PROP"
         		},
         		{
         			x: 2000,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.6499999999999997,
         			z: 13.5,
         			assetKey: "csavar",
         			type: "ANIMATED"
         		},
         		{
-        			x: 440,
-        			y: 940,
+        			x: 1020,
+        			y: 800,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1,
         			z: 15,
-        			assetKey: "paragraph_small.png",
-        			type: "PROP"
+        			assetKey: "TEXT",
+        			type: "TEXT",
+        			fontSize: 53,
+        			wordWrapWidth: 880,
+        			charCount: 150
         		},
         		{
-        			x: 1440,
-        			y: 1000,
+        			x: -20,
+        			y: 800,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1,
         			z: 15,
-        			assetKey: "paragraph_box.png",
-        			type: "PROP"
+        			assetKey: "TEXT",
+        			type: "TEXT",
+        			fontSize: 53,
+        			wordWrapWidth: 880,
+        			charCount: 150
         		}
         	],
         	[
         		{
         			x: -20,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1.1500000000000001,
         			z: 16,
         			assetKey: "kagyloszikla.png",
@@ -578,6 +733,8 @@
         		{
         			x: 960,
         			y: 610,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1.4500000000000004,
         			z: 13.5,
         			assetKey: "lian_dot3.png",
@@ -586,6 +743,8 @@
         		{
         			x: 1860,
         			y: 1090,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.5999999999999996,
         			z: 12.5,
         			assetKey: "csapfej",
@@ -594,6 +753,8 @@
         		{
         			x: 1180,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.8499999999999999,
         			z: 11,
         			assetKey: "gombak.png",
@@ -602,6 +763,8 @@
         		{
         			x: 1480,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.95,
         			z: 12,
         			assetKey: "gomba1.png",
@@ -610,34 +773,53 @@
         		{
         			x: 280,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.8499999999999999,
         			z: 11.5,
         			assetKey: "kagylogyongy.png",
         			type: "PROP"
         		},
         		{
-        			x: 300,
-        			y: 830,
+        			x: 1280,
+        			y: 720,
+        			rotation: 0,
         			baseScale: 1,
         			z: 13.5,
-        			assetKey: "paragraph_small.png",
-        			type: "PROP"
+        			assetKey: "TEXT",
+        			type: "TEXT",
+        			fontSize: 48,
+        			wordWrapWidth: 480,
+        			charCount: 90,
+        			textAlign: null
         		},
         		{
-        			x: 980,
-        			y: 830,
+        			x: 80,
+        			y: 720,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1,
         			z: 13.5,
-        			assetKey: "paragraph_small.png",
-        			type: "PROP"
+        			assetKey: "TEXT",
+        			type: "TEXT",
+        			fontSize: 48,
+        			wordWrapWidth: 480,
+        			charCount: 90,
+        			textAlign: null
         		},
         		{
-        			x: 1660,
-        			y: 870,
+        			x: 700,
+        			y: 720,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1,
-        			z: 14,
-        			assetKey: "paragraph_small.png",
-        			type: "PROP"
+        			z: 13.5,
+        			assetKey: "TEXT",
+        			type: "TEXT",
+        			fontSize: 48,
+        			wordWrapWidth: 480,
+        			charCount: 90,
+        			textAlign: null
         		}
         	],
         	[
@@ -808,6 +990,8 @@
         		{
         			x: -260,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.34999999999999964,
         			z: 15,
         			assetKey: "kezek",
@@ -816,22 +1000,28 @@
         		{
         			x: 460,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 2.000000000000001,
         			z: 19,
         			assetKey: "hegy.png",
         			type: "PROP"
         		},
         		{
-        			x: 200,
+        			x: 0,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.5999999999999996,
-        			z: 11.5,
+        			z: 10.5,
         			assetKey: "gomba.png",
         			type: "PROP"
         		},
         		{
         			x: 2180,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.8499999999999999,
         			z: 15,
         			assetKey: "kiskorallok.png",
@@ -840,38 +1030,48 @@
         		{
         			x: 1760,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.5499999999999996,
-        			z: 11.5,
+        			z: 11,
         			assetKey: "homokpad.png",
         			type: "PROP"
         		},
         		{
         			x: 1740,
         			y: 930,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.29999999999999966,
-        			z: 11.5,
+        			z: 10.95,
         			assetKey: "csiga",
         			type: "ANIMATED"
         		},
         		{
         			x: 1040,
-        			y: 1080,
+        			y: 1090,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.4499999999999996,
-        			z: 13,
+        			z: 12,
         			assetKey: "buborek3.png",
         			type: "PROP"
         		},
         		{
         			x: 1480,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1,
-        			z: 11,
+        			z: 10.5,
         			assetKey: "buborek_1.png",
         			type: "PROP"
         		},
         		{
         			x: 440,
         			y: 840,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1.5000000000000004,
         			z: 13.5,
         			assetKey: "ikon_kagylo.png",
@@ -880,40 +1080,55 @@
         		{
         			x: 1380,
         			y: 840,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1.5000000000000004,
         			z: 13.5,
         			assetKey: "ikon_kagylo.png",
         			type: "PROP"
         		},
         		{
-        			x: 540,
-        			y: 1000,
-        			baseScale: 1,
-        			z: 13.5,
-        			assetKey: "paragraph_small.png",
-        			type: "PROP"
-        		},
-        		{
-        			x: 1460,
-        			y: 1000,
-        			baseScale: 1,
-        			z: 13.5,
-        			assetKey: "paragraph_small.png",
-        			type: "PROP"
-        		},
-        		{
         			x: 960,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.4499999999999996,
         			z: 15.5,
         			assetKey: "agancs_kis.png",
         			type: "PROP"
+        		},
+        		{
+        			x: 1080,
+        			y: 880,
+        			rotation: 0,
+        			baseScale: 1,
+        			z: 13.5,
+        			assetKey: "TEXT",
+        			type: "TEXT",
+        			fontSize: 51,
+        			wordWrapWidth: 660,
+        			charCount: 110
+        		},
+        		{
+        			x: 140,
+        			y: 880,
+        			flip: false,
+        			rotation: 0,
+        			baseScale: 1,
+        			z: 13.5,
+        			assetKey: "TEXT",
+        			type: "TEXT",
+        			fontSize: 51,
+        			wordWrapWidth: 660,
+        			charCount: 110
         		}
         	],
         	[
         		{
         			x: 320,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1.2500000000000002,
         			z: 18,
         			assetKey: "hegy.png",
@@ -922,6 +1137,8 @@
         		{
         			x: 3180,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1,
         			z: 18,
         			assetKey: "hegy.png",
@@ -930,14 +1147,18 @@
         		{
         			x: 2160,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.4499999999999996,
         			z: 16,
         			assetKey: "gombaszikla.png",
         			type: "PROP"
         		},
         		{
-        			x: -260,
+        			x: -340,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.6999999999999997,
         			z: 14.5,
         			assetKey: "csillag_homok.png",
@@ -946,6 +1167,8 @@
         		{
         			x: 280,
         			y: 850,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1.4000000000000004,
         			z: 14,
         			assetKey: "ikon_kagylo.png",
@@ -954,6 +1177,8 @@
         		{
         			x: 940,
         			y: 850,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1.4000000000000004,
         			z: 14,
         			assetKey: "ikon_kagylo.png",
@@ -962,38 +1187,18 @@
         		{
         			x: 1620,
         			y: 850,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1.4000000000000004,
         			z: 14,
         			assetKey: "ikon_kagylo.png",
         			type: "PROP"
         		},
         		{
-        			x: 360,
-        			y: 1080,
-        			baseScale: 1,
-        			z: 14,
-        			assetKey: "paragraph_box.png",
-        			type: "PROP"
-        		},
-        		{
-        			x: 1040,
-        			y: 1020,
-        			baseScale: 1,
-        			z: 14,
-        			assetKey: "paragraph_small.png",
-        			type: "PROP"
-        		},
-        		{
-        			x: 1720,
-        			y: 1020,
-        			baseScale: 1,
-        			z: 14,
-        			assetKey: "paragraph_small.png",
-        			type: "PROP"
-        		},
-        		{
         			x: -40,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.24999999999999967,
         			z: 13,
         			assetKey: "bluggyBig",
@@ -1002,6 +1207,8 @@
         		{
         			x: 0,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.5999999999999996,
         			z: 11,
         			assetKey: "bluggy",
@@ -1010,6 +1217,8 @@
         		{
         			x: 340,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.1499999999999997,
         			z: 10.5,
         			assetKey: "agancs_nagy.png",
@@ -1018,6 +1227,8 @@
         		{
         			x: 1020,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.6999999999999997,
         			z: 10.5,
         			assetKey: "homokpad.png",
@@ -1026,6 +1237,8 @@
         		{
         			x: 960,
         			y: 910,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.39999999999999963,
         			z: 10.5,
         			assetKey: "pukk",
@@ -1034,6 +1247,8 @@
         		{
         			x: 1520,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.7499999999999998,
         			z: 10,
         			assetKey: "gomba1.png",
@@ -1042,6 +1257,8 @@
         		{
         			x: 2140,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.6499999999999997,
         			z: 13.5,
         			assetKey: "gombak.png",
@@ -1050,16 +1267,58 @@
         		{
         			x: 1860,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.39999999999999963,
         			z: 11.5,
         			assetKey: "tal_kis.png",
         			type: "PROP"
+        		},
+        		{
+        			x: 1340,
+        			y: 900,
+        			rotation: 0,
+        			baseScale: 1,
+        			z: 14,
+        			assetKey: "TEXT",
+        			type: "TEXT",
+        			fontSize: 62,
+        			wordWrapWidth: 580,
+        			charCount: 60
+        		},
+        		{
+        			x: 20,
+        			y: 900,
+        			flip: false,
+        			rotation: 0,
+        			baseScale: 1,
+        			z: 14,
+        			assetKey: "TEXT",
+        			type: "TEXT",
+        			fontSize: 62,
+        			wordWrapWidth: 580,
+        			charCount: 60
+        		},
+        		{
+        			x: 660,
+        			y: 900,
+        			flip: false,
+        			rotation: 0,
+        			baseScale: 1,
+        			z: 14,
+        			assetKey: "TEXT",
+        			type: "TEXT",
+        			fontSize: 62,
+        			wordWrapWidth: 580,
+        			charCount: 60
         		}
         	],
         	[
         		{
         			x: 960,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1.7000000000000006,
         			z: 20.5,
         			assetKey: "hegy.png",
@@ -1068,6 +1327,8 @@
         		{
         			x: 2360,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.34999999999999964,
         			z: 16,
         			assetKey: "agancs_nagy.png",
@@ -1076,6 +1337,8 @@
         		{
         			x: -480,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.6999999999999997,
         			z: 18,
         			assetKey: "agancs_kis.png",
@@ -1084,6 +1347,8 @@
         		{
         			x: -60,
         			y: 930,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1.4500000000000004,
         			z: 14.5,
         			assetKey: "ikon_kagylo.png",
@@ -1092,6 +1357,8 @@
         		{
         			x: 1260,
         			y: 930,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1.4500000000000004,
         			z: 14.5,
         			assetKey: "ikon_kagylo.png",
@@ -1100,6 +1367,8 @@
         		{
         			x: 600,
         			y: 930,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1.4500000000000004,
         			z: 14.5,
         			assetKey: "ikon_kagylo.png",
@@ -1108,96 +1377,135 @@
         		{
         			x: 1920,
         			y: 930,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1.4500000000000004,
         			z: 14.5,
         			assetKey: "ikon_kagylo.png",
         			type: "PROP"
         		},
         		{
-        			x: -20,
-        			y: 1090,
-        			baseScale: 1,
-        			z: 14.5,
-        			assetKey: "paragraph_small.png",
-        			type: "PROP"
-        		},
-        		{
-        			x: 660,
-        			y: 1090,
-        			baseScale: 1,
-        			z: 14.5,
-        			assetKey: "paragraph_small.png",
-        			type: "PROP"
-        		},
-        		{
-        			x: 1340,
-        			y: 1090,
-        			baseScale: 1,
-        			z: 14.5,
-        			assetKey: "paragraph_small.png",
-        			type: "PROP"
-        		},
-        		{
-        			x: 2000,
-        			y: 1090,
-        			baseScale: 1,
-        			z: 14.5,
-        			assetKey: "paragraph_small.png",
-        			type: "PROP"
-        		},
-        		{
         			x: 60,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.34999999999999964,
-        			z: 11,
+        			z: 10.5,
         			assetKey: "uborka3.png",
         			type: "PROP"
         		},
         		{
         			x: 300,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.6499999999999997,
-        			z: 10,
+        			z: 9.5,
         			assetKey: "uborka4.png",
         			type: "PROP"
         		},
         		{
         			x: 380,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.34999999999999964,
-        			z: 11,
+        			z: 10.5,
         			assetKey: "uborka3.png",
         			type: "PROP"
         		},
         		{
         			x: 960,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.34999999999999964,
-        			z: 12,
+        			z: 11,
         			assetKey: "csillag",
         			type: "ANIMATED"
         		},
         		{
-        			x: 1300,
+        			x: 1340,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.39999999999999963,
-        			z: 11,
+        			z: 10.5,
         			assetKey: "agancs_kis.png",
         			type: "PROP"
         		},
         		{
         			x: 1800,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1,
         			z: 11,
         			assetKey: "buborek_2.png",
         			type: "PROP"
+        		},
+        		{
+        			x: 1658,
+        			y: 960,
+        			rotation: 0,
+        			baseScale: 1,
+        			z: 14.5,
+        			assetKey: "TEXT",
+        			type: "TEXT",
+        			fontSize: 50,
+        			wordWrapWidth: 580,
+        			charCount: 90,
+        			textAlign: null
+        		},
+        		{
+        			x: -340,
+        			y: 960,
+        			flip: false,
+        			rotation: 0,
+        			baseScale: 1,
+        			z: 14.5,
+        			assetKey: "TEXT",
+        			type: "TEXT",
+        			fontSize: 50,
+        			wordWrapWidth: 580,
+        			charCount: 90,
+        			textAlign: null
+        		},
+        		{
+        			x: 320,
+        			y: 960,
+        			flip: false,
+        			rotation: 0,
+        			baseScale: 1,
+        			z: 14.5,
+        			assetKey: "TEXT",
+        			type: "TEXT",
+        			fontSize: 50,
+        			wordWrapWidth: 580,
+        			charCount: 90,
+        			textAlign: null
+        		},
+        		{
+        			x: 998,
+        			y: 960,
+        			flip: false,
+        			rotation: 0,
+        			baseScale: 1,
+        			z: 14.5,
+        			assetKey: "TEXT",
+        			type: "TEXT",
+        			fontSize: 50,
+        			wordWrapWidth: 580,
+        			charCount: 90,
+        			textAlign: null
         		}
         	],
         	[
         		{
         			x: 1580,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1.8500000000000008,
         			z: 20,
         			assetKey: "hegy.png",
@@ -1206,6 +1514,8 @@
         		{
         			x: -140,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.6999999999999997,
         			z: 18,
         			assetKey: "kiskorallok.png",
@@ -1214,38 +1524,28 @@
         		{
         			x: -300,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1,
         			z: 15.5,
         			assetKey: "kagyloszikla.png",
         			type: "PROP"
         		},
         		{
-        			x: 420,
-        			y: 1050,
-        			baseScale: 1.5000000000000004,
+        			x: 360,
+        			y: 1120,
+        			flip: false,
+        			rotation: 0,
+        			baseScale: 1.8499999999999992,
         			z: 15,
         			assetKey: "ikon_kagylo.png",
         			type: "PROP"
         		},
         		{
-        			x: 1220,
-        			y: 860,
-        			baseScale: 1,
-        			z: 16,
-        			assetKey: "header_long.png",
-        			type: "PROP"
-        		},
-        		{
-        			x: 1060,
-        			y: 1030,
-        			baseScale: 1,
-        			z: 15.5,
-        			assetKey: "paragraph_box.png",
-        			type: "PROP"
-        		},
-        		{
         			x: 1680,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.5999999999999996,
         			z: 11,
         			assetKey: "csigaszikla.png",
@@ -1254,6 +1554,8 @@
         		{
         			x: 1500,
         			y: 960,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.34999999999999964,
         			z: 11,
         			assetKey: "csavar",
@@ -1262,6 +1564,8 @@
         		{
         			x: 1640,
         			y: 870,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.39999999999999963,
         			z: 11,
         			assetKey: "csavar",
@@ -1270,6 +1574,8 @@
         		{
         			x: 1800,
         			y: 780,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.39999999999999963,
         			z: 11,
         			assetKey: "csavar",
@@ -1278,6 +1584,8 @@
         		{
         			x: 1320,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.34999999999999964,
         			z: 12.5,
         			assetKey: "tal_kis.png",
@@ -1286,6 +1594,8 @@
         		{
         			x: 1160,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.24999999999999967,
         			z: 11.5,
         			assetKey: "tal_nagy.png",
@@ -1294,6 +1604,8 @@
         		{
         			x: 140,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.24999999999999967,
         			z: 12,
         			assetKey: "kezek",
@@ -1302,6 +1614,8 @@
         		{
         			x: 40,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.6999999999999997,
         			z: 11.5,
         			assetKey: "buborek_2.png",
@@ -1310,6 +1624,8 @@
         		{
         			x: 480,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.6999999999999997,
         			z: 11.5,
         			assetKey: "buborek3.png",
@@ -1318,16 +1634,45 @@
         		{
         			x: 220,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.5999999999999996,
         			z: 13.5,
         			assetKey: "buborek_2.png",
         			type: "PROP"
+        		},
+        		{
+        			x: 760,
+        			y: 800,
+        			rotation: 0,
+        			baseScale: 1,
+        			z: 15.5,
+        			assetKey: "TEXT",
+        			type: "TEXT",
+        			fontSize: 55,
+        			wordWrapWidth: 860,
+        			charCount: 170
+        		},
+        		{
+        			x: 760,
+        			y: 570,
+        			flip: false,
+        			rotation: 0,
+        			baseScale: 1,
+        			z: 15.5,
+        			assetKey: "TEXT",
+        			type: "TEXT",
+        			fontSize: 85,
+        			wordWrapWidth: 1160,
+        			charCount: 50
         		}
         	],
         	[
         		{
         			x: -640,
         			y: 1040,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1.2500000000000002,
         			z: 19.5,
         			assetKey: "hegy.png",
@@ -1336,23 +1681,28 @@
         		{
         			x: 1500,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1,
         			z: 15.5,
         			assetKey: "csigaszikla.png",
         			type: "PROP"
         		},
         		{
-        			x: -100,
+        			x: -160,
         			y: 1080,
         			flip: true,
-        			baseScale: 0.4999999999999996,
-        			z: 13,
+        			rotation: 0,
+        			baseScale: 0.3999999999999995,
+        			z: 12.5,
         			assetKey: "csapfej",
         			type: "ANIMATED"
         		},
         		{
         			x: 1940,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.39999999999999963,
         			z: 14,
         			assetKey: "agancs_nagy.png",
@@ -1361,6 +1711,8 @@
         		{
         			x: 2040,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.5999999999999996,
         			z: 13,
         			assetKey: "agancs_kis.png",
@@ -1369,6 +1721,8 @@
         		{
         			x: 1600,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.6499999999999997,
         			z: 11,
         			assetKey: "homokpad.png",
@@ -1377,6 +1731,8 @@
         		{
         			x: 1420,
         			y: 930,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.39999999999999963,
         			z: 11,
         			assetKey: "pukk",
@@ -1385,6 +1741,8 @@
         		{
         			x: 1040,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.5499999999999996,
         			z: 11,
         			assetKey: "hatterkorall.png",
@@ -1393,14 +1751,18 @@
         		{
         			x: 560,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1,
         			z: 12.5,
         			assetKey: "buborek_2.png",
         			type: "PROP"
         		},
         		{
-        			x: 80,
+        			x: 20,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.29999999999999966,
         			z: 12.5,
         			assetKey: "tal_kis.png",
@@ -1409,6 +1771,8 @@
         		{
         			x: -40,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.5999999999999996,
         			z: 11,
         			assetKey: "gomba2.png",
@@ -1417,40 +1781,56 @@
         		{
         			x: 80,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.6999999999999997,
         			z: 10.5,
         			assetKey: "gomba1.png",
         			type: "PROP"
         		},
         		{
-        			x: 140,
-        			y: 950,
-        			baseScale: 1.2500000000000002,
-        			z: 14,
+        			x: 240,
+        			y: 940,
+        			flip: false,
+        			rotation: 0,
+        			baseScale: 1.4499999999999995,
+        			z: 13,
         			assetKey: "ikon_kagylo.png",
         			type: "PROP"
         		},
         		{
-        			x: 900,
-        			y: 710,
+        			x: 580,
+        			y: 770,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1,
         			z: 14,
-        			assetKey: "header_long.png",
-        			type: "PROP"
+        			assetKey: "TEXT",
+        			type: "TEXT",
+        			fontSize: 59,
+        			wordWrapWidth: 1040,
+        			charCount: 110
         		},
         		{
-        			x: 720,
-        			y: 930,
+        			x: 580,
+        			y: 520,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1,
         			z: 14,
-        			assetKey: "paragraph_box.png",
-        			type: "PROP"
+        			assetKey: "TEXT",
+        			type: "TEXT",
+        			fontSize: 95,
+        			wordWrapWidth: 1040,
+        			charCount: 40
         		}
         	],
         	[
         		{
         			x: -180,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1,
         			z: 16,
         			assetKey: "kagyloszikla.png",
@@ -1460,6 +1840,7 @@
         			x: 20,
         			y: 1080,
         			flip: true,
+        			rotation: 0,
         			baseScale: 0.4499999999999996,
         			z: 12.5,
         			assetKey: "csapfej",
@@ -1468,6 +1849,8 @@
         		{
         			x: -40,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1,
         			z: 12,
         			assetKey: "buborek_1.png",
@@ -1476,6 +1859,8 @@
         		{
         			x: 960,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.6999999999999997,
         			z: 11,
         			assetKey: "gomba.png",
@@ -1484,6 +1869,8 @@
         		{
         			x: 1760,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.4499999999999996,
         			z: 11,
         			assetKey: "buborek3.png",
@@ -1492,6 +1879,8 @@
         		{
         			x: 1820,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.24999999999999967,
         			z: 13,
         			assetKey: "tal_nagy.png",
@@ -1500,6 +1889,8 @@
         		{
         			x: 2060,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.39999999999999963,
         			z: 13.5,
         			assetKey: "tal_kis.png",
@@ -1509,6 +1900,7 @@
         			x: 1880,
         			y: 1080,
         			flip: true,
+        			rotation: 0,
         			baseScale: 1,
         			z: 17,
         			assetKey: "hegy.png",
@@ -1517,32 +1909,55 @@
         		{
         			x: 480,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.5499999999999996,
         			z: 12.5,
         			assetKey: "mobil_slide.png",
         			type: "PROP"
         		},
         		{
-        			x: 1300,
-        			y: 520,
-        			baseScale: 1,
-        			z: 12.5,
-        			assetKey: "header_long.png",
+        			x: 463,
+        			y: 1040,
+        			flip: false,
+        			rotation: 0,
+        			baseScale: 0.5499999999999996,
+        			z: 12.55,
+        			assetKey: "mobil_slide_inner.png",
         			type: "PROP"
         		},
         		{
-        			x: 1120,
-        			y: 740,
+        			x: 820,
+        			y: 580,
+        			rotation: 0,
         			baseScale: 1,
         			z: 12.5,
-        			assetKey: "paragraph_box.png",
-        			type: "PROP"
+        			assetKey: "TEXT",
+        			type: "TEXT",
+        			fontSize: 57,
+        			wordWrapWidth: 980,
+        			charCount: 120
+        		},
+        		{
+        			x: 820,
+        			y: 350,
+        			flip: false,
+        			rotation: 0,
+        			baseScale: 1,
+        			z: 12.5,
+        			assetKey: "TEXT",
+        			type: "TEXT",
+        			fontSize: 81,
+        			wordWrapWidth: 1080,
+        			charCount: 50
         		}
         	],
         	[
         		{
         			x: 2220,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.8499999999999999,
         			z: 18.5,
         			assetKey: "homokpad.png",
@@ -1551,6 +1966,8 @@
         		{
         			x: -320,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1,
         			z: 17.5,
         			assetKey: "homokpad.png",
@@ -1559,6 +1976,8 @@
         		{
         			x: 1940,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.6999999999999997,
         			z: 15.5,
         			assetKey: "gombacsap.png",
@@ -1567,6 +1986,8 @@
         		{
         			x: 1820,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.6499999999999997,
         			z: 10.5,
         			assetKey: "kiskorallok.png",
@@ -1575,6 +1996,8 @@
         		{
         			x: 1300,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.34999999999999964,
         			z: 12,
         			assetKey: "csillag",
@@ -1583,6 +2006,8 @@
         		{
         			x: -200,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.8999999999999999,
         			z: 14,
         			assetKey: "hatterkorall.png",
@@ -1591,6 +2016,8 @@
         		{
         			x: 640,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1,
         			z: 11,
         			assetKey: "buborek_1.png",
@@ -1599,6 +2026,8 @@
         		{
         			x: -100,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1,
         			z: 12.5,
         			assetKey: "buborek_2.png",
@@ -1607,6 +2036,8 @@
         		{
         			x: 520,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.5999999999999996,
         			z: 14,
         			assetKey: "buborek3.png",
@@ -1615,25 +2046,182 @@
         		{
         			x: 460,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.5499999999999996,
         			z: 12,
         			assetKey: "ora_slide.png",
         			type: "PROP"
         		},
         		{
-        			x: 1160,
-        			y: 590,
-        			baseScale: 0.7499999999999998,
-        			z: 12,
-        			assetKey: "header_long.png",
+        			x: 425,
+        			y: 879,
+        			flip: false,
+        			rotation: 0.08726650000000001,
+        			baseScale: 0.5499999999999996,
+        			z: 12.05,
+        			assetKey: "ora_slide_inner.png",
         			type: "PROP"
         		},
         		{
-        			x: 1140,
-        			y: 740,
+        			x: 800,
+        			y: 610,
+        			rotation: 0,
         			baseScale: 1,
         			z: 12,
-        			assetKey: "paragraph_small.png",
+        			assetKey: "TEXT",
+        			type: "TEXT",
+        			fontSize: 54,
+        			wordWrapWidth: 780,
+        			charCount: 90
+        		},
+        		{
+        			x: 800,
+        			y: 370,
+        			flip: false,
+        			rotation: 0,
+        			baseScale: 1,
+        			z: 12,
+        			assetKey: "TEXT",
+        			type: "TEXT",
+        			fontSize: 73,
+        			wordWrapWidth: 780,
+        			charCount: 40
+        		}
+        	],
+        	[
+        		{
+        			x: 0,
+        			y: 1080,
+        			flip: false,
+        			rotation: 0,
+        			baseScale: 1.5500000000000005,
+        			z: 22,
+        			assetKey: "hegy.png",
+        			type: "PROP"
+        		},
+        		{
+        			x: -440,
+        			y: 1080,
+        			flip: false,
+        			rotation: 0,
+        			baseScale: 1.3000000000000003,
+        			z: 17.5,
+        			assetKey: "kiskorallok.png",
+        			type: "PROP"
+        		},
+        		{
+        			x: 580,
+        			y: 1080,
+        			flip: false,
+        			rotation: 0,
+        			baseScale: 1,
+        			z: 10.5,
+        			assetKey: "homokpad.png",
+        			type: "PROP"
+        		},
+        		{
+        			x: 1040,
+        			y: 1080,
+        			flip: true,
+        			rotation: 0,
+        			baseScale: 0.4999999999999996,
+        			z: 10,
+        			assetKey: "agancs_kis.png",
+        			type: "PROP"
+        		},
+        		{
+        			x: 40,
+        			y: 840,
+        			flip: true,
+        			rotation: 0,
+        			baseScale: 0.22499999999999953,
+        			z: 10.5,
+        			assetKey: "csiga",
+        			type: "ANIMATED"
+        		},
+        		{
+        			x: 2120,
+        			y: 1080,
+        			flip: false,
+        			rotation: 0,
+        			baseScale: 1.2000000000000002,
+        			z: 15,
+        			assetKey: "hatterkorall.png",
+        			type: "PROP"
+        		},
+        		{
+        			x: 2540,
+        			y: 1080,
+        			flip: false,
+        			rotation: 0,
+        			baseScale: 1,
+        			z: 20,
+        			assetKey: "hegy.png",
+        			type: "PROP"
+        		},
+        		{
+        			x: 2027,
+        			y: 1080,
+        			flip: false,
+        			rotation: 0,
+        			baseScale: 0.39999999999999963,
+        			z: 14,
+        			assetKey: "csillag",
+        			type: "ANIMATED"
+        		},
+        		{
+        			x: 1941,
+        			y: 1080,
+        			flip: false,
+        			rotation: 0,
+        			baseScale: 0.7499999999999998,
+        			z: 11,
+        			assetKey: "gombak.png",
+        			type: "PROP"
+        		},
+        		{
+        			x: 980,
+        			y: 300,
+        			flip: false,
+        			rotation: 0,
+        			baseScale: 1,
+        			z: 13,
+        			assetKey: "TEXT",
+        			type: "TEXT",
+        			fontSize: 95,
+        			wordWrapWidth: 880,
+        			charCount: 40
+        		},
+        		{
+        			x: 980,
+        			y: 660,
+        			flip: false,
+        			rotation: 0,
+        			baseScale: 1,
+        			z: 13,
+        			assetKey: "TEXT",
+        			type: "TEXT",
+        			fontSize: 63,
+        			wordWrapWidth: 700,
+        			charCount: 100
+        		},
+        		{
+        			x: 440,
+        			y: 830,
+        			rotation: -0.0349066,
+        			baseScale: 0.5749999999999996,
+        			z: 11,
+        			assetKey: "tablet_slide.png",
+        			type: "PROP"
+        		},
+        		{
+        			x: 425,
+        			y: 795,
+        			rotation: -0.0349066,
+        			baseScale: 0.5949999999999996,
+        			z: 11.05,
+        			assetKey: "tablet_slide_inner.png",
         			type: "PROP"
         		}
         	],
@@ -1641,6 +2229,8 @@
         		{
         			x: 1420,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1.7000000000000006,
         			z: 19,
         			assetKey: "hegy.png",
@@ -1649,23 +2239,28 @@
         		{
         			x: -320,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1.3000000000000003,
         			z: 15.5,
         			assetKey: "hatterkorall.png",
         			type: "PROP"
         		},
         		{
-        			x: -60,
+        			x: 0,
         			y: 1080,
         			flip: true,
-        			baseScale: 0.4999999999999996,
-        			z: 12.5,
+        			rotation: 0,
+        			baseScale: 0.42499999999999954,
+        			z: 11.5,
         			assetKey: "csillag",
         			type: "ANIMATED"
         		},
         		{
         			x: 1560,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.7999999999999998,
         			z: 12.5,
         			assetKey: "buborek3.png",
@@ -1674,48 +2269,74 @@
         		{
         			x: 960,
         			y: 1080,
-        			baseScale: 0.24999999999999967,
-        			z: 11,
+        			flip: false,
+        			rotation: 0,
+        			baseScale: 0.2249999999999997,
+        			z: 10.5,
         			assetKey: "agancs_nagy.png",
         			type: "PROP"
         		},
         		{
-        			x: 440,
+        			x: 160,
         			y: 1020,
-        			baseScale: 1,
+        			flip: false,
+        			rotation: 0,
+        			baseScale: 1.1749999999999994,
         			z: 13,
         			assetKey: "image_placeholder.png",
         			type: "PROP"
         		},
         		{
-        			x: 1060,
+        			x: 880,
         			y: 1020,
-        			baseScale: 1,
+        			flip: false,
+        			rotation: 0,
+        			baseScale: 1.1749999999999994,
         			z: 13,
         			assetKey: "image_placeholder.png",
         			type: "PROP"
         		},
         		{
-        			x: 1700,
-        			y: 600,
-        			baseScale: 0.6999999999999997,
+        			x: 480,
+        			y: 1050,
+        			rotation: 0,
+        			baseScale: 1,
         			z: 13,
-        			assetKey: "header_long.png",
+        			assetKey: "photobig_v2arnyek.png",
         			type: "PROP"
         		},
         		{
-        			x: 1680,
-        			y: 810,
+        			x: 1260,
+        			y: 650,
+        			rotation: 0,
         			baseScale: 1,
         			z: 13,
-        			assetKey: "paragraph_box.png",
-        			type: "PROP"
+        			assetKey: "TEXT",
+        			type: "TEXT",
+        			fontSize: 57,
+        			wordWrapWidth: 840,
+        			charCount: 120
+        		},
+        		{
+        			x: 1260,
+        			y: 380,
+        			flip: false,
+        			rotation: 0,
+        			baseScale: 1,
+        			z: 13,
+        			assetKey: "TEXT",
+        			type: "TEXT",
+        			fontSize: 84,
+        			wordWrapWidth: 840,
+        			charCount: 40
         		}
         	],
         	[
         		{
         			x: 300,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 2.25,
         			z: 20.5,
         			assetKey: "hegy.png",
@@ -1723,39 +2344,29 @@
         		},
         		{
         			x: 60,
-        			y: 1080,
-        			baseScale: 1,
+        			y: 1110,
+        			flip: false,
+        			rotation: 0,
+        			baseScale: 1.0999999999999996,
         			z: 13,
         			assetKey: "photo3_big_place.png",
         			type: "PROP"
         		},
         		{
-        			x: 600,
-        			y: 1080,
-        			baseScale: 1,
+        			x: 640,
+        			y: 1110,
+        			flip: false,
+        			rotation: 0,
+        			baseScale: 1.0999999999999996,
         			z: 13,
         			assetKey: "photo3_big_place.png",
-        			type: "PROP"
-        		},
-        		{
-        			x: 1360,
-        			y: 690,
-        			baseScale: 1,
-        			z: 13,
-        			assetKey: "header_long.png",
-        			type: "PROP"
-        		},
-        		{
-        			x: 1200,
-        			y: 910,
-        			baseScale: 1,
-        			z: 13,
-        			assetKey: "paragraph_box.png",
         			type: "PROP"
         		},
         		{
         			x: 1820,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.24999999999999967,
         			z: 12,
         			assetKey: "kezek",
@@ -1764,6 +2375,8 @@
         		{
         			x: 1220,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.5499999999999996,
         			z: 11,
         			assetKey: "gomba.png",
@@ -1773,6 +2386,7 @@
         			x: 2520,
         			y: 1080,
         			flip: false,
+        			rotation: 0,
         			baseScale: 0.4999999999999996,
         			z: 18,
         			assetKey: "buborek3.png",
@@ -1781,6 +2395,8 @@
         		{
         			x: 1800,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.95,
         			z: 11.5,
         			assetKey: "buborek_1.png",
@@ -1789,14 +2405,18 @@
         		{
         			x: 460,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.7499999999999998,
-        			z: 11,
+        			z: 10.799999999999997,
         			assetKey: "kagylogyongy.png",
         			type: "PROP"
         		},
         		{
         			x: -160,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.4499999999999996,
         			z: 12.5,
         			assetKey: "gombak.png",
@@ -1805,10 +2425,56 @@
         		{
         			x: -460,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.4499999999999996,
         			z: 15,
         			assetKey: "gomba1.png",
         			type: "PROP"
+        		},
+        		{
+        			x: 60,
+        			y: 1120,
+        			rotation: 0,
+        			baseScale: 0.5499999999999996,
+        			z: 13.05,
+        			assetKey: "photobig_v1arnyek.png",
+        			type: "PROP"
+        		},
+        		{
+        			x: 560,
+        			y: 1120,
+        			flip: false,
+        			rotation: 0,
+        			baseScale: 0.6499999999999997,
+        			z: 13.05,
+        			assetKey: "photobig_v1arnyek.png",
+        			type: "PROP"
+        		},
+        		{
+        			x: 980,
+        			y: 300,
+        			rotation: 0,
+        			baseScale: 1,
+        			z: 13,
+        			assetKey: "TEXT",
+        			type: "TEXT",
+        			fontSize: 91,
+        			wordWrapWidth: 1060,
+        			charCount: 70
+        		},
+        		{
+        			x: 980,
+        			y: 660,
+        			flip: false,
+        			rotation: 0,
+        			baseScale: 1,
+        			z: 13,
+        			assetKey: "TEXT",
+        			type: "TEXT",
+        			fontSize: 59,
+        			wordWrapWidth: 780,
+        			charCount: 100
         		}
         	],
         	[
@@ -1929,6 +2595,8 @@
         		{
         			x: 260,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1.9000000000000008,
         			z: 20.5,
         			assetKey: "hegy.png",
@@ -1937,6 +2605,8 @@
         		{
         			x: 2320,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.5499999999999996,
         			z: 16.5,
         			assetKey: "csigaszikla.png",
@@ -1945,6 +2615,8 @@
         		{
         			x: 1880,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.4499999999999996,
         			z: 12,
         			assetKey: "csapfej",
@@ -1953,6 +2625,8 @@
         		{
         			x: 1300,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.4999999999999996,
         			z: 10.5,
         			assetKey: "gombaszikla.png",
@@ -1961,6 +2635,8 @@
         		{
         			x: -300,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.4499999999999996,
         			z: 15,
         			assetKey: "tal_kis.png",
@@ -1969,6 +2645,8 @@
         		{
         			x: -20,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.39999999999999963,
         			z: 11,
         			assetKey: "hatterkorall.png",
@@ -1977,40 +2655,54 @@
         		{
         			x: 300,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1,
         			z: 11.5,
         			assetKey: "photobig_v1_place.png",
         			type: "PROP"
         		},
         		{
-        			x: 1220,
-        			y: 450,
-        			baseScale: 1,
-        			z: 11.5,
-        			assetKey: "header_long.png",
+        			x: 300,
+        			y: 1100,
+        			rotation: 0,
+        			baseScale: 1.0499999999999998,
+        			z: 11.55,
+        			assetKey: "photoarnyek.png",
         			type: "PROP"
         		},
         		{
-        			x: 1080,
-        			y: 610,
+        			x: 740,
+        			y: 590,
+        			rotation: 0,
         			baseScale: 1,
         			z: 11.5,
-        			assetKey: "paragraph_small.png",
-        			type: "PROP"
+        			assetKey: "TEXT",
+        			type: "TEXT",
+        			fontSize: 56,
+        			wordWrapWidth: 860,
+        			charCount: 120
         		},
         		{
-        			x: 1080,
-        			y: 780,
+        			x: 740,
+        			y: 280,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1,
         			z: 11.5,
-        			assetKey: "paragraph_small.png",
-        			type: "PROP"
+        			assetKey: "TEXT",
+        			type: "TEXT",
+        			fontSize: 85,
+        			wordWrapWidth: 1020,
+        			charCount: 60
         		}
         	],
         	[
         		{
         			x: -500,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1,
         			z: 20.5,
         			assetKey: "hegy.png",
@@ -2020,6 +2712,7 @@
         			x: 2840,
         			y: 1080,
         			flip: true,
+        			rotation: 0,
         			baseScale: 1,
         			z: 20,
         			assetKey: "hegy.png",
@@ -2028,6 +2721,8 @@
         		{
         			x: 1820,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1,
         			z: 16,
         			assetKey: "kagyloszikla.png",
@@ -2036,6 +2731,8 @@
         		{
         			x: -360,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1,
         			z: 15,
         			assetKey: "buborek_1.png",
@@ -2044,6 +2741,8 @@
         		{
         			x: 2180,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.29999999999999966,
         			z: 14,
         			assetKey: "agancs_kis.png",
@@ -2052,6 +2751,8 @@
         		{
         			x: 1560,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.6499999999999997,
         			z: 10,
         			assetKey: "homokpad.png",
@@ -2060,6 +2761,8 @@
         		{
         			x: 1700,
         			y: 960,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.4999999999999996,
         			z: 10,
         			assetKey: "kagylo",
@@ -2068,6 +2771,8 @@
         		{
         			x: 1320,
         			y: 970,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.34999999999999964,
         			z: 10,
         			assetKey: "kagylo",
@@ -2076,6 +2781,8 @@
         		{
         			x: 440,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1,
         			z: 12,
         			assetKey: "photobig_v2_place.png",
@@ -2084,6 +2791,8 @@
         		{
         			x: 220,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.34999999999999964,
         			z: 10.5,
         			assetKey: "uborka3.png",
@@ -2092,6 +2801,8 @@
         		{
         			x: 340,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.34999999999999964,
         			z: 10.5,
         			assetKey: "uborka4.png",
@@ -2100,32 +2811,54 @@
         		{
         			x: -40,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.34999999999999964,
         			z: 11,
         			assetKey: "ketuborka.png",
         			type: "PROP"
         		},
         		{
-        			x: 1340,
-        			y: 410,
-        			baseScale: 0.8499999999999999,
-        			z: 12,
-        			assetKey: "header_long.png",
+        			x: 420,
+        			y: 1086,
+        			rotation: 0,
+        			baseScale: 0.8749999999999999,
+        			z: 12.05,
+        			assetKey: "photobig_v1arnyek.png",
         			type: "PROP"
         		},
         		{
-        			x: 1240,
-        			y: 620,
+        			x: 960,
+        			y: 570,
+        			rotation: 0,
         			baseScale: 1,
         			z: 12,
-        			assetKey: "paragraph_box.png",
-        			type: "PROP"
+        			assetKey: "TEXT",
+        			type: "TEXT",
+        			fontSize: 53,
+        			wordWrapWidth: 840,
+        			charCount: 110
+        		},
+        		{
+        			x: 960,
+        			y: 270,
+        			flip: false,
+        			rotation: 0,
+        			baseScale: 1,
+        			z: 12,
+        			assetKey: "TEXT",
+        			type: "TEXT",
+        			fontSize: 76,
+        			wordWrapWidth: 940,
+        			charCount: 60
         		}
         	],
         	[
         		{
         			x: 660,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 2.2,
         			z: 20.5,
         			assetKey: "hegy.png",
@@ -2134,6 +2867,8 @@
         		{
         			x: 1780,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1,
         			z: 16,
         			assetKey: "gombacsap.png",
@@ -2142,14 +2877,18 @@
         		{
         			x: 1920,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.34999999999999964,
         			z: 12.5,
         			assetKey: "korall",
         			type: "ANIMATED"
         		},
         		{
-        			x: 1460,
+        			x: 1560,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1,
         			z: 15.5,
         			assetKey: "buborek_2.png",
@@ -2158,6 +2897,8 @@
         		{
         			x: -320,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1,
         			z: 16.5,
         			assetKey: "kiskorallok.png",
@@ -2166,56 +2907,75 @@
         		{
         			x: 420,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.8499999999999999,
-        			z: 11,
+        			z: 10.5,
         			assetKey: "kagyloszikla.png",
         			type: "PROP"
         		},
         		{
         			x: 200,
         			y: 820,
-        			baseScale: 0.39999999999999963,
-        			z: 11,
+        			flip: false,
+        			rotation: 0,
+        			baseScale: 0.3749999999999996,
+        			z: 10.45,
         			assetKey: "kagylo",
         			type: "ANIMATED"
         		},
         		{
         			x: 460,
         			y: 890,
-        			baseScale: 0.4499999999999996,
-        			z: 11,
+        			flip: false,
+        			rotation: 0,
+        			baseScale: 0.4249999999999996,
+        			z: 10.45,
         			assetKey: "kagylo",
         			type: "ANIMATED"
         		},
         		{
         			x: 720,
         			y: 970,
-        			baseScale: 0.4499999999999996,
-        			z: 11,
+        			flip: false,
+        			rotation: 0,
+        			baseScale: 0.4249999999999996,
+        			z: 10.45,
         			assetKey: "kagylo",
         			type: "ANIMATED"
         		},
         		{
-        			x: 920,
-        			y: 570,
+        			x: 440,
+        			y: 680,
+        			rotation: 0,
         			baseScale: 1,
         			z: 13.5,
-        			assetKey: "header_long.png",
-        			type: "PROP"
+        			assetKey: "TEXT",
+        			type: "TEXT",
+        			fontSize: 60,
+        			wordWrapWidth: 920,
+        			charCount: 110
         		},
         		{
-        			x: 760,
-        			y: 790,
+        			x: 440,
+        			y: 370,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1,
         			z: 13.5,
-        			assetKey: "paragraph_box.png",
-        			type: "PROP"
+        			assetKey: "TEXT",
+        			type: "TEXT",
+        			fontSize: 88,
+        			wordWrapWidth: 1000,
+        			charCount: 50
         		}
         	],
         	[
         		{
         			x: 0,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1.5500000000000005,
         			z: 22,
         			assetKey: "hegy.png",
@@ -2224,6 +2984,8 @@
         		{
         			x: -440,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1.3000000000000003,
         			z: 17.5,
         			assetKey: "kiskorallok.png",
@@ -2232,6 +2994,8 @@
         		{
         			x: 580,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1,
         			z: 10.5,
         			assetKey: "homokpad.png",
@@ -2241,6 +3005,7 @@
         			x: 1040,
         			y: 1080,
         			flip: true,
+        			rotation: 0,
         			baseScale: 0.4999999999999996,
         			z: 10,
         			assetKey: "agancs_kis.png",
@@ -2250,6 +3015,7 @@
         			x: 160,
         			y: 810,
         			flip: true,
+        			rotation: 0,
         			baseScale: 0.39999999999999963,
         			z: 10.5,
         			assetKey: "csiga",
@@ -2258,6 +3024,8 @@
         		{
         			x: 2120,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1.2000000000000002,
         			z: 15,
         			assetKey: "hatterkorall.png",
@@ -2267,42 +3035,56 @@
         			x: 2540,
         			y: 1080,
         			flip: false,
+        			rotation: 0,
         			baseScale: 1,
         			z: 20,
         			assetKey: "hegy.png",
         			type: "PROP"
         		},
         		{
-        			x: 1980,
+        			x: 2027,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.39999999999999963,
         			z: 14,
         			assetKey: "csillag",
         			type: "ANIMATED"
         		},
         		{
-        			x: 1900,
+        			x: 1941,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.7499999999999998,
         			z: 11,
         			assetKey: "gombak.png",
         			type: "PROP"
         		},
         		{
-        			x: 960,
-        			y: 580,
+        			x: 400,
+        			y: 300,
+        			rotation: 0,
         			baseScale: 1,
         			z: 13,
-        			assetKey: "header_long.png",
-        			type: "PROP"
+        			assetKey: "TEXT",
+        			type: "TEXT",
+        			fontSize: 94,
+        			wordWrapWidth: 1280,
+        			charCount: 70
         		},
         		{
-        			x: 780,
-        			y: 830,
+        			x: 400,
+        			y: 660,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1,
-        			z: 13.5,
-        			assetKey: "paragraph_box.png",
-        			type: "PROP"
+        			z: 13,
+        			assetKey: "TEXT",
+        			type: "TEXT",
+        			fontSize: 63,
+        			wordWrapWidth: 1280,
+        			charCount: 160
         		}
         	]
         ];
@@ -2404,7 +3186,7 @@
             }
         };
 
-        const IMAGE_PLACEHOLDERS = ['image_placeholder.png', 'full_1_place.png', 'ikon_kagylo.png', 'photo_place.png', 'photo3_big_place.png', 'photobig_v1_place.png', 'photobig_v2_place.png'];
+        const IMAGE_PLACEHOLDERS = ['image_placeholder.png', 'full_1_place.png', 'ikon_kagylo.png', 'photo_place.png', 'photo3_big_place.png', 'photobig_v1_place.png', 'photobig_v2_place.png', 'mobil_slide_inner.png', 'ora_slide_inner.png', 'tablet_slide_inner.png'];
 
         function pickFrom(arr){
             return arr[Math.floor(Math.random() * arr.length)]
@@ -2432,7 +3214,7 @@
                     }
                     let fn = animationControllers[p.assetKey];
                     if(fn) actor.controller = fn(actor);
-                }else {
+                }else if(p.type ==='ANIMATED'){
                     actor = actorFactory.makeAnimatedSprite(p.assetKey);
                     actor.animationSpeed = 24 / 60;
                     let fn = animationControllers[p.assetKey];
@@ -2441,6 +3223,8 @@
                     }else {
                         actor.play();
                     }
+                }else {
+                    actor = actorFactory.makeText(p.fontSize, p.wordWrapWidth, p.charCount, p.textAlign);
                 }
                 actor.assetKey = p.assetKey;
                 actor.type = p.type;
@@ -2449,6 +3233,7 @@
                 actor.z = p.z + slideIdx * SLIDE_ZGAP;
                 actor._baseScale = p.baseScale;
                 actor._flip = !!p.flip;
+                actor.rotation = p.rotation || 0;
                 stage.addChild(actor);
                 nodes.push(actor);
                 createdNodes.push(actor);
@@ -2513,6 +3298,24 @@
                 });
             });
             div.appendChild(document.createElement('br'));
+            {
+                const b = document.createElement('button');
+                b.innerText = 'TEXT';
+                div.appendChild(b);
+                b.addEventListener('click', e => {
+                    const s = actorFactory.makeText();
+                    s.type = 'TEXT';
+                    s.assetKey = e.currentTarget.innerText;
+                    nodes.push(s);
+                    stage.addChild(s);
+                    makeInteractive(s);
+                    s._x = 1920 / 2;
+                    s._y = 540;
+                    s.z = Z + 11;
+                    updateOutput();
+                });
+            }
+            div.appendChild(document.createElement('br'));
 
             const taImport = document.createElement('textarea');
             div.appendChild(taImport);
@@ -2527,18 +3330,25 @@
                 ta.select();
                 document.execCommand("copy");
             });
+            function nodeToData(n){
+                return Object.assign({
+                    x: n._x,
+                    y: n._y,
+                    flip: n._flip,
+                    rotation: n.rotation,
+                    baseScale: n._baseScale,
+                    z: n.z,
+                    assetKey: n.assetKey,
+                    type: n.type,
+                }, n.type === 'TEXT' ? {
+                    fontSize: n.fontSize,
+                    wordWrapWidth: n.wordWrapWidth,
+                    charCount: n.charCount,
+                    textAlign: n.textAlign
+                } : {})
+            }
             function updateOutput(){
-                ta.innerText = JSON.stringify(nodes.map(n => {
-                    return {
-                        x: n._x,
-                        y: n._y,
-                        flip: n._flip,
-                        baseScale: n._baseScale,
-                        z: n.z,
-                        assetKey: n.assetKey,
-                        type: n.type,
-                    }
-                }));
+                ta.innerText = JSON.stringify(nodes.map(nodeToData));
             }
             document.addEventListener('keydown', e => {
                 if(!currentEl) return
@@ -2548,16 +3358,26 @@
                         stage.removeChild(currentEl);
                         break;
                     case 'ArrowLeft':
-                        currentEl._x -= 20;
+                        currentEl._x -= e.shiftKey? 1 : 20;
                         break;
                     case 'ArrowRight':
-                        currentEl._x += 20;
+                        currentEl._x += e.shiftKey? 1 : 20;
                         break;
                     case '+':
-                        currentEl._baseScale += .05;
+                        if(currentEl.type === 'TEXT'){
+                            currentEl.fontSize += 1;
+                            currentEl.updateStyle();
+                        }else {
+                            currentEl._baseScale += .025;
+                        }
                         break;
                     case '-':
-                        currentEl._baseScale -= .05;
+                        if(currentEl.type === 'TEXT'){
+                            currentEl.fontSize -= 1;
+                            currentEl.updateStyle();
+                        }else {
+                            currentEl._baseScale -= .025;
+                        }
                         break;
                     case 'q':
                         currentEl.z += .5;
@@ -2573,14 +3393,62 @@
                         break;
                     case 'w':
                         currentEl._y -= 10;
-                        console.log(currentEl._y);
                         break;
                     case 's':
                         currentEl._y += 10;
-                        console.log(currentEl._y);
+                        break;
+                    case 'W':
+                        currentEl._y -= 1;
+                        break;
+                    case 'S':
+                        currentEl._y += 1;
                         break;
                     case 'f':
                         currentEl._flip = !currentEl._flip;
+                        break;
+                    case 'e':
+                        currentEl.rotation -= 0.0174533;
+                        break;
+                    case 'r':
+                        currentEl.rotation += 0.0174533;
+                        break;
+                    case 'd':
+                        populator.buildSlide(app, nodes, [nodeToData(currentEl)], 0, true).forEach(item => makeInteractive(item));
+                        updateOutput();
+                        break;
+                    case 'i':
+                        if(currentEl.type === 'TEXT') {
+                            currentEl.wordWrapWidth += 20;
+                            currentEl.updateStyle();
+                        }
+                        break;
+                    case 'u':
+                        if(currentEl.type === 'TEXT') {
+                            currentEl.wordWrapWidth -= 20;
+                            currentEl.updateStyle();
+                        }
+                        break;
+                    case 'k':
+                        if(currentEl.type === 'TEXT') {
+                            currentEl.charCount += 10;
+                            currentEl.updateStyle();
+                        }
+                        break;
+                    case 'j':
+                        if(currentEl.type === 'TEXT') {
+                            currentEl.charCount -= 10;
+                            currentEl.updateStyle();
+                        }
+                        break;
+                    case 'o':
+                        if(currentEl.type === 'TEXT') {
+                            if(currentEl.textAlign === 'center'){
+                                currentEl.textAlign = null;
+                            }else {
+                                currentEl.textAlign = 'center';
+                            }
+                            currentEl.updateStyle();
+                        }
                         break;
                     }
                 updateOutput();
