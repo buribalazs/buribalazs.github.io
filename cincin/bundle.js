@@ -826,6 +826,8 @@
         		{
         			x: 1820,
         			y: 1040,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.29999999999999966,
         			z: 11,
         			assetKey: "csiga",
@@ -834,6 +836,8 @@
         		{
         			x: 200,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.6499999999999997,
         			z: 11,
         			assetKey: "kagylogyongy.png",
@@ -842,6 +846,8 @@
         		{
         			x: 960,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1.1,
         			z: 11.5,
         			assetKey: "full_1_place.png",
@@ -850,6 +856,8 @@
         		{
         			x: 880,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.4999999999999996,
         			z: 11,
         			assetKey: "buborek3.png",
@@ -858,6 +866,8 @@
         		{
         			x: 2020,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1,
         			z: 14,
         			assetKey: "buborek3.png",
@@ -866,6 +876,8 @@
         		{
         			x: -220,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.7499999999999998,
         			z: 15,
         			assetKey: "kagyloszikla.png",
@@ -874,6 +886,8 @@
         		{
         			x: 600,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 2.0500000000000007,
         			z: 19,
         			assetKey: "hegy.png",
@@ -882,9 +896,20 @@
         		{
         			x: 2280,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.39999999999999963,
         			z: 16.5,
         			assetKey: "gomba.png",
+        			type: "PROP"
+        		},
+        		{
+        			x: 960,
+        			y: 1080,
+        			rotation: 0,
+        			baseScale: 1,
+        			z: 11.55,
+        			assetKey: "full_1arnyek.png",
         			type: "PROP"
         		}
         	],
@@ -892,6 +917,8 @@
         		{
         			x: 980,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1.1,
         			z: 11.5,
         			assetKey: "full_1_place.png",
@@ -900,6 +927,8 @@
         		{
         			x: 1900,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.24999999999999967,
         			z: 10.5,
         			assetKey: "korall",
@@ -908,6 +937,8 @@
         		{
         			x: 340,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.5999999999999996,
         			z: 10.5,
         			assetKey: "homokpad.png",
@@ -916,6 +947,8 @@
         		{
         			x: 1760,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1,
         			z: 11,
         			assetKey: "buborek_1.png",
@@ -924,6 +957,8 @@
         		{
         			x: 1400,
         			y: 1200,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1,
         			z: 11,
         			assetKey: "buborek_2.png",
@@ -932,6 +967,8 @@
         		{
         			x: 620,
         			y: 1000,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.6499999999999997,
         			z: 10.5,
         			assetKey: "gomba1.png",
@@ -940,6 +977,8 @@
         		{
         			x: 360,
         			y: 1000,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.4499999999999996,
         			z: 10.5,
         			assetKey: "gomba2.png",
@@ -948,6 +987,8 @@
         		{
         			x: 240,
         			y: 1090,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.5999999999999996,
         			z: 10.5,
         			assetKey: "gomba2.png",
@@ -956,6 +997,8 @@
         		{
         			x: 880,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.4999999999999996,
         			z: 10.5,
         			assetKey: "gombak.png",
@@ -964,6 +1007,8 @@
         		{
         			x: 40,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.6999999999999997,
         			z: 10,
         			assetKey: "hatterkorall.png",
@@ -972,6 +1017,8 @@
         		{
         			x: -460,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.6499999999999997,
         			z: 16,
         			assetKey: "gombacsap.png",
@@ -980,9 +1027,20 @@
         		{
         			x: 2380,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.4499999999999996,
         			z: 15.5,
         			assetKey: "gombaszikla.png",
+        			type: "PROP"
+        		},
+        		{
+        			x: 960,
+        			y: 1080,
+        			rotation: 0,
+        			baseScale: 1.1249999999999996,
+        			z: 11.55,
+        			assetKey: "photobig_v2arnyek.png",
         			type: "PROP"
         		}
         	],
@@ -2299,15 +2357,17 @@
         		{
         			x: 480,
         			y: 1050,
+        			flip: false,
         			rotation: 0,
         			baseScale: 1,
-        			z: 13,
+        			z: 13.099999999999994,
         			assetKey: "photobig_v2arnyek.png",
         			type: "PROP"
         		},
         		{
         			x: 1260,
         			y: 650,
+        			flip: false,
         			rotation: 0,
         			baseScale: 1,
         			z: 13,
@@ -2481,6 +2541,8 @@
         		{
         			x: 120,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1.7000000000000006,
         			z: 20.5,
         			assetKey: "hegy.png",
@@ -2489,6 +2551,8 @@
         		{
         			x: 2320,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.6999999999999997,
         			z: 15.5,
         			assetKey: "hatterkorall.png",
@@ -2497,6 +2561,8 @@
         		{
         			x: -260,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.6499999999999997,
         			z: 14.5,
         			assetKey: "kagyloszikla.png",
@@ -2505,6 +2571,8 @@
         		{
         			x: 400,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1,
         			z: 11.5,
         			assetKey: "photo3_big_place.png",
@@ -2513,6 +2581,8 @@
         		{
         			x: 960,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1,
         			z: 11.5,
         			assetKey: "photo3_big_place.png",
@@ -2521,6 +2591,8 @@
         		{
         			x: 1520,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1,
         			z: 11.5,
         			assetKey: "photo3_big_place.png",
@@ -2529,6 +2601,8 @@
         		{
         			x: 960,
         			y: 210,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 1,
         			z: 11.5,
         			assetKey: "header_long.png",
@@ -2537,6 +2611,8 @@
         		{
         			x: 80,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.4999999999999996,
         			z: 10.5,
         			assetKey: "agancs_kis.png",
@@ -2545,6 +2621,8 @@
         		{
         			x: 1200,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.5499999999999996,
         			z: 10.5,
         			assetKey: "csillag_homok.png",
@@ -2553,6 +2631,8 @@
         		{
         			x: 1180,
         			y: 990,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.19999999999999968,
         			z: 10.5,
         			assetKey: "csiga",
@@ -2561,6 +2641,8 @@
         		{
         			x: 400,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.4499999999999996,
         			z: 10.5,
         			assetKey: "buborek3.png",
@@ -2569,6 +2651,8 @@
         		{
         			x: 760,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.5999999999999996,
         			z: 10.5,
         			assetKey: "buborek_1.png",
@@ -2577,6 +2661,8 @@
         		{
         			x: 1860,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.4499999999999996,
         			z: 11,
         			assetKey: "bluggy",
@@ -2585,10 +2671,41 @@
         		{
         			x: 1640,
         			y: 1080,
+        			flip: false,
+        			rotation: 0,
         			baseScale: 0.34999999999999964,
         			z: 10,
         			assetKey: "bluggyBig",
         			type: "ANIMATED"
+        		},
+        		{
+        			x: 1520,
+        			y: 1090,
+        			rotation: 0,
+        			baseScale: 0.7249999999999998,
+        			z: 11.55,
+        			assetKey: "photoarnyek.png",
+        			type: "PROP"
+        		},
+        		{
+        			x: 960,
+        			y: 1090,
+        			flip: false,
+        			rotation: 0,
+        			baseScale: 0.7249999999999998,
+        			z: 11.55,
+        			assetKey: "photoarnyek.png",
+        			type: "PROP"
+        		},
+        		{
+        			x: 400,
+        			y: 1090,
+        			flip: false,
+        			rotation: 0,
+        			baseScale: 0.7249999999999998,
+        			z: 11.55,
+        			assetKey: "photoarnyek.png",
+        			type: "PROP"
         		}
         	],
         	[
@@ -3204,12 +3321,13 @@
                         let placeholder = actor;
                         actor = new PIXI.Container();
                         createMaskedImage(app, actor, placeholder, PIXI.Sprite.from(pickFrom([
-                            '/dummy/image01.jpg',
-                            '/dummy/image02.jpg',
-                            '/dummy/image03.png',
-                            '/dummy/image04.png',
-                            '/dummy/image05.png',
-                            '/dummy/image06.jpg',
+                            // '/dummy/image01.jpg',
+                            // '/dummy/image02.jpg',
+                            // '/dummy/image03.png',
+                            // '/dummy/image04.png',
+                            // '/dummy/image05.png',
+                            // '/dummy/image06.jpg',
+                            '/dummy/image07.png',
                         ])));
                     }
                     let fn = animationControllers[p.assetKey];
