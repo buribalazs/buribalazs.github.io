@@ -53,9 +53,9 @@ function setup(){
     })
 
     function move(){
-        gsap.to(layer0,2,{pixi:{x:-OFFSET * slideIdx}})
-        gsap.to(layer1,2,{pixi:{x:-OFFSET * slideIdx * 0.8}})
-        gsap.to(layer2,2,{pixi:{x:-OFFSET * slideIdx * 0.6}})
+        gsap.to(layer0,3,{pixi:{x:-OFFSET * slideIdx}})
+        gsap.to(layer1,3,{pixi:{x:-OFFSET * slideIdx * 0.8}})
+        gsap.to(layer2,3,{pixi:{x:-OFFSET * slideIdx * 0.6}})
     }
 }
 
