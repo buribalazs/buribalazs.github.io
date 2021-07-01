@@ -4,25 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>parallax demo</title>
+    <title>Balaton VR board</title>
     <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-            background-color: black;
-        }
-        .main-canvas {
+        .yt-container {
+            position: relative;
             width: 100%;
+            height: 0;
+            padding-bottom: 56.25%;
+            margin-bottom: 10px;
+        }
+        iframe {
+            position: absolute;
             height: 100%;
-            object-fit: contain;
+            width: 100%;
+        }
+        img {
+            width: 100%;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .grid {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 1fr 1fr 1fr;
         }
     </style>
 </head>
 <body>
-    <div id="loading" style="color: white;">Loading please wait</div>
-    <script src="pixi.min.js"></script>
-    <script src="PixiPlugin.min.js"></script>
-    <script src="gsap.min.js"></script>
-    <script src="main.js"></script>
+
+    <div class="grid">
+        <div class="col-left">
+            <div class="yt-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/tRnGLTQIdUk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <div class="yt-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/7QG_8VW5aYk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <div class="yt-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/bpvHqAsNVH0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div>
+        <div class="col-center">
+            <div class="yt-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/DzOnGuZorZw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <div class="yt-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/QRq7E5hOzuE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div>
+        <div class="col-right">
+            <div class="yt-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/yaXUfqiPBUw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <div class="yt-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/N-efoX2v5GQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div>
+    </div>
 </body>
 </html>
