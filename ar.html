@@ -1,18 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AR object view</title>
 </head>
+
 <body>
     <h1>AR object view</h1>
     <!-- <a href="intent://arvr.google.com/scene-viewer/1.0?file=https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/Avocado/glTF/Avocado.gltf#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;">Avocado</a> -->
-    <a href="intent://arvr.google.com/scene-viewer/1.0?file=https://dicom.bio/scene.glb#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;">Android View in AR</a>
+    <a
+        href="intent://arvr.google.com/scene-viewer/1.0?file=https://dicom.bio/scene.glb#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;">Android
+        View in AR</a>
     <a rel="ar" href="https://dicom.bio/scene_usdz.usdz">
-        <img src=""><div class="ar-glyph-background">
-        <div class="ar-icon"></div>
-        <div class="ar-text">iOS View in AR</div></div>
+        <img src="">
+        <div class="ar-glyph-background">
+            <div class="ar-icon"></div>
+            <div class="ar-text">iOS View in AR</div>
+        </div>
     </a>
+    <div id="platform"></div>
+    <script>
+        function getMobileOperatingSystem() {
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+            // Windows Phone must come first because its UA also contains "Android"
+            if (/windows phone/i.test(userAgent)) {
+                return "Windows Phone";
+            }
+
+            if (/android/i.test(userAgent)) {
+                return "Android";
+            }
+
+            // iOS detection from: http://stackoverflow.com/a/9039885/177710
+            if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                return "iOS";
+            }
+
+            return "unknown";
+        }
+        document.getElementById("platform").innerText = getMobileOperatingSystem()
+    </script>
 </body>
+
 </html>
